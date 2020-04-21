@@ -1,0 +1,125 @@
+\documentclass[11pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usetheme{cambridgeUS}
+\usepackage[longnamesfirst]{natbib} 
+\usepackage{caption}
+\DeclareCaptionFormat{citation}{%
+	\ifx\captioncitation\relax\relax\else
+	\captioncitation\par
+	\fi
+	#1#2#3\par}
+\newcommand*\setcaptioncitation[1]{\def\captioncitation{\textit{Source:}~#1}}
+\let\captioncitation\relax
+\captionsetup{format=citation,justification=centering}
+\usepackage {subcaption}
+\usepackage{CJKutf8}
+
+
+\begin{document}
+	
+	\begin{CJK*}{UTF8}{gkai}
+		
+	\author[LC Meng]{Lingchao Meng}
+	\title[LaTeX Tutorial]{\LaTeX\ Tutorial}
+	%\subtitle{}
+	%\logo{}
+	\institute[SE, PKU]{School of Economics\\Peking University}
+	%\date{}
+	%\subject{}
+	%\setbeamercovered{transparent}
+	%\setbeamertemplate{navigation symbols}{}
+\begin{frame}[plain]
+    \maketitle
+\end{frame}
+
+\begin{frame}
+	This is  just a beginners guide to writing documents in \LaTeX\ without prior knowledge of \LaTeX. This slide is designed for the \LaTeX\ workshop at School of Economics, Peking University.
+\end{frame}
+
+\begin{frame}
+	This file and some other materials can be download from my GitHub repository: \underline{https://github.com/MengLingchao/LaTex\_tutorial}. \\Please feel free to download and use it.
+\end{frame}
+
+\begin{frame}{Outline}
+	\tableofcontents
+\end{frame}
+
+\section{Introduction}
+\begin{frame}
+	\sectionpage
+\end{frame}
+
+\begin{frame}{Definition}
+\LaTeX	Working definitions of capital reallocation are based on measurement in models or in empirical work. But generally, \alert{capital reallocation} is 
+	\begin{itemize}
+		\item the transfer or sale of capital between productive firms or technologies
+		\item sales of property, plant, and equipment (PP\&E) or as acquisitions of entire divisions or firm
+	\end{itemize}
+\end{frame}
+
+
+\section{Capital Reallocation: Stylized Facts}
+\begin{frame}
+	\sectionpage
+\end{frame}
+
+\begin{frame}{The basic idea of our paper}
+	
+	Generally, we can follow \cite{korniotis2013state-level} and test whether province-level business cycle can significantly predict the expected returns.
+	\vskip 0.25cm
+	This paper can be roughly split into the following three part:
+	\begin{enumerate}
+		\item Estimate the province-level business cycle. \\(Use direct proxy or use some models to estimate)
+		\item Test the predictive power of this indicator. \\(Standard empirical asset pricing testing)
+		\item Explain and interpret the predictive power. \\(Find the mechanism)
+	\end{enumerate}
+
+\vskip 0.25cm
+
+The first and second part is relatively easy to do, while the third part needs more consideration.
+\end{frame}
+
+\section{Capital Reallocation: the Theory}
+\begin{frame}
+	\sectionpage
+\end{frame}
+
+\section{Potential Research}
+\begin{frame}
+	\sectionpage
+\end{frame}
+
+\subsection{Capital Reallocation in China Market}
+\begin{frame}
+	\begin{centering}
+		{\small \begin{beamercolorbox}[center]{part title}
+			\usebeamerfont{section title}\insertsubsection\par
+		\end{beamercolorbox}}
+	\end{centering}
+\end{frame}
+
+\subsection{Capital Reallocation and Empirical Asset Pricing}
+\begin{frame}
+	\begin{centering}
+		{\small \begin{beamercolorbox}[center]{part title}
+				\usebeamerfont{section title}\insertsubsection\par
+		\end{beamercolorbox}}
+	\end{centering}
+\end{frame}
+
+\section{References}
+\begin{frame}
+	\sectionpage
+\end{frame}
+
+
+\bibliographystyle{jf}
+\bibliography{ref}
+\end{CJK*}
+\end{document}

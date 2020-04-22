@@ -25,9 +25,9 @@
 
 **Supplementary Materials**
 
-- The Not So Short Introduction to LaTeXe (in CN): 中文版本的一份不太简短的LaTeX2$\varepsilon$介绍，see more info on https://www.ctan.org/tex-archive/info/lshort/
+- The Not So Short Introduction to LaTeXe (in CN): 中文版本的一份不太简短的LaTeX2e介绍，see more info on https://www.ctan.org/tex-archive/info/lshort/
 
-- The Not So Short Introduction to LaTeXe (in EN): 英文版本的一份不太简短的LaTeX2$\varepsilon$介绍，see more info on https://www.ctan.org/tex-archive/info/lshort/
+- The Not So Short Introduction to LaTeXe (in EN): 英文版本的一份不太简短的LaTeX2e介绍，see more info on https://www.ctan.org/tex-archive/info/lshort/
 
 - Chang_LaTeX_sheet.pdf: 一份LaTeX速查表
 - LaTeX_24H_Note.pdf: 一份总结的比较好的LaTeX Note

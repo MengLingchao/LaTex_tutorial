@@ -1,0 +1,8 @@
+\beamer@sectionintoc {1}{Introduction}{5}{0}{1}
+\beamer@sectionintoc {2}{\LaTeX \ Basic}{12}{0}{2}
+\beamer@sectionintoc {3}{Basic Typesetting}{17}{0}{3}
+\beamer@sectionintoc {4}{Capital Reallocation: the Theory}{20}{0}{4}
+\beamer@sectionintoc {5}{Potential Research}{21}{0}{5}
+\beamer@subsectionintoc {5}{1}{Capital Reallocation in China Market}{22}{0}{5}
+\beamer@subsectionintoc {5}{2}{Capital Reallocation and Empirical Asset Pricing}{23}{0}{5}
+\beamer@sectionintoc {6}{References}{24}{0}{6}

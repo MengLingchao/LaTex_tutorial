@@ -1,0 +1,112 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.9.6)  21 APR 2020 21:08
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**sample.tex
+(./sample.tex
+LaTeX2e <2018-12-01>
+(d:/Program Files/texlive/2019/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+(d:/Program Files/texlive/2019/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(d:/Program Files/texlive/2019/texmf-dist/tex/latex/blindtext/blindtext.sty
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+
+(d:/Program Files/texlive/2019/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+\c@blindtext=\count88
+\c@Blindtext=\count89
+\c@blind@countparstart=\count90
+\blind@countxx=\count91
+\blindtext@numBlindtext=\count92
+\blind@countyy=\count93
+\c@blindlist=\count94
+\c@blindlistlevel=\count95
+\c@blindlist@level=\count96
+\blind@listitem=\count97
+\c@blind@listcount=\count98
+\c@blind@levelcount=\count99
+\blind@mathformula=\count100
+\blind@Mathformula=\count101
+\c@blind@randomcount=\count102
+\c@blind@randommax=\count103
+\c@blind@pangramcount=\count104
+\c@blind@pangrammax=\count105
+)
+(d:/Program Files/texlive/2019/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
+
+(d:/Program Files/texlive/2019/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+(d:/Program Files/texlive/2019/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+)
+(./sample.aux)
+\openout1 = `sample.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 12.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 12.
+ [1
+
+{d:/Program Files/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 28.
+
+(d:/Program Files/texlive/2019/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+) [2]
+(./sample.aux) ) 
+Here is how much of TeX's memory you used:
+ 645 strings out of 494490
+ 8029 string characters out of 6174093
+ 63190 words of memory out of 5000000
+ 4381 multiletter control sequences out of 15000+600000
+ 9788 words of font info for 25 fonts, out of 8000000 for 9000
+ 36 hyphenation exceptions out of 8191
+ 22i,6n,19p,856b,187s stack positions out of 5000i,500n,10000p,200000b,80000s
+{d:/Program Files/texlive/2019/texmf-dist/fonts/enc/dvips/cm-su
+per/cm-super-t1.enc}<d:/Program Files/texlive/2019/texmf-dist/fonts/type1/publi
+c/cm-super/sfbx1440.pfb><d:/Program Files/texlive/2019/texmf-dist/fonts/type1/p
+ublic/cm-super/sfbx1728.pfb><d:/Program Files/texlive/2019/texmf-dist/fonts/typ
+e1/public/cm-super/sfrm1200.pfb><d:/Program Files/texlive/2019/texmf-dist/fonts
+/type1/public/cm-super/sfrm1440.pfb><d:/Program Files/texlive/2019/texmf-dist/f
+onts/type1/public/cm-super/sfrm2074.pfb><d:/Program Files/texlive/2019/texmf-di
+st/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on sample.pdf (2 pages, 81940 bytes).
+PDF statistics:
+ 36 PDF objects out of 1000 (max. 8388607)
+ 25 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

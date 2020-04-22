@@ -1,0 +1,2602 @@
+\documentclass[nogrid,nosurname,sort&compress]{RFS}
+
+\newcommand{\footnoteremember}[2]{\footnote{#2}\newcounter{#1}\setcounter{#1}{\value{footnote}}}
+\newcommand{\footnoterecall}[1]{\footnotemark[\value{#1}]}
+\renewcommand\theequation{\arabic{equation}}
+
+\makeatletter
+\gdef\copyrightline{Published by Oxford %
+University Press on behalf of The Society for Financial Studies 2014.}
+\makeatother
+
+\def\DOI{Sample}
+\def\volumenumber{00}
+\def\volumeissue{0}
+\def\volumeyear{2015}
+
+\setcounter{page}{1}
+
+\access{Advance Access publication September 21, 2014}
+
+%\def\querybox#1{\protect\fboxsep=0pt\colorbox{yellow}{#1}}
+
+\def\mystar{\relax}
+
+\def\tciLaplace{\mathcal{L}}
+\def\dint{\mathop{\displaystyle \int}}%
+
+\begin{document}
+
+\title{Strategic Investment and Industry Risk Dynamics\protect\footnote{I\ appreciate helpful comments from Helen Weeds, Pietro Veronesi, and two
+anoymous referees. I\ also thank Ulf Axelson, Kerry Back, Andres Donangelo, Andrea Eisfeldt,
+Rick Green, Dirk Hackbarth, Raman Uppal, and Lucy White, as well as seminar participants at LSE\
+and UCLA, and participants at the UBC\ Summer Conference 2010, the World Econometric Society
+Meetings 2010, the FIRS Conference 2011, the WFA\ Annual Meetings 2011, and the Texas Finance
+Festival 2012. Send correspondence to M. Cecilia Bustamante, University of Maryland, 4428 Van
+Munching Hall, College Park, MD 20742, USA; telephone: (301) 405-7934. E-mail:
+mcbustam@rhsmith.umd.edu.}}
+
+\shorttitle{Strategic Investment and Industry Risk Dynamics}
+
+\author{M. Cecilia {Bustamante}}
+\affiliation{University of Maryland and London School of Economics}
+
+\abstract{This paper characterizes how firms' strategic interaction in product markets affects the
+industry dynamics of investment and expected returns. In imperfectly competitive industries, a
+firm's exposure to systematic risk is affected by both its own investment strategy and the
+investment strategies of its peers, so that the dynamics of its expected returns depend on the
+intraindustry value spread. In the model and the data, firms' betas and returns correlate more
+positively in industries with low value spread, low dispersion in operating markups, and low
+concentration. \JEL{G12, G31}\history{Received XXXX XX, XXXX;
+editorial decision XXXX XX, XXXX by Editor
+XXXXXXXXXXXX.}}
+
+\maketitle
+
+In imperfectly competitive industries, the ability of firms to affect market prices induces them
+to invest strategically. The value of each firm depends not only on its own assets in place and
+investment opportunities but also on the ability of its competitors to expand capacity and reduce
+market prices. As a result,\ under imperfect competition, the dynamics of a firm's exposure to
+systematic risk is not only significantly explained by its own investment strategy but is also
+explained by the investment strategies of its industry peers.
+
+The study of firms' intraindustry interactions is relevant in
+light of the empirical evidence that suggests that commonly
+studied asset pricing regularities are predominantly intraindustry
+(see, e.g., \citealt{cohen1996}; \citealt{mosk}; \citealt{cohen}).
+The current production-based asset-pricing literature focuses on
+the impact of corporate investment on expected returns in
+perfectly competitive or in perfectly monopolistic industries
+(see, e.g., \citealt{berk}; \citealt{zhang};
+\citealt{carlson2004}). We explore the intermediate case of
+imperfectly competitive industries, in which firms' strategic
+interaction affects the dynamics of investment and risk. Our
+analysis rationalizes existing findings on the cross-section of
+returns and provides additional testable predictions for which we
+find supporting evidence in our empirical section.
+
+Our study is motivated by several research questions. How does a firm's relative position in its
+product market influence its investment decisions and the conditional dynamics of its expected
+returns? In which types of industries are the stylized predictions of investment-based asset
+pricers for monopolies or perfectly competitive industries still appropriate? And how does
+strategic interaction affect the intraindustry correlation of firms' investments and their
+exposure to systematic risk?
+
+%%%%The core testable prediction of our model is that the dynamics of corporate investment and
+%%%%expected returns depend critically on the intraindustry standard deviation in market-to-book
+%%%%ratios, or intraindustry value spread. In industries with low value spread, firms have more
+%%%%similar investment strategies, and their betas and returns correlate more positively. In
+%%%%contrast, in industries with high value spread, there are leaders and laggards whose investment
+%%%%strategies and risk exposures are less correlated. Firms' betas and returns may also correlate
+%%%%more positively in industries with low standard deviation in markups and low concentration.
+%%%%
+%%%%We obtain this prediction in a partial equilibrium real-options model of duopoly under imperfect
+%%%%competition, with heterogeneous firms in which investment is irreversible and firms optimally
+%%%%decide when to invest. We solve for the investment strategies of firms that differ in their
+%%%%production technologies and have a single growth option to increase capacity. This departs from
+%%%%several earlier dynamic models of imperfect competition that focus on identical firms and
+%%%%therefore are silent about the intraindustry cross-section of growth opportunities and risk (see,
+%%%%e.g., \citealt{grenadier2002}; \citealt{aguerrevere}).\footnote{A relevant exception is the model
+%%%%by \cite{carlson2012}, on which we elaborate below.} Given that the setting is fairly complex, we
+%%%%exert substantial effort to derive firms' investment strategies in equilibrium.
+%%%%
+%%%%The paper makes three main contributions. First, we add to the literature on corporate investment
+%%%%as we elaborate on the effect of firms' strategic interaction on their\ investment strategies. In
+%%%%neoclassical investment models, the investment strategy of each firm solely depends on its own
+%%%%marginal product of capital, or $q$ (see, e.g., \citealt{hayashi}). In contrast, under imperfect
+%%%%competition, the investment strategy of each firm depends on the marginal product of capital of
+%%%%all firms in the industry. In our model, a firm's $q$ reflects its comparative advantage in
+%%%%increasing its market share relative to its peer. As a result, the investment strategy of each
+%%%%firm depends on the intraindustry dispersion in $q$, or its empirical counterpart, the
+%%%%intraindustry value spread.
+%%%%
+%%%%In our duopoly model, two mutually exclusive types of Markov perfect equilibria arise, depending
+%%%%on the cross-sectional differences in firms' production technologies and on the intraindustry
+%%%%value spread.\footnote{To obtain mutually exclusive equilibria, we consider a Pareto dominance
+%%%%refinement. See Section~\ref{s1}.} In industries with more distant competitors and high value
+%%%%spread, the firm with high $q$ invests\vpb{} earlier than does its competitor. In this
+%%%%leader-follower equilibrium, the firm with high $q$ may invest more aggressively and thus
+%%%%accelerate its investment relative to its first-best strategy to secure its position as a leader.
+%%%%As a result, the firm with high $q$ bears a nonnegative shadow cost of preemption. In industries
+%%%%with closer competitors and low value spread, firms invest simultaneously in equilibrium. In this
+%%%%clustering equilibrium, both firms\ delay their investments relative to their strategy as either a
+%%%%leader or a follower and invest at a threshold that is strictly higher than the optimal follower
+%%%%threshold of the firm with low $q$. As a result, firms strategically delay their investments in
+%%%%industries with low value spread.\footnote{This is consistent with the clustering equilibrium with
+%%%%strategic delay discussed by \cite{weeds2002}.}
+%%%%
+%%%%As a second contribution, the model characterizes how firms' strategic behavior affects the
+%%%%intraindustry cross-section of expected returns. We find that firms' strategic interaction
+%%%%affects the intraindustry cross-section of betas beyond the given cross-sectional heterogeneity in
+%%%%firms' production technologies. In industries with leaders and followers, preemption amplifies
+%%%%the intraindustry cross-sectional differences in betas. The equilibrium intraindustry spread in
+%%%%betas is weakly higher than the spread in betas of an industry in which the firm with high $q$
+%%%%would invest earlier by assumption. Conversely, in industries with closer competitors, it is
+%%%%Pareto optimal for both firms to invest jointly at a higher threshold relative to their
+%%%%corresponding leader-follower strategies. Such strategic delay in firms' investment decisions
+%%%%dampens the intraindustry cross-section in betas.
+%%%%
+%%%%The final contribution of the paper is to provide testable implications and supporting empirical
+%%%%evidence on the effect of firms' strategic interaction on the\ intraindustry dynamics of expected
+%%%%returns. In our model, firms' strategic interaction significantly affects the intraindustry
+%%%%correlation of their expected returns, even when all firms in the industry are subject to no
+%%%%idiosyncratic shocks and there is a single source of systematic risk. In industries with low
+%%%%value spread, firms' investments cluster, and their expected returns correlate\ positively over
+%%%%time. Conversely, in industries with high value spread, the betas of leaders and laggards
+%%%%correlate negatively: when leaders are about to invest and their expected returns are high,
+%%%%laggards are about to lose market share and their expected returns are low.
+%%%%
+%%%%To test our predictions on industry dynamics, we construct a measure of comovement that captures
+%%%%the average pairwise correlation in firms' investments, betas, and returns by industry. Consistent
+%%%%with the model, we report that firms' betas and returns correlate more positively in industries
+%%%%with low value spread. The model also predicts that firms' returns and betas comove more
+%%%%positively in industries with a low Herfindahl-Hirshman index (HHI) of concentration and a low
+%%%%spread in markups, if the HHI and the intraindustry spread in markups are positively correlated
+%%%%with the intraindustry value spread\vpb{}. In our empirical tests, we report that those industries
+%%%%with low value spread usually have lower standard deviation in markups and lower concentration as
+%%%%measured by the HHI. We also find more positive comovement in firms' betas and returns in
+%%%%industries with low HHI\ and low dispersion in markups.
+%%%%
+%%%%The model relates closely to the symmetric duopoly model of investment timing by \cite{weeds2002}
+%%%%and the asymmetric duopoly models of \cite{pawlina2006} and \cite{weeds2010}.\footnote{Other
+%%%%related models of duopoly include those of \cite{fudenberg1985}, \cite{grenadier1996},
+%%%%\cite{boyer}, and \cite{lambrecht}.} We depart from the studies of \cite{pawlina2006} and
+%%%%\cite{weeds2010} as we use an alternative solution approach based on a sorting condition and
+%%%%incentive compatibility constraints. The use of a sorting condition in a dynamic game of
+%%%%oligopoly relates to \cite{maskin}. The Lagrange multiplier on the binding incentive
+%%%%compatibility constraint of the firm with low $q$ captures the shadow cost of preemption on the
+%%%%value of its peer.
+%%%%
+%%%%Consistent with \cite{pawlina2006} and \cite{weeds2010}, we obtain a leader-follower equilibrium,
+%%%%in which the firm with the better technology may invest more aggressively in equilibrium to secure
+%%%%its position as a leader. We contribute to \cite{pawlina2006} in extending the analysis of
+%%%%clustering equilibria by \cite{weeds2002} to the case of an asymmetric duopoly. Consistent with
+%%%%\cite{weeds2002}, we predict multiple clustering equilibria and apply a Pareto-dominance
+%%%%refinement to focus on the Pareto optimal case, in which firms invest simultaneously at the
+%%%%first-best strategy of the firm with the high $q$. The joint-investment equilibrium discussed by
+%%%%\cite{pawlina2006} coincides with the Pareto optimal clustering equilibrium in our paper.
+%%%%
+%%%%The implications on industry risk dynamics relate to \cite{carlson2012}, who build on
+%%%%\cite{pawlina2006} and study the effect of firms' strategic behavior on the dynamics of expected
+%%%%returns. We depart from \cite{carlson2012} as we characterize the effects of preemption and
+%%%%strategic delay on the intraindustry cross-section of betas. We also show that the unobservable
+%%%%differences in firms' production technologies (which effectively drive their strategic behavior)\
+%%%%translate into observable differences in market-to-book ratios. This allows us to formulate
+%%%%testable implications of how firms' strategic behavior affects the intraindustry dynamics of
+%%%%returns, for which we find empirical support.
+%%%%
+%%%%Last, the paper relates to empirical studies highlighting the relevance of intraindustry
+%%%%variation in explaining return predictability and the cross-section of returns. \cite{cohen}
+%%%%document that the value spread of U.S. firms is predominantly intraindustry. In our model, a
+%%%%firm's market-to-book ratio captures its ability to increase its market share. This suggests
+%%%%that the market-to-book sorts by \cite{fama} aggregate stocks according to firms' relative
+%%%%position in their own industry. The model rationalizes the empirical evidence of \cite{hoberg}.
+%%%%\ \cite{hoberg} find that less concentrated industries have more predictable average industry
+%%%%returns, so that periods of high market-to-book ratios, high investment, high returns, and high
+%%%%betas are followed by periods of lower market-to-book ratios, lower investment, lower returns, and
+%%%%lower betas.
+
+\section{Basic Model}\label{s1}
+
+We begin by studying a tractable model of duopoly to characterize the effect of firms' strategic
+interaction on their risk exposure in the most simple way. In the following section, we
+elaborate on alternative specifications of the model and derive testable implications.
+
+\subsection{Main assumptions}
+
+We consider an industry with two firms $j=L,M$, in which each firm has assets in place and a
+single growth option to increase its capacity. Each firm is all-equity financed and run by a
+manager who is the single shareholder.
+
+Firms compete in capacity and produce a homogeneous good that they sell in the market at a price
+$p_{t}$. Firms operate at full capacity at any point in time. The demand function requires that
+the product market price $p_{t}$ equals
+\begin{equation}
+p_{t}=X_{t}Y_{t}^{-\frac{1}{\varepsilon }}\text{,}  \label{tax}
+\end{equation}
+where $\varepsilon >1$ is the elasticity of demand, $X_{t}$ is a systematic multiplicative shock,
+and the industry output $Y_{t}$ is the sum of the production at time $t$.
+
+The demand shock $X_{t}$ follows a geometric Brownian motion with drift $\mu _{x}$ and volatility
+$\sigma _{x}$ so that
+\begin{equation}
+dX_{t}=\mu _{x}X_{t}dt+\sigma _{x}X_{t}dz_{t}\text{,}  \label{demand}
+\end{equation}
+where $z_{t}$ is a standard Wiener process, and $X_{0}$ is strictly positive. We further assume
+that $X_{0}$ is sufficiently low so that the growth options of all firms in the industry are
+strictly positive at $t=0$. Throughout the paper, we denote by $\mu _{\mathbf{y}t}$ and $\sigma
+_{\mathbf{y}t}$ the mean and standard deviation of any variable $y$ at time $t$, and we omit the
+subscript $t$ when $\mu _{\mathbf{y}}$ or $\sigma _{\mathbf{y}}$ are constant over time.
+
+%%%%%We assume that both firms have the same initial installed capacity $K$. Firms can also invest at
+%%%%%any time to increase their installed capacity to $\Lambda _{j}K$, where $\Lambda _{j}>1.$ Without loss of generality, we denote firm $L$ as the firm with the more productive investment
+%%%%%opportunity so that $\Lambda _{L}>\Lambda _{M}$. We further set the output of each
+%%%%%firm to be equal to its installed capacity, so that the total production $%
+%%%%%Y_{t}$ in Equation (\ref{tax}) is the sum of the installed capacity of both firms at any point in
+%%%%%time.\footnote{Total production equals $Y_{t}=2K$ if no firm has invested, $Y_{t}=\left( 1+\Lambda
+%%%%%_{j}\right) K$ if only firm $j$ has invested, and $Y_{t}=\left( \Lambda _{L}+\Lambda _{F}\right)
+%%%%%K$ if both firms have invested.}\vpb{}
+%%%%%
+%%%%%Managers maximize shareholder value by determining the critical value $x_{j}$ for the stochastic
+%%%%%demand shock $X_{t}$, at which point each firm exercises its growth option. All parameter values
+%%%%%and actions are common knowledge, so the game is one of complete information.
+%%%%%
+%%%%%\looseness=1The decision to invest is irreversible and entails benefits and costs. In our
+%%%%%setting, the irreversibility of investment implies a commitment by firms not to adjust their
+%%%%%capacity upon a reduction in market prices. Upon
+%%%%%investment, firms benefit from an increase in the scale of their profits by $%
+%%%%%\Lambda _{j}.$ They also incur a fixed cost $fK$. For the sake of tractability, we do not
+%%%%%consider variable costs of investment, and we assume that firms face no variable costs of
+%%%%%production.
+%%%%%
+%%%%%Given our assumptions, we denote the instantaneous profits of firm $j$
+%%%%%before its own investment by $\pi _{jt}^{-}\equiv p_{t}^{-}K$, where the
+%%%%%superscript $^{-}$ denotes the cash flows before investment. Similarly, we
+%%%%%denote the instantaneous profits of firm $j$ after its own investment by $%
+%%%%%\pi _{jt}^{+}\equiv p_{t}^{+}\Lambda _{j}K$, where the superscript $^{+}$ denotes the cash flows
+%%%%%after investment.
+%%%%%
+%%%%%\subsection{Firm value}
+%%%%%
+%%%%%\looseness=1The value of firm $j$ at time $t$ or $V_{jt}$\ equals the expected present value of
+%%%%%its risky profits. Following \cite{carlson2004}, we assume that demand shocks are perfectly
+%%%%%hedgeable and determine the value of the firm using a replicating portfolio with weights on a
+%%%%%risk-free and a risky asset.
+%%%%%
+%%%%%\looseness=1We let $B_{t}$ denote the price of a riskless bond with dynamics $dB_{t}=rB_{t}dt$,
+%%%%%and we let $S_{t}$ be a risky asset with dynamics $dS_{t}=\mu _{s}S_{t}dt+\sigma _{x}S_{t}dz_{t}$.
+%%%%%\ The risky asset $S_{t}$ has a drift $\mu _{s}-\mu _{x}\equiv \delta >0$, and we assume that the
+%%%%%returns on $S_{t}$ are perfectly correlated with percentage changes in demand shocks. We use the
+%%%%%traded assets $B_{t}$ and $S_{t}$ to define a risk-neutral measure, under which the demand shock
+%%%%%$X_{t}$ follows a geometric Brownian motion with drift $r-\delta $ and volatility $\sigma
+%%%%%_{x}$.\footnote{The dynamics of the demand shock under the risk-neutral measure are $dX_{t}=\left(
+%%%%%r-\delta \right) X_{t}+\sigma _{x}X_{t}d\widehat{z_{t}}$, where $\widehat{z}_{t}=z_{t}+\frac{\mu
+%%%%%_{s}-r}{\sigma _{x}}t$.}
+%%%%%
+%%%%%\looseness=1In our model, firms sell their products at the common market price $p_{t}$. At any
+%%%%%point in time, the market price $p_{t}$ at which each firm sells its production depends on the
+%%%%%capacity decisions of its competitor. Whenever the competitor of firm $j$ invests, the market
+%%%%%price $p_{t}$ goes down, and the current and expected future profits of firm $j$ are also lower. We denote by $\Delta \pi _{jt}^{-}$ the expected change in instantaneous profits of firm $j$ due
+%%%%%to an investment by its competitor before firm $j$ invests. We denote by $\Delta \pi _{jt}^{+}$
+%%%%%the expected change in instantaneous profits of firm $j$ due to an investment by its competitor
+%%%%%after firm $j$ invests.
+%%%%%
+%%%%%Using standard techniques, we prove in Appendix A that the value of firm $j$
+%%%%%at time $t$ for any investment strategy $x_{j}$ is given by%
+%%%%%{\fontsize{8.5}{12}\selectfont\mathtight\begin{align} V_{jt}=\left\{
+%%%%%\begin{tabular}{ll}
+%%%%%$\frac{\pi _{jt}^{-}}{\delta }+\left( \frac{X_{t}}{x_{j}}\right) ^{\upsilon
+%%%%%}\left( \frac{\pi _{j}^{+}}{\delta }-\frac{\pi _{j}^{-}}{\delta }-fK\right) +%
+%%%%%\frac{\Delta \pi _{jt}^{-}}{\delta }+\left( \frac{X_{t}}{x_{j}}\right)
+%%%%%^{\upsilon }\left. \left( \frac{\Delta \pi _{j}^{+}}{\delta }\right)
+%%%%%\right\vert _{X_{t}=x_{j}}$ & if $X_{t}\leq x_{j}$ \\
+%%%%%$\frac{\pi _{jt}^{+}}{\delta }+\frac{\Delta \pi _{jt}^{+}}{\delta }$ & if $%
+%%%%%X_{t}>x_{j}$%
+%%%%%\end{tabular}%
+%%%%%\right.  \label{fval}\!\!\!,
+%%%%%\end{align}}
+%%%%%where $\upsilon >1$ is defined in Appendix A.
+%%%%%
+%%%%%Equation (\ref{fval}) shows that under imperfect competition the preinvestment value of firm $j$
+%%%%%when $X_{t}\leq x_{j}$ is a function of its own investment strategy and the investment strategy of
+%%%%%its competitor. The first and second terms reflect that the value of firm $j$ depends on its own
+%%%%%strategy $x_{j}$. The first term corresponds to the value of a growing perpetuity of cash flows
+%%%%%generated by its assets in place. The second term corresponds to the value of its investment
+%%%%%opportunities or growth options. The third and fourth terms reflect the impact of the investment
+%%%%%strategy of the competitor of firm $j$ on $V_{jt}$. The investment strategy of the competitor of
+%%%%%firm $j$ affects $V_{jt}$ negatively through the expected reductions in future profits $\Delta \pi
+%%%%%_{jt}^{-}$ and $\Delta \pi _{jt}^{+} $.
+%%%%%
+%%%%%\subsection{Equilibrium investment dynamics}
+%%%%%
+%%%%%\subsubsection{Equilibrium concept}
+%%%%%
+%%%%%The equilibrium concept is Bayes-Nash. The state of the industry is described by the history of
+%%%%%the stochastic demands shocks $X_{t}$. At any point in time, a history is the collection of
+%%%%%realizations of the stochastic process $X_{s}$, $s\leq t$, and the actions taken by all firms in
+%%%%%the industry. The investment strategy maps the set of histories of the industry into the action
+%%%%%$x_{j}$ for each firm $j$. Before investment, firm $j$ responds immediately to its competitor's
+%%%%%investment decision. This yields Nash equilibria in state-dependent strategies of the
+%%%%%closed-loop type.\footnote{A closed-loop equilibrium is a Nash equilibrium in state-dependent
+%%%%%strategies. See \cite{fudenberg1991}, \cite{weeds2002}, and \cite{back} for related discussions
+%%%%%on\ closed-loop strategies.} Upon investment, firm $j$ cannot take any other action.
+%%%%%
+%%%%%\looseness=1We follow \cite{weeds2002} and assume that firms follows Markov strategies, so that their actions
+%%%%%are a function of the state $X_{t}$ and of whether or not their rival has invested. As discussed
+%%%%%by \cite{weeds2002}, other non-Markov strategies may also exist; however, if one firm follows a
+%%%%%Markov strategy, the best response of the other firm is also Markov. We\ consider the set of
+%%%%%subgame-perfect equilibria, in which each firm's investment strategy, conditional on its
+%%%%%competitor's strategy, is value maximizing. A set of strategies that satisfies this condition is
+%%%%%Markov perfect. The initial demand shock $X_{0}$ is sufficiently low to focus on equilibria in
+%%%%%pure strategies.\footnote{When firms are identical, the equilibrium may involve mixed strategies
+%%%%%whose formulation is complicated by the continuous-time nature of the game, as noted by
+%%%%%\cite{fudenberg1985} and \cite{weeds2002}. When firms have different production technologies,
+%%%%%\cite{weeds2010} show that a sufficient condition to avoid these concerns is to assume that
+%%%%%$X_{0}$ is sufficiently low. $X_{o}$ is assumed strictly lower than the lowest optimal
+%%%%%investment threshold in the industry $x_{L}^{s}$. We\ define $x_{L}^{s}$ in
+%%%%%Proposition~\ref{p2}.} Subgame perfection requires that each firm's strategy maximizes its value
+%%%%%conditional on its competitor's strategy.
+
+\subsubsection{Equilibrium outcome}
+
+We obtain two types of subgame-perfect equilibria in pure strategies: a leader-follower
+equilibrium and\ multiple\ clustering equilibria. We denote by $x_{j}^{s}$ the investment
+threshold of firm $j$ in the leader-follower equilibrium, in which firms invest sequentially. We
+denote by $x^{c}$ the investment threshold of any firm $j$ in a given clustering equilibrium, in
+which firms invest simultaneously. We define $x_{L}^{c\ast }$ as the optimal clustering
+equilibrium for firm $L$. The standard deviation of firms' scale of production after investment is
+given by $\sigma _{\Lambda }\equiv \frac{\left\vert \Lambda _{L}-\Lambda _{M}\right\vert
+}{2}$.
+
+\subsubsection{Equilibrium concept}
+
+The equilibrium concept is Bayes-Nash. The state of the industry is described by the history of
+the stochastic demands shocks $X_{t}$. At any point in time, a history is the collection of
+realizations of the stochastic process $X_{s}$, $s\leq t$, and the actions taken by all firms in
+the industry. The investment strategy maps the set of histories of the industry into the action
+$x_{j}$ for each firm $j$. Before investment, firm $j$ responds immediately to its competitor's
+investment decision. This yields Nash equilibria in state-dependent strategies of the
+closed-loop type.\footnote{A closed-loop equilibrium is a Nash equilibrium in state-dependent
+strategies. See \cite{fudenberg1991}, \cite{weeds2002}, and \cite{back} for related discussions
+on\ closed-loop strategies.} Upon investment, firm $j$ cannot take any other action.
+
+
+\begin{proposition}[Equilibrium investment dynamics]\label{p1}
+The subgame-perfect industry equilibria for $N=2$ with $\Lambda _{L}>\Lambda _{M} $ are such that
+\begin{itemize}
+\item if $\sigma _{\Lambda }\geq \Theta _{\Lambda }$, firm $L$ invests
+earlier than firm $M$ so that $x_{L}^{s}<x_{M}^{s}$, and
+\item if $\sigma _{\Lambda }<\Theta _{\Lambda }$, the Pareto optimal
+equilibrium is so that both firms invest jointly at the threshold $%
+x^{c}\equiv x_{L}^{c\ast }$,
+\end{itemize}
+\end{proposition}
+\noindent where $\Theta _{\Lambda }$ is determined endogenously in equilibrium.
+\begin{proof}
+See Appendix B.
+\end{proof}
+
+Proposition \ref{p1} states that\ the investment dynamics of any industry depend on the
+cross-sectional differences in firms' production technologies. When firms are distant
+competitors so that $\sigma _{\Lambda }\geq \Theta _{\Lambda }$, a leader-follower equilibrium
+arises, in which firm $L$\ invests first. The dynamics of firms' values are affected by their
+strategic interaction so that $\Delta \pi _{Lt}^{s+}<0$ and $\Delta \pi _{Mt}^{s-}<0$. By
+construction, it also holds that $\Delta \pi _{Lt}^{s-}=0 $ and $\Delta \pi _{Mt}^{s+}=0$.
+
+%%%%When firms are close competitors so that $\sigma _{\Lambda }<\Theta _{\Lambda }$, the Pareto
+%%%%optimal clustering equilibrium obtains at $x^{c}\equiv x_{L}^{c\ast }$. As we elaborate below,
+%%%%the model admits alternative clustering equilibria that are suboptimal for both firms. In any of
+%%%%the clustering equilibria of the model, there are no expected reductions in profits so that
+%%%%$\Delta \pi _{jt}^{c-}=0$, $\Delta \pi _{jt}^{c+}=0$, and the expressions for firms' values
+%%%%resemble those of monopolistic firms in the real options literature.
+%%%%
+%%%%\subsubsection{Equilibrium strategies}
+%%%%
+%%%%We solve for the equilibrium outcome using a sorting condition and incentive compatibility
+%%%%constraints. This solution approach is heavily used in the literature of mechanism design. As
+%%%%discussed in Chapter 13 of \cite{fudenberg1991}, it can also be applied to games of strategic
+%%%%interaction.
+%%%%
+%%%%The leader-follower equilibrium is so that firm $L$\ invests first and firm $M$ follows. There
+%%%%exists no alternative equilibrium in which firm $M$ leads, because firm $L$\ has the comparative
+%%%%advantage to become a leader. We provide a formal derivation of this argument in Appendix B.
+%%%%
+%%%%The comparative advantage of firm $L$\ to invest as a leader relates to the sorting condition of
+%%%%the game. The sorting condition ranks firms according to their ability to invest earlier than
+%%%%their peers. We prove in Appendix B that if firms differ in their future scale of production
+%%%%$\Lambda _{j}$, those firms with a larger scale upon investment $\Lambda _{j}$ find it less
+%%%%costly to invest earlier than their competitors so that%
+%%%%\begin{equation}
+%%%%\frac{\partial }{\partial \Lambda _{j}}\left[ \frac{\partial V_{jt}}{%
+%%%%\partial x_{j}}\right] <0\text{,}  \label{sort1}
+%%%%\end{equation}%
+%%%%\noindent where the sorting condition in Equation (\ref{sort1}) applies to any possible investment
+%%%%strategy $x_{j}$.
+%%%%
+%%%%We derive the leader-follower equilibrium strategies by considering firms' incentives to preempt
+%%%%each other. While the sorting condition in Equation (\ref{sort1}) states that firm $L$ is better
+%%%%able to lead, firm $M$ may still want to invest earlier than firm $L$ as if it had a better growth
+%%%%opportunity. Firm $M$\ has incentives to invest earlier than firm $L$\ if its value as a leader
+%%%%is higher than its value as a follower.
+%%%%
+%%%%We denote by $V_{j}^{s\ast }$ the value of firm $j$ in a Stackelberg game in
+%%%%which firm $L$\ invests earlier than firm $M$ by assumption; $x_{j}^{s\ast }$
+%%%%is the investment threshold of firm $j$\ in a such game. We denote by $%
+%%%%\widetilde{V_{M}^{s\ast }}$ the value of firm $M$ when it\ deviates from its own strategy and
+%%%%pursues instead a strategy as a Stackelberg leader. Firm
+%%%%$M$ has incentives to preempt firm $L$ whenever%
+%%%%\begin{equation}
+%%%%\left. \widetilde{V_{M}^{\ast }}\right\vert _{X_{t}=x_{L}^{\ast s}}\geq \left. V_{M}^{s\ast
+%%%%}\right\vert _{X_{t}=x_{L}^{s\ast }}\text{,} \label{trivial}
+%%%%\end{equation}%
+%%%%\noindent where the inequality in Equation (\ref{trivial}) provides an upper bound $%
+%%%%\overline{\sigma _{\Lambda }}$ so that firm $M$ has no incentives to become
+%%%%a leader if $\sigma _{\Lambda }>\overline{\sigma _{\Lambda }}$.
+%%%%
+%%%%We solve for firms' investment strategies in equilibrium by backward induction. Using standard
+%%%%techniques, we first derive the optimal strategy that maximizes the value of firm $M$, assuming
+%%%%that firm $L$\ has already invested. We then focus on the optimal strategy of firm $L$. Firm
+%%%%$L$ becomes a leader in equilibrium if and only if firm $M$ is at most indifferent between
+%%%%choosing its own strategy as a follower or pursuing a leader's strategy.
+%%%%
+
+We solve for the optimal investment strategy that maximizes the value of firm $L$ as a leader
+subject to the incentive compatibility constraint (ICC) of firm $M$. The complementary slackness
+condition of the ICC of firm $M$\
+is given~by%
+\begin{equation}
+\lambda ^{s}\left. \left[ \widetilde{V_{M}^{s}}-V_{M}^{s}\right] \right\vert
+_{X_{t}=x_{L}^{s}}=0,  \label{ic3}
+\end{equation}%
+where the multiplier $\lambda ^{s}\geq 0$ in Equation (\ref{ic3}) relates to \cite{posner} and
+measures to which extent the contest for monopoly power between firms $L$ and $M$\ hinders the
+value of firm $L$. $\widetilde{V_{M}^{s}}$ denotes the value of firm $M$ when it deviates from its
+strategy as a follower and invests instead at the threshold $x_{L}^{s}$. %%%%%When the ICC of firm $M$\
+%%%%%is binding so that $\lambda ^{s}>0$, the second factor in Equation (\ref{ic3}) equals zero, and
+%%%%%firm $M$\ is indifferent between investing as a leader or as a follower. When the ICC of firm $M$\
+%%%%%is not binding so that $\lambda ^{s}=0$, firm $M$\ strictly prefers to stay as a follower.
+
+\begin{proposition}[Leader-follower equilibrium strategies]\label{p2}
+The subgame-perfect strategies for $N=2$ with $\Lambda _{L}>\Lambda _{M}$, in
+which $x_{L}^{s}<x_{M}^{s}$ are so that the investment threshold of firm $L$%
+\ equals%
+\begin{equation}
+x_{L}^{s}=\frac{fK^{\frac{1}{\varepsilon }}\left( 1-\lambda ^{s}\right)
+\frac{\upsilon \delta }{\upsilon -1}}{\left[ \left( \Lambda _{L}+1\right) ^{-%
+\frac{1}{\varepsilon }}\Lambda _{L}-2^{-\frac{1}{\varepsilon }}\right]
+-\lambda ^{s}\left[ \left( \Lambda _{M}+1\right) ^{-\frac{1}{\varepsilon }%
+}\Lambda _{M}-\left( \Lambda _{L}+1\right) ^{-\frac{1}{\varepsilon }}\right]
+},  \label{xm}
+\end{equation}
+\noindent and the investment threshold of firm $M$\ equals%
+\begin{equation}
+x_{M}^{s}=\frac{fK^{\frac{1}{\varepsilon }}\frac{\delta \upsilon }{\upsilon
+-1}}{\left( \Lambda _{L}+\Lambda _{M}\right) ^{-\frac{1}{\varepsilon }%
+}\Lambda _{M}-\left( \Lambda _{L}+1\right) ^{-\frac{1}{\varepsilon }}},
+\label{xl}
+\end{equation}
+\noindent where $\lambda ^{s}=0$ if $\sigma _{\Lambda }>\overline{\sigma _{\Lambda }}$, and
+$\lambda ^{s}\in \left( 0,1\right) $ if $\sigma _{\Lambda }<\overline{\sigma _{\Lambda }}$.
+\end{proposition}
+\begin{proof}
+See Appendix B.
+\end{proof}
+
+Proposition \ref{p2} characterizes the leader-follower equilibrium strategies. We obtain two
+different types of leader-follower equilibria, depending on the strength of the preemptive motives
+of firm $M$. When $\sigma _{\Lambda }>\overline{\sigma _{\Lambda }}$, firm $L$\ invests at the
+Stackelberg threshold $x_{L}^{s\ast }$ so that $x_{L}^{s\ast }\equiv x_{L}^{s}\left( \lambda
+^{s}=0\right) $.
+
+
+\begin{figure}[!t]%F1
+%\centerline{\includegraphics{./Art/Sample/web/OP-REVF140069f1.eps}}
+\fbox{\begin{minipage}[t]{300pt} \vbox to 300pt{\vfill\hbox to
+300pt{\hfill\fontsize{24pt}{24pt}\selectfont FPO\hfill}\vfill}
+\end{minipage}}
+\caption{\label{f1}\textbf{Investment strategies as a function of $\sigma _{\Lambda }$}\newline In
+panel A, the solid line relates to the leader equilibrium strategies $x_{L}^{s}$. The dashed line
+corresponds to the Stackelberg strategy $x_{j}^{s\ast }$, in which firm $L$ leads by assumption.
+$\lambda ^{s}$ is the shadow cost of preemption in the leader-follower equilibrium. In panel B,
+the solid line relates to the Pareto optimal clustering equilibrium strategy $x_{L}^{c\ast }.$ The
+dashed line corresponds to the minimum clustering equilibrium threshold $\underline{x}_{L}^{c}$.
+For the sake of comparison, the dotted line depicts the follower threshold in the leader-follower
+equilibrium $x_{M}^{s}<x^{c}.$ The dash-dotted line represents the first-best joint-investment
+threshold of firm $M$, or\ $x_{M}^{c\ast }>x^{c}$.}
+\end{figure}
+
+
+%%%%Conversely, when $\sigma _{\Lambda }<\overline{\sigma _{\Lambda }}$, the investment strategy of
+%%%%firm $L$\ is significantly affected by the preemptive motives of firm $M$ ($\lambda ^{s}>0$). To
+%%%%deter firm $M$, firm $L$ invests earlier as if it had a better growth opportunity. In Appendix
+%%%%B, we prove formally that $x_{L}^{s}<x_{L}^{s\ast }$ if $\lambda ^{s}>0$, so that preemption
+%%%%erodes the option value of waiting to invest for firm $L$. We also prove that $\lambda ^{s}\in
+%%%%\left( 0,1\right) $ if $\sigma _{\Lambda }<\overline{\sigma _{\Lambda }}$.
+%%%%
+
+The upper charts of Figure~\ref{f1} illustrate the leader-follower equilibrium strategies as a
+function of $\sigma _{\Lambda }$. The multiplier $\lambda ^{s}$ captures the shadow cost of
+preemption for firm $L$, and it is decreasing in $\sigma _{\Lambda }$. When firms are more
+distant competitors, the wedge between the equilibrium threshold $x_{L}^{s}$ and the Stackelberg
+threshold $x_{L}^{s\ast }$ decreases. It is less costly for firm $L$\ to lead if firm $M$\ is a
+weaker competitor.
+
+
+%%%%%\begin{figure}[!p]%F2
+%%%%%\centerline{\includegraphics{./Art/Sample/web/OP-REVF140069f2.eps}}
+%%%%%\caption{\label{f2}\textbf{Strategic interaction and firm values}\newline This figure illustrates
+%%%%%how strategic interaction affects firms' values in the leader-follower equilibrium. The value of
+%%%%%each firm consists of its assets in place, its growth option, and the expected reduction in
+%%%%%profits due to the investment of the rival firm.}
+%%%%%\end{figure}
+
+%%%%%Figure~\ref{f2} illustrates how strategic interaction affects the dynamics of firms' values in the
+%%%%%leader-follower equilibrium through the expected reductions in profits $\Delta \pi _{Mt}^{s-}<0$
+%%%%%and $\Delta \pi _{Lt}^{s+}<0$. The value of each firm goes above the value of its assets in
+%%%%%place when its own growth option is in the money, and yet it goes below the value of its assets in
+%%%%%place when its competitor is about to invest. This second effect is a result of firms' strategic
+%%%%%interaction.
+%%%%%
+%%%%%The model admits multiple clustering equilibria, in which firms invest at a common investment
+%%%%%threshold $x^{c}$. We highlight three main aspects of the clustering equilibria of the game and
+%%%%%leave the details to Appendix~B.
+%%%%%
+%%%%%First, for a clustering equilibrium to occur, the value of firm $L$ associated with being a leader
+%%%%%must be lower than its value under the alternative \hbox{joint-investment} strategy so that
+%%%%%$V_{Lt}^{s}\leq V_{Lt}^{c} $ for any $X_{t}$. Otherwise, firm $L$\ would invest at the lower
+%%%%%investment threshold $x_{L}^{s}$. Moreover, firm $M$'s follower threshold must be lower than the
+%%%%%clustering threshold $x^{c}$. Otherwise, firm $M$ would invest as a follower at $x_{M}^{s}$. As we
+%%%%%show in Appendix $B$, the model is so that whenever it is optimal for firm $L$\ to invest
+%%%%%simultaneously, firm $M$'s follower threshold $x_{M}^{s}$ is strictly lower than the clustering
+%%%%%threshold $x^{c}$. Hence, both firms have incentives to invest simultaneously at $x^{c}$ as long
+%%%%%as $V_{Lt}^{s}\leq V_{Lt}^{c}$.
+%%%%%
+%%%%%Second, the Pareto optimal clustering equilibrium for both firms is to invest at $x_{L}^{c\ast }$,
+%%%%%and there exists no alternative clustering equilibrium threshold higher than $x_{L}^{c\ast }$ so
+%%%%%that $x^{c}\leq x_{L}^{c\ast }$. Given the asymmetry in firms' production technologies, the
+%%%%%joint investment threshold at which firm $M$\ would maximize its value under joint investment
+%%%%%$x_{M}^{c\ast }$ is strictly higher than $x_{L}^{c\ast }$ so that $x_{M}^{c\ast }>x_{L}^{c\ast }$.
+%%%%%\ This might lead to the conjecture that firms may invest jointly at a threshold $x^{c}>$
+%%%%%$x_{L}^{c\ast }$. However, at $x_{L}^{c\ast }$ it is a dominant strategy for firm $L$\ to invest
+%%%%%even though its rival will follow at once, and firm $M$\ invests instantaneously at
+%%%%%$x_{L}^{c\ast}$.
+
+%%%%Last, there exist alternative clustering equilibrium thresholds $x^{c}<x_{L}^{c\ast }$, in which
+%%%%both firms attain a lower value than under the alternative strategy $x_{L}^{c\ast }$. To
+%%%%characterize such clustering equilibria, we follow \cite{weeds2002} and define
+%%%%$\underline{x}_{L}^{c}$ as the lowest joint-investment threshold so that firm $L$\ has no
+%%%%unilateral incentive to deviate. Formally, the threshold $\underline{x}_{L}^{c}$ is given by
+%%%%\begin{equation}
+%%%%\underline{x}_{L}^{c}=\inf \{x^{c}\in (0,x_{L}^{c\ast }]:V_{Lt}^{s}\leq V_{Lt}^{c}\forall x^{c}\in
+%%%%(0,x_{L}^{c\ast }]\}\text{,}  \label{unilateral}
+%%%%\end{equation}%
+%%%%where $V_{Lt}^{c}$ is the preinvestment value of firm $L$\ when both firms
+%%%%invest jointly, but not necessarily optimally, at a given threshold $x^{c}$.
+
+%%%In sum, the derivation of the clustering equilibria relies on the premise
+%%%that a joint investment strategy $x^{c}$ is sustainable as long as $%
+%%%V_{Lt}^{s}\leq V_{Lt}^{c}$. Moreover, because $V_{Lt}^{s}\leq V_{Lt}^{c}$ implies $x_{M}^{s\ast
+%%%}<x^{c}$, the weaker competitor firm $M$ acts as if it were a follower; firm $M$ invests
+%%%instantaneously if firm\ $L$
+%%%exercises its own growth option. If $V_{Lt\text{ }}^{s}$never exceeds $%
+%%%V_{Lt\text{ }}^{c}$, we predict a range of multiple clustering equilibrium thresholds $x^{c}\in
+%%%\lbrack \underline{x}_{L}^{c},x_{L}^{c\ast }]$. The value of both firms under joint investment
+%%%is the highest under the clustering strategy $x_{L}^{c\ast }$.
+
+\begin{proposition}[Clustering equilibrium strategies]\label{p3}
+The subgame-perfect clustering equilibria for $N=2$ with $\Lambda _{L}>\Lambda _{M}$ are so that
+both firms invest at the same threshold $x^{c}\in \lbrack \underline{x}_{L}^{c},x_{L}^{c\ast }]$.
+While there is a continuum of equilibrium thresholds over this interval, the Pareto optimal
+equilibrium threshold $x_{L}^{c\ast }$ is given by
+\begin{equation}
+x_{L}^{c\ast }=\frac{fK^{\frac{1}{\varepsilon }}\frac{\delta \upsilon }{%
+\upsilon -1}}{\left( \Lambda _{L}+\Lambda _{M}\right) ^{-\frac{1}{%
+\varepsilon }}\Lambda _{L}-2^{-\frac{1}{\varepsilon }}}.  \label{xc}
+\end{equation}
+\label{proposition clustering}
+\end{proposition}
+\ \vspace*{-24pt}
+\begin{proof}
+See Appendix B.
+\end{proof}
+
+%%%Figure~\ref{f1} illustrates the clustering equilibrium thresholds of the model as defined in
+%%%Proposition~\ref{p3}. The bottom left chart of Figure~\ref{f1} depicts the range of clustering
+%%%equilibria of the model as a function of $\sigma _{\Lambda }$. When firms are very close
+%%%competitors, the minimum clustering equilibrium threshold $\underline{x}_{L}^{c}$ is slightly
+%%%above the equilibrium follower's threshold $x_{M}^{s}$; the distance between
+%%%$\underline{x}_{L}^{c}$ and $x_{M}^{s}$ widens for higher levels of $\sigma _{\Lambda }$. As
+%%%$\sigma _{\Lambda }$ increases and firm $L$ becomes a relatively stronger competitor, the set of
+%%%multiple clustering equilibria shrinks until the only feasible clustering equilibrium is the
+%%%Pareto optimal equilibrium \n threshold~$x_{L}^{c\ast }$.
+%%%
+%%%The bottom-right chart of Figure~\ref{f1} compares the Pareto optimal equilibrium threshold
+%%%$x_{L}^{c\ast }$ with the off-equilibrium threshold $x_{M}^{c\ast } $. By inspection, firm $M$\
+%%%follows a suboptimal strategy relative to its first-best joint-investment threshold $x_{M}^{c\ast
+%%%}$. In a related model of symmetric oligopoly, \cite{grenadier2002}\ predicts that competition
+%%%erodes the option value of waiting of all firms evenly. The wedge between $x_{L}^{c\ast }$ and
+%%%$x_{M}^{c\ast }$ illustrated in Figure~\ref{f1} adds to \cite{grenadier2002} as it implies that in
+%%%an asymmetric duopoly firms' strategic interaction more severely erodes the value of the firm with
+%%%the less profitable technology.
+
+%%\subsubsection{Equilibrium refinement}
+
+\cite{fudenberg1985} argue that if one equilibrium Pareto dominates all others, it is the most
+reasonable outcome to expect. We apply an equilibrium refinement to select the Pareto optimal
+clustering equilibrium as the joint-investment equilibrium of the model, and derive testable
+implications on industry dynamics in the next section.
+\begin{assumption}[Pareto\ dominance refinement]\label{a1} Given $V_{jt}^{s}\leq V_{jt}^{c\ast }$ for
+$j=L,M$, firm $L$\ rationally opts for the Pareto optimal clustering equilibrium strategy
+$x_{L}^{c\ast }$.
+\end{assumption}
+
+\enlargethispage{-3pt}
+
+Assumption~\ref{a1} arises naturally in our setting because firm $L$\ has the real option to
+become the industry leader. Given assumption~\ref{a1}, the clustering equilibrium outcome depends
+on the relative magnitudes of the value of firm $L$ as a leader and the value of firm $L$\ when
+both firms delay their investment until the Pareto optimal clustering threshold $x_{L}^{c\ast }$.
+If $V_{Lt\text{ }}^{s}$ever exceeds $V_{Lt\text{ }}^{c\ast }$, preemption incentives are too
+strong for clustering to be an equilibrium, and the only possible outcome is the leader-follower
+equilibrium. Conversely, if $V_{Lt\text{ }}^{s}$never exceeds $V_{Lt\text{ }}^{c\ast }$, a
+clustering equilibrium may be sustained, although the leader-follower equilibrium outcome is also
+an equilibrium.
+%%%%
+%%%%Relying on assumption~\ref{a1}, we derive a cutoff parameter $\sigma _{\Lambda }=\Theta _{\Lambda
+%%%%}$ so that firm $L$\ is indifferent between pursuing its strategy as a leader and pursuing the
+%%%%Pareto optimal joint-investment strategy $x_{L}^{c\ast }$. Firm $L$ is indifferent between
+%%%%pursuing the strategies $x_{L}^{s}$ and $x^{c}$ at the cutoff point $\sigma _{\Lambda
+%%%%}=\Theta _{\Lambda }$ so that%
+%%%%\begin{equation}
+%%%%\left. V_{Lt}^{s}\right\vert _{X_{t}=x_{L}^{s\ast }}=\left. V_{Lt}^{c\ast
+%%%%}\right\vert _{X_{t}=x_{L}^{s\ast }}\text{,}  \label{indif}
+%%%%\end{equation}%
+%%%%where $V_{Lt}^{c\ast }$ is the value of firm $L$ under the clustering
+%%%%equilibrium strategy $x_{L}^{c\ast }$. The rationale to compare the value
+%%%%of firm $L$\ under the alternative investment strategies at the threshold $%
+%%%%x_{L}^{s\ast }$ follows from \cite{fudenberg1985}. Given $%
+%%%%X_{t}=x_{L}^{s\ast }$, $V_{Lt}^{s}\ $and $V_{Lt}^{c\ast }$ are equal and
+%%%%tangent to each other at a unique $\sigma _{\Lambda }=\Theta _{\Lambda }.$
+
+%%%%Put together, assumption~\ref{a1} and the cutoff parameter $\sigma _{\Lambda }=\Theta _{\Lambda }$
+%%%%serve a dual purpose. First, we eliminate any clustering equilibria in which both firms invest
+%%%%jointly at a threshold lower than $x_{L}^{c\ast }$, which is suboptimal for both firms. Second,
+%%%%we predict that firms optimally cluster in equilibrium if they are sufficiently close competitors
+%%%%so that $\sigma _{\Lambda }<\Theta _{\Lambda } $.
+%%%%
+%%%%\looseness=-1Given assumption~\ref{a1}, panel A in Figure~\ref{f3} illustrates the equilibrium
+%%%%outcome of the basic model as a function of $\sigma _{\Lambda }$. The clustering equilibrium is
+%%%%sustainable for lower values of $\sigma _{\Lambda } $, whereas the leader-follower equilibrium
+%%%%emerges otherwise. Panel~B in Figure~\ref{f3} illustrates the impact of the elasticity of demand
+%%%%$\varepsilon $ and the volatility of the demand shocks $\sigma _{x}$ in determining the
+%%%%equilibrium outcome. If firms are close competitors and operate in industries in which either
+%%%%$\varepsilon $ or $\sigma _{x}$ are sufficiently low, it is optimal for firms to invest jointly in
+%%%%equilibrium.
+
+%%%\begin{figure}[!p]%F3
+%%%\centerline{\includegraphics{./Art/Sample/web/OP-REVF140069f3.eps}}
+%%%\caption{\label{f3}\textbf{Equilibrium strategies given $\sigma _{\Lambda }$, the elasticity of
+%%%demand $\varepsilon $, and the volatility of demand shocks $\sigma _{x}$}\newline This figure
+%%%illustrates the equilibrium investment strategies for different parameter values, given the
+%%%Pareto-dominance refinement in assumption~\ref{a1}. $x_{L}^{s}$ denotes the leader-follower
+%%%equilibrium threshold of firm $L$, and $x_{L}^{s\ast }$ is the investment strategy of firm $L$ in
+%%%a game in which firm $L$\ leads by assumption. $\lambda ^{s}$ is the shadow cost of preemption in
+%%%the leader-follower equilibrium. $x^{c}$ denotes the clustering equilibrium threshold;
+%%%$x_{L}^{c\ast }$ is the Pareto optimal clustering strategy.}
+%%%\end{figure}
+
+
+%%%\subsection{Expected returns}
+%%%
+%%%We study the asset pricing implications of the\ basic model by analyzing firms' exposure to
+%%%systematic risk or betas. We define the beta of firm $j$ at time $t$ or $\beta _{jt}$ as the
+%%%covariance of the expected return of firm $j$ with the single source of systematic risk or market
+%%%portfolio, divided by the variance of the market portfolio.
+%%%
+%%%Given that firms are subject to a single source of systematic risk, the conditional CAPM\ holds. The riskless rate of return $r$ is exogenously specified, and the market price of risk is constant
+%%%and exogenously given. In Section~\ref{s3}, we address the fundamental concern that firms' betas
+%%%are a poor measure of their exposure to systematic risk by testing our asset pricing predictions
+%%%on both firms' betas and returns.
+%%%
+%%%As in \cite{carlson2004}, we infer expected returns from a replicating
+%%%portfolio composed of a risk-free asset and a risky asset that exactly
+%%%reproduce the dynamics of firm value. We show formally in Appendix C that
+%%%the proportion of the risky asset held in such a replicating portfolio is
+%%%equal to $\beta _{jt}.$ For any strategy $x_{j}$, the beta of firm $j$ at
+%%%time $t$ is given by%
+%%%\begin{equation}
+%%%\beta _{jt}=1+\mathbf{I}_{t}\left( \upsilon -1\right) \left[ 1-\frac{1}{%
+%%%\delta }\frac{\pi _{jt}}{V_{jt}}\right] \text{,}  \label{beta}
+%%%\end{equation}%
+%%%where $\mathbf{I}_{t}$ is an indicator function that equals zero if all firms have invested at
+%%%time $t$, and equals one otherwise.\label{expected returns}
+%%%
+%%%The identity in Equation (\ref{beta}) for firms' betas under imperfect competition provides two
+%%%important insights. First, a firm's exposure to systematic risk depends on the relative
+%%%contribution of its own growth opportunities to total firm value. Second, a firm's exposure to
+%%%systematic risk also depends on the growth opportunities of its industry peers. Whenever a firm
+%%%invests, the total industry capacity increases, the market price $p_{t}$ goes down, and the
+%%%earnings-to-price ratios of all firms in the industry are affected. This explains why the
+%%%indicator function $I_{t}$ in Equation (\ref{beta}) equals zero only when all firms in the
+%%%industry have invested.\vs{-5}
+%%%
+%%%\subsection{Industry risk dynamics}
+%%%
+%%%We use the identity in Equation (\ref{beta}) and Propositions \ref{p1}--\ref{p3} to obtain
+%%%time-series and cross-sectional implications on the impact of firms' strategic interaction on
+%%%their exposure to systematic risk. The time-series implications relate to the impact of the
+%%%expected reductions in profits $\Delta \pi _{jt}^{-}\leq 0$ and $\Delta \pi _{jt}^{+}\leq 0$ on
+%%%the dynamics of $\beta _{jt}$. The equilibrium dynamics of firms' betas depend on the
+%%%intraindustry heterogeneity captured by $\sigma _{\Lambda }$.
+
+\begin{proposition}[Intraindustry correlation of betas]\label{p4}
+Given $X_{t}<x_{M}^{s}$ and the refinement in assumption~\ref{a1}, the equilibrium dynamics of
+$\beta _{jt}$ depend on $\sigma _{\Lambda }$ so that
+\begin{itemize}
+\item if $\sigma _{\Lambda }<\Theta _{\Lambda }$, firms' betas correlate
+positively, and
+\item if $\sigma _{\Lambda }\geq \Theta _{\Lambda },$ the betas of
+leaders and followers correlate negatively.%
+\label{proposition: betas}
+\end{itemize}
+\end{proposition}
+
+%%%\begin{proof}
+%%%See Appendix C.
+%%%\end{proof}
+
+%%%%When firms are distant competitors so that $\sigma _{\Lambda }>\Theta _{\Lambda }$, the industry
+%%%%has leaders and followers, and firms' strategic interaction affects the dynamics of firms' betas
+%%%%in equilibrium. When one firm in the industry expects to increase its market share, the other
+%%%%expects a reduction in its own. Consequently, firms' betas correlate negatively over time. This
+%%%%result is consistent with the study by \cite{carlson2012}. We illustrate the dynamics of firms'
+%%%%betas in the leader-follower equilibrium in panel A of Figure~\ref{f4}.
+%%%%
+%%%%In contrast, when firms are close competitors so that $\sigma _{\Lambda }<\Theta _{\Lambda }$, the
+%%%%intraindustry comovement in betas is strictly positive. The betas of both firms increase before
+%%%%investment up to the common investment threshold $x^{c}$. These dynamics are similar to the case
+%%%%of an idle firm: firms' betas are increasing in the moneyness of their growth options. We
+%%%%illustrate the dynamics of firms' betas in panel B of Figure~\ref{f4}.
+
+%%%%\begin{figure}[!p]%F4
+%%%%\centerline{\includegraphics{./Art/Sample/web/OP-REVF140069f4.eps}}
+%%%%\caption{\label{f4}\textbf{Industry risk equilibrium dynamics}\newline This figure illustrates the
+%%%%equilibrium dynamics of betas in the basic model.  Panel A illustrates the
+%%%%leader-follower~equilibrium. Panel B illustrates the clustering equilibrium. The thicker trace
+%%%%corresponds to firm $L$.  We represent $\beta _{jt}$ as the average firm beta given $350$
+%%%%simulations of the Brownian shocks.}
+%%%%\end{figure}
+
+
+%%%%\begin{figure}[!t]%F5
+%%%%\centerline{\includegraphics{./Art/Sample/web/OP-REVF140069f5.eps}}
+%%%%\caption{\label{f5}\textbf{Equilibrium betas as a function of $\sigma _{\Lambda }$}\newline This
+%%%%figure illustrates the effect of strategic interaction on firms' betas. $\beta _{\it j}$
+%%%%is the beta of firm $j$ and $\sigma _{\beta t\text{ }%
+%%%%} $is the intraindustry spread in betas. Panel A illustrates the leader-follower equilibrium strategies in which $x_{L}^{s}<x_{M}^{s}$.  Panel B illustrates the clustering equilibrium strategies $x_{L}^{c\ast }$.  The solid line corresponds to the strategy of firm $L$,
+%%%%and the dashed line corresponds to the strategy of firm $M$. The term $\sigma _{\beta
+%%%%t}^{s}-\sigma _{\beta t}^{s\ast }>0$ captures the difference between intraindustry spread in betas
+%%%%of an industry in which firms follow strategies $x_{j}^{s}$, and the spread in betas of an
+%%%%industry in which firms follow strategies $x_{j}^{s\ast }$, where $x_{j}^{s\ast }$ denotes the
+%%%%strategies of a Stackelberg game in which firm $L$\ leads by assumption. The term $\sigma
+%%%%_{\beta t}^{c\ast }-\sigma _{\beta t}^{s}<0$ captures the difference between intraindustry spread
+%%%%in betas of an industry in which firms follow strategies $x_{j}^{s}$, and the spread in betas of
+%%%%an industry
+%%%%in which firms invest at the Pareto optimal clustering threshold $%
+%%%%x_{L}^{c\ast }$.}
+%%%%\end{figure}
+
+%%%%Figure~\ref{f5} illustrates firms' betas before investment for different values of $\sigma
+%%%%_{\Lambda }$. The beta of firm $L$ is strictly greater than one in both types of equilibria. In the leader-follower equilibrium, the beta of firm $M$ is strictly lower than one before firm
+%%%%$L$ invests, as it expects a sharp reduction in\ prices when its peer adds capacity. In any
+%%%%clustering equilibrium, the beta of firm $L$\ is strictly higher than one by construction; firm
+%%%%$L$\ pursues a strategy so that its value under joint investment is weakly higher than its value
+%%%%as a leader.
+%%%%
+%%%%Figure~\ref{f5} illustrates the beta of firm $M$\ before investment\textit{\ }for different values
+%%%%of $\sigma _{\Lambda }$. In the leader-follower
+%%%%equilibrium, the beta of firm $M$\ is strictly lower than one before firm $L$%
+%%%%\ invests. Firm $M$\ expects a significant reduction in prices, driving
+%%%%its total firm value below the value of its assets in place; this, in turn,
+%%%%drives its beta of firm $M$\ below unity.
+%%%%
+%%%%Last, Figure~\ref{f5} contributes to \cite{carlson2012} in showing that the preinvestment beta of
+%%%%firm $M$\ may be lower than one in the clustering equilibrium. The rationale for this result
+%%%%relies on the strategic behavior of firm $M$, which effectively acts as a follower and invests
+%%%%instantaneously with firm $L$ when firm $L$ invests at $x^{c}>x_{M}^{s}$. Given that in
+%%%%equilibrium firm $M$ invests below its first-best joint-investment threshold $x_{M}^{c\ast
+%%%%}>x^{c}$, the preinvestment value of firm $M$ in the clustering equilibrium may result lower than
+%%%%the value of its assets in place if $\sigma _{\Lambda }$ is relatively high.
+
+%%%%%\subsection{Strategic interaction in the cross-section}
+%%%%%
+%%%%%The model shows that firms' strategic interaction also affects the intraindustry cross-section of
+%%%%%betas beyond the given cross-sectional heterogeneity in firms' technologies $\sigma _{\Lambda }$.
+%%%%%\ We denote the intraindustry cross-sectional spread in betas by $\sigma _{\beta t}\equiv
+%%%%%\frac{\left\vert \beta _{Lt}-\beta _{Mt}\right\vert }{2}$.
+%%%%%\begin{proposition}[Cross sectional effects on betas]\label{p5}
+%%%%%Given $X_{t}<x_{M}^{s}$ and the refinement in assumption~\ref{a1}, the equilibrium effect of
+%%%%%strategic interaction on $\sigma _{\beta t}$ is so that
+%%%%%\begin{itemize}
+%%%%%\item if $\sigma _{\Lambda }\geq \Theta _{\Lambda }$, preemption
+%%%%%amplifies $\sigma _{\beta t}$ so that $\sigma _{\beta t}^{s}-\sigma _{\beta t}^{s\ast }\geq 0$,
+%%%%%and
+%%%%%
+%%%%%\item if $\sigma _{\Lambda }<\Theta _{\Lambda }$, firms' strategic delay, thereby dampening $\sigma _{\beta t}$ so that $\sigma _{\beta t}^{c\ast }-\sigma
+%%%%%_{\beta t}^{s}<0.$%
+%%%%%\label{proposition: cross section}%
+%%%%%\end{itemize}
+%%%%%\end{proposition}
+%%%%%\begin{proof}
+%%%%%See Appendix C.
+%%%%%\end{proof}
+%%%%%
+%%%%%In industries with leaders and followers in which $\lambda ^{s}>0$, firm $L$ invests more
+%%%%%aggressively than in a standard Stackelberg game to ensure its position as a leader. As a result,
+%%%%%preemption amplifies the cross-sectional differences in firms' betas. Proposition \ref{p5}
+%%%%%therefore implies that the cross-sectional heterogeneity in firms' technologies $\sigma _{\Lambda
+%%%%%}$ is not sufficient to explain by itself the intraindustry spread in betas. Otherwise, $\sigma
+%%%%%_{\beta t}^{s}$ would equal $\sigma_{\beta t}^{s\ast }.$ Figure~\ref{f5} illustrates the effects
+%%%%%of preemption on $\sigma _{\beta t}$ at $X_{t}=X_{0}$. The term $\sigma _{\beta t}^{s}-\sigma
+%%%%%_{\beta t}^{s\ast }$ is strictly positive in the range $\sigma _{\Lambda }>\Theta _{\Lambda }$ if
+%%%%%$\lambda ^{s}>0$. In Appendix C, we prove that this inequality holds until both firms invest.
+%%%%%
+%%%%%In industries in which firms are sufficiently close competitors, we observe that firms could
+%%%%%invest following leader-follower strategies and yet the Pareto optimal outcome is so that both
+%%%%%firms invest simultaneously at a higher threshold $x_{L}^{c\ast }>x_{M}^{s}$. This strategic
+%%%%%delay in firms' investment decisions is discussed by \cite{weeds2002}\ for the case of identical
+%%%%%firms. In our paper, firms' strategic delay dampens the cross-sectional differences in betas
+%%%%%relative to the leader-follower equilibrium outcome. Figure~\ref{f5} illustrates the effect of
+%%%%%strategic delay on $\sigma _{\beta t}$ at $X_{t}=X_{0}$. The term $\sigma _{\beta t}^{c\ast
+%%%%%}-\sigma _{\beta t}^{s}$ is strictly negative in the range $\sigma _{\Lambda }<\Theta _{\Lambda
+%%%%%}$.
+%%%%%
+%%%%%\section{Testable Implications}\label{s2}
+%%%%%
+%%%%%The basic model in the previous section characterizes the industry dynamics of investment and
+%%%%%expected returns as a function of the unobservable parameter $\sigma _{\Lambda }.$ For the sake
+%%%%%of empirical tests, we review its predictions in a more general setting. We obtain the empirical
+%%%%%prediction that the intraindustry dynamics of investment and risk in imperfectly competitive
+%%%%%industries are driven by the intraindustry value spread.
+%%%%%
+%%%%%\subsection{Firms with different installed capacities}
+%%%%%
+%%%%%The neoclassical model by \cite{hayashi} predicts that the optimal
+%%%%%investment of any firm depends on its own marginal product of capital or $%
+%%%%%q\equiv V_{K}$. In an imperfectly competitive industry, we find that the
+%%%%%investment strategy of each firm also depends on the intraindustry standard
+%%%%%deviation in $q$.
+%%%%%
+%%%%%To illustrate this argument, we complement the analysis in Section~\ref{s1} by considering the
+%%%%%alternative type of industry, in which firms differ exclusively in their installed capacity before
+%%%%%investment $K_{j}$. We focus on $K_{j}$ and $\Lambda _{j}$ as relevant sources of heterogeneity
+%%%%%across firms to build on economic intuition. The intraindustry heterogeneity in $K_{j}$ relates
+%%%%%broadly to industries in which firms differ in their assets in place. The intraindustry
+%%%%%heterogeneity in $\Lambda _{j}$ relates broadly to industries in which firms differ in their
+%%%%%growth opportunities.
+%%%%%
+%%%%%When firms differ in $K_{j}$, we prove in Appendix D that firms with a lower
+%%%%%installed capacity find it less costly to invest earlier than their
+%%%%%competitors so that%
+%%%%%\begin{equation}
+%%%%%\frac{\partial }{\partial K_{j}}\left[ \frac{\partial V_{jt}}{\partial x_{j}}%
+%%%%%\right] <0\text{,}  \label{sort2}
+%%%%%\end{equation}%
+%%%%%\noindent where the sorting condition in Equation (\ref{sort2}) applies to any possible investment
+%%%%%strategy $x_{j}$. The economic rationale of this prediction relates to the study by
+%%%%%\cite{boyer}. Because the relative gain from investing is larger for smaller firms, smaller
+%%%%%firms are willing to invest earlier. All else being equal, the option to invest is relatively
+%%%%%more valuable for the firm with the lowest installed capacity.
+%%%%%
+%%%%%We apply the solution approach and the equilibrium refinement in Section~\ref{s1} to solve for the
+%%%%%investment and risk dynamics of industries in which firms differ in $K_{j}$. The equilibrium
+%%%%%outcome depends on the cross-sectional differences in firms' installed capacities before
+%%%%%investment $\sigma _{K}\equiv \frac{\left\vert K_{L}-K_{M}\right\vert }{2}$.
+%%%%%\begin{proposition}[Equilibrium dynamics with $\sigma _{K}>0$]\label{p6}
+%%%%%The subgame-perfect industry equilibria for $N=2$ with $K_{L}<K_{M}$ are so that
+%%%%%\begin{itemize}
+%%%%%\item if $\sigma _{K}\geq \Theta _{K}$, firm $L$ invests earlier than
+%%%%%firm $M$ so that $x_{L}^{s}<x_{M}^{s}$ and firms' betas correlate negatively, and
+%%%%%
+%%%%%\item if $\sigma _{K}<\Theta _{K}$, it is Pareto optimal for both firms to
+%%%%%invest at the threshold $x_{L}^{c\ast }$ and firms' betas correlate positively,
+%%%%%\end{itemize}
+%%%%%where $\Theta _{K}$ is determined endogenously in equilibrium.\vs{-6}
+%%%%%\end{proposition}
+%%%%%\begin{proof}
+%%%%%See Appendix D.
+%%%%%\end{proof}
+%%%%%
+%%%%%When firms differ exclusively in $K_{j}$, the leader-follower equilibrium is so that the smaller
+%%%%%firm with the lower installed capacity $K_{L}$ invests earlier than the larger firm. In both
+%%%%%types of equilibria, the smaller firm catches up in market share with the larger firm\ upon
+%%%%%investment. Firms' market shares become less concentrated as they exercise their growth options.
+%%%%%
+%%%%%The implications on industry risk dynamics are qualitatively the same as those in the basic model.
+%%%%%\ The higher the dispersion in installed capacities across firms, the lower the intraindustry
+%%%%%correlation in firms' expected returns. Moreover, because the firm with the lower installed
+%%%%%capacity is the one with the more profitable growth option, it is straightforward to show that the
+%%%%%smaller firm has a higher beta in both types of equilibria. Concerning the cross-section of
+%%%%%returns, firms' strategic delay dampens the intraindustry spread in betas when $\sigma _{K}<\Theta
+%%%%%_{K}$. Conversely, preemption amplifies the cross-sectional differences in betas between small
+%%%%%and large firms when $\sigma _{K}\geq \Theta _{K}$.
+%%%%%
+%%%%%\subsection{Industry dynamics and the intraindustry value spread}
+%%%%%
+%%%%%We restate the predictions in the basic model and the model in Proposition \ref{p6} considering
+%%%%%firms' marginal product of capital before investment. We define a scalar $q_{j0}$ so that
+%%%%%$q_{j0}\ $is the marginal product of capital of firm $q_{jt}$, evaluated at $X_{t}=X_{0}$ and some
+%%%%%strategy $x$. The choice of the strategy $x$ to define $q_{j0}$ is without loss of generality;
+%%%%%we use the same\ strategy for all firms so that it does not affect the sorting of $q_{j0}$. We
+%%%%%evaluate $q_{jt}$ at $X_{t}=X_{0}$ to rank firms by their marginal product of capital before
+%%%%%investment.
+%%%%%
+%%%%%In industries in which firms differ in $K_{j}$ or $\Lambda _{j}$, we prove
+%%%%%in Appendix E that firms with higher $q$ at $X_{t}=X_{0}$ or $q_{j0}$ have
+%%%%%the ability to invest earlier so that
+%%%%%\begin{equation}
+%%%%%\frac{\partial }{\partial q_{j0}}\left[ \frac{\partial V_{jt}}{\partial x_{j}%
+%%%%%}\right] >0\text{.}  \label{sort3}
+%%%%%\end{equation}
+%%%%%
+%%%%%The inequality in Equation (\ref{sort3}) generalizes the economic intuition behind the sorting
+%%%%%conditions in Equations (\ref{sort1}) and (\ref{sort2}). Consider first the case in which firms
+%%%%%differ exclusively in their marginal costs of production after investment $\Lambda _{j}$. The
+%%%%%more efficient firm or firm with lower $\Lambda _{j}$ has the ability to invest earlier. For any
+%%%%%strategy $x_{j}$, firms with a higher $q$ have the ability to invest earlier. Consider now the
+%%%%%case in which firms differ exclusively in their installed capacity before investment $K_{j}$. Given that the marginal product of capital $q$ is strictly decreasing in $K_{j}$, the firm with
+%%%%%the lower installed capacity $K_{j}$ has a higher $q$, and the willingness to invest earlier.
+%%%%%
+%%%%%Given the sorting condition in Equation (\ref{sort3}), we redefine firm type in terms of firms'
+%%%%%marginal product capital $q_{j0}$. When firms differ in either $K_{j}$ or $\Lambda _{j}$, we
+%%%%%prove in\ Appendix E that firms invest simultaneously if $\sigma _{q0}\ $is sufficiently low, and
+%%%%%sequentially otherwise. We also show that the same qualitative results hold in the general case
+%%%%%in which firms differ in both $K_{j}$ and $\Lambda _{j}$. Because firms' marginal $q$ is not
+%%%%%observable, we derive testable implications by considering the identity between $q$ and the
+%%%%%market-to-book ratio $\frac{V}{K}$.
+%%%%%\begin{lemma}\label{l1}
+%%%%%$q_{jt}\equiv \frac{V_{jt}}{K_{j}}-\frac{1}{\varepsilon
+%%%%%\delta }\left[ \frac{p_{t}^{-}}{Y_{t}^{-}}+\left( \frac{p_{t}^{+}}{Y_{t}^{+}}%
+%%%%%-\frac{p_{t}^{-}}{Y_{t}^{-}}\right) \left( \frac{X_{t}}{x_{j}}\right) ^{\upsilon -1}\right]
+%%%%%$\vs{-12}
+%%%%%\end{lemma}
+%%%%%\begin{lemma}\label{l2}
+%%%%%$\sigma _{qt}$ $\equiv $ $\sigma _{\frac{V}{K}t}$
+%%%%%\end{lemma}
+%%%%%
+%%%%%The marginal product of capital $q_{jt}$ in Lemma~\ref{l1} consists of two terms. The first term
+%%%%%is equal to the market-to-book ratio of the firm. The second term is consistent with
+%%%%%\cite{hayashi} and captures the marginal extraordinary income per unit of capital attributable to
+%%%%%firms' market power. Because the second term of $q_{jt}$ is common to all firms in the same
+%%%%%industry, the cross-sectional variation in $q$ within an industry or $\sigma _{qt}$ equals the
+%%%%%intraindustry value spread $\sigma _{\frac{V}{K}t}$. This explains Lemma~\ref{l2}.
+%%%%%\begin{proposition}[Industry dynamics and the value spread]\label{p7}
+%%%%%Under imperfect competition, firms' investment strategies with\ $N=2$ are such that
+%%%%%\begin{itemize}
+%%%%%\item if $\sigma _{\frac{V}{K}0}$ $\geq \Theta _{\frac{V}{K}0}$, the
+%%%%%betas of leaders and followers correlate negatively, and
+%%%%%
+%%%%%\item if $\sigma _{\frac{V}{K}0}<\Theta _{\frac{V}{K}0},$ firms investments
+%%%%%cluster, and their betas correlate positively.
+%%%%%\label{proposition: qtheory duopolies}%
+%%%%%\end{itemize}
+%%%%%\vspace*{-14pt}
+%%%%%\end{proposition}
+%%%%%
+%%%%%\begin{proof}
+%%%%%See Appendix E\vpb{}.
+%%%%%\end{proof}
+%%%%%
+%%%%%Proposition \ref{p7} provides the core testable implication that the comovement in firms' betas
+%%%%%and returns is higher in industries with high intraindustry value spread. We provide the
+%%%%%supporting empirical evidence in Section~\ref{s3}.
+%%%%%
+%%%%%Similarly, Proposition \ref{p7} implies that average industry betas are more predictable in
+%%%%%industries with low value spread. In industries with low value spread, the betas of all firms
+%%%%%increase simultaneously before investment and then decrease in tandem upon investment. In
+%%%%%contrast, in industries with high value spread, the dynamics of the average industry beta are less
+%%%%%predictable. At any point in time, the increase in the betas of those firms that are about to
+%%%%%invest are mitigated by the reduction in the betas of the remaining firms.
+%%%%%
+%%%%%\subsection{Industry dynamics, markups, and concentration}
+%%%%%
+%%%%%The model predicts that the dynamics of firms' investments and betas are more positively
+%%%%%correlated in industries with low value spread. We hereby formulate additional testable
+%%%%%predictions on the relation between the HHI and the intraindustry spread in markups. We define
+%%%%%$m_{j}$ as the markup of firm $j$, which equals the ratio of operating profits by sales.
+%%%%%
+%%%%%In the basic model, the intraindustry value spread, the HHI, and the intraindustry spread in
+%%%%%markups are positively correlated. As a result, the testable implications on the value spread
+%%%%%also hold for these additional measures. Industries with leaders and followers are more
+%%%%%concentrated and have higher spread in markups than do industries in which firms invest
+%%%%%simultaneously.\footnote{In the basic model, the markup equals one before firm $j$ invests and
+%%%%%$\Lambda _{j}$ thereafter. Hence, the intraindustry spread in markups equals $\sigma _{\Lambda }$
+%%%%%once all firms invest. The HHI equals zero before any firm invests and equals $\frac{1}{2}\left(
+%%%%%\frac{\sigma _{\pi t}^{2}}{\mu _{_{\pi t}}^{2}}+1\right) $ thereafter.} Firms' investments and
+%%%%%betas correlate more positively in industries with low value spread, low HHI, and low spread in
+%%%%%markups.
+%%%%%
+%%%%%However, the implied positive correlation between $\sigma _{\frac{V}{K}}$, $%
+%%%%%\sigma _{m}$, and HHI\ need not hold in all industries. A deconcentrating industry may have a
+%%%%%high value spread, and a concentrating industry may have a lower value spread. A relevant
+%%%%%example is provided in the model of Proposition~\ref{p6}. When firms differ exclusively in their
+%%%%%installed capacities before investment, the smaller firm catches up in market share with the
+%%%%%larger firm\ upon investment, so that the HHI\ of the industry decreases as firms invest.  Hence,
+%%%%%if the amount invested by the leading small firm is sufficiently large, the HHI of a
+%%%%%deconcentrating industry with high value spread may be higher than the HHI\ of a deconcentrating
+%%%%%industry with low value spread.
+%%%%%
+%%%%%Implication is that standard measures of competition, such as the HHI\ and $\sigma _{m}$ may prove
+%%%%%insufficient to capture the degree of competition in an industry, because they are static. Firms' investment decisions depend not only on the current spread in markups or market shares but
+%%%%%also on the expected future changes in markup and
+%%%%%market shares. In contrast, the intraindustry value spread $\sigma _{\frac{%
+%%%%%V}{K}}$ is an observable industry characteristic that captures the
+%%%%%unobserved heterogeneity in firms' production technologies over time.
+%%%%%
+%%%%%We extrapolate the predictions on industry dynamics and the intraindustry value spread to $\sigma
+%%%%%_{m}$ and the HHI only when these measures are positively correlated. Static measures of
+%%%%%competition, such as $\sigma _{m} $ and the HHI, sort industries in the same way as the
+%%%%%intraindustry value spread when there is persistence in firms' relative position in the product
+%%%%%market; that is, leaders remain leaders, while followers remain followers over time. We explore
+%%%%%in Section~\ref{s3} the empirical relation between $\sigma _{\frac{V}{K}}$, $\sigma _{m}$ and the
+%%%%%HHI.
+%%%%%
+%%%%%A related implication is that average industry expected returns should be more predictable in less
+%%%%%concentrated industries, unless these industries are undergoing deep transitions from high to low
+%%%%%competition, or vice versa. This is consistent with the evidence by \cite{hoberg}, who report
+%%%%%that in less concentrated industries, periods of high market-to-book ratios, high returns, high
+%%%%%betas, and high investment are followed by periods of lower market-to-book ratios, lower
+%%%%%investment, lower returns, and lower betas.
+
+\vspace*{-12pt}
+
+
+\begin{table}[!t]%T1
+\tableparts{\caption{Working sample statistics}\label{t1}}
+{\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lrrrrrr@{}} & \multicolumn{3}{c}{Firm level} &
+\multicolumn{3}{c}{Industry level}\down\\\cline{2-4}\cline{5-7}\up & \mcc{Mean}  & \mcc{SD}    &
+\mcc{N}     & \mcc{Mean}  & \mcc{SD}    & \mcc{N}\\\colrule
+{$\frac{I}{K}$} & 0.360 & 0.520 & 113,007 & 0.324 & 0.293 & 14,745\\[2pt]
+{$\beta$} & 1.102 & 0.947 & 115,702 & 1.040 & 0.547 & 15,014 \\
+{$R$} & 0.082 & 0.564 & 115,765 & 0.073 & 0.366 & 15,077 \\
+{$\frac{V}{K}$}  & 1.477 & 0.826 & 110,355 & 1.407 & 0.525 & 14,931 \\[2pt]
+{$\frac{V-B}{K-B}$}  & 2.085 & 1.543 & 109,797 & 1.985 & 1.050 & 14,836 \\[2pt]
+{$\frac{B}{K}$}  & 0.526 & 0.230 & 115,702 & 0.544 & 0.145 & 15,014 \\[2pt]
+{$\frac{\pi}{K}$}  & 0.082 & 0.219 & 115,633 & 0.110 & 0.099 & 15,013 \\[2pt]
+{$m$} & 0.144 & 0.110 & 115,419 & 0.129 & 0.075 & 14,779 \\
+$\sigma_{\frac{I}{K}}$ &       &       &       & 0.274 & 0.353 & 12,584 \\
+$\sigma_{\beta}$ &       &       &       & 0.635 & 0.417 & 12,815 \\
+$\sigma_{R}$ &       &       &       & 0.374 & 0.279 & 12,815 \\
+$\sigma_{\frac{V}{K}}$ &       &       &       & 0.530 & 0.394 & 12,693 \\
+$\sigma_{\frac{V-B}{K-B}}$ &       &       &       & 1.088 & 0.718 & 12,523 \\
+$\sigma_{\frac{B}{K}}$ &       &       &       & 0.178 & 0.081 & 12,815 \\
+$\sigma_{\frac{\pi}{K}}$ &       &       &       & 0.111 & 0.116 & 12,811 \\
+$\sigma_{m}$ &       &       &       & 0.058 & 0.047 & 12,782 \\
+lnHHI &       &       &        & 5.645 & 1.185 & 8,539 \\
+lnCR4 &       &       &       & 3.583 & 0.642 & 8,539 \\
+lnCR8 &       &       &       & 3.917 & 0.555 & 8,539 \\
+$\omega_{\frac{I}{K}}$ &       &       &       & 0.031 & 0.066 & 14,812 \\
+$\omega_{\beta}$ &       &       &       & 0.026 & 0.032 & 14,857 \\
+$\omega_{R}$ &       &       &       & 0.016 & 0.012 & 14,857 \\
+$\omega_{\frac{V}{K}}$ &       &       &       & 0.107 & 0.213 & 14,849 \\
+$\omega_{\frac{V-B}{K-B}}$ &       &       &       & 0.178 & 0.201 & 14,244 \\\bottomrule
+\end{tabular*}}
+{This table reports the summary statistics of our\ working sample of U.S.
+public firms from 1968 to 2008. $\frac{I}{K}$ is the investment rate; $%
+\beta $ is the equity beta; $R$ is the stock return in excess of the risk-free rate, which is
+annualized in this table, since all statistics are
+reported in annual terms; $\frac{V}{K}$ is the market-to-book asset ratio; $%
+\frac{V-B}{K-B}$ is the market-to-book equity ratio; $\frac{B}{K}$ is the book leverage ratio;
+$\frac{\pi }{K}$ is operating cash flows to assets; $m$ is the operating markup on profits;
+$\sigma _{x}$ denotes the intraindustry standard deviation in variable $x$; lnHHI is the logarithm
+of the U.S.\ Census HHI; lnCR4 and lnCR8 are the logarithm of the U.S.\ Census concentration
+ratios CR4 and CR8; and $\omega _{x}$ denotes the intraindustry comovement in variable $x$.}
+\end{table}
+
+
+
+\section{Empirical Evidence}\label{s3}
+
+The theoretical framework described so far provides qualitative predictions on how firms'
+strategic interaction affects the intraindustry dynamics of investments and betas. A reasonable
+concern, however, is whether these effects are economically significant. We therefore assess
+whether the main testable implications of our model hold on average for the cross-section of U.S.
+industries. We find supporting empirical evidence on the following predictions.
+\begin{itemize}
+\item Firms' investment strategies are significantly related to the
+intraindustry value spread.
+
+\item Firms' betas and returns correlate more positively in industries with
+low intraindustry value spread.
+
+\item Firms' betas and returns correlate more positively in industries with
+low intraindustry standard deviation in markups and low HHI.
+\end{itemize}
+
+\subsection{Data set and empirical approach}
+
+Our tests rely on similar data sets used in previous studies, such as those of \cite{hoberg}. We
+define an industry by its four-digit SIC code. This is the finest available industry
+classification that is available in our merged CRSP/Compustat data set.
+
+We include all listed in firms in NYSE, AMEX, and Nasdaq. We merge the CRSP monthly returns file
+with the Compustat annual file between January 1968 and December 2008. We use data at annual
+frequency to run the tests on investment equations. We use data at monthly frequency to run the
+asset-pricing tests. We elaborate on the database construction in\ Appendix G. We report the
+summary statistics of the working sample in Table~\ref{t1}.
+
+
+
+%%%%We denote the relevant variables in our tests as the equity beta $\beta $, the stock return in
+%%%%excess of the risk-free rate $R$, the market-to-book asset ratio $\frac{V}{K}$, the book-leverage
+%%%%ratio $\frac{B}{K}$, the market-to-book equity ratio $\frac{V-B}{K-B}$, cash-flow-to-assets ratio
+%%%%$\frac{\pi }{K}$, the investment rate $\frac{I}{K}$, and the markup in profits $m$. We follow
+%%%%\cite{thomas} and construct a measure of comovement that captures the average pairwise correlation
+%%%%in firms' investments, market-to-book equity ratios, market-to-book asset ratios, betas, and
+%%%%returns by industry. We denote the intraindustry comovement of variable $x$ in period $t$ as
+%%%%$\omega _{xt}$.
+%%%%
+%%%%We consider the two static measures of competition discussed in Section~\ref{s2}. One is the
+%%%%intraindustry deviation in markups or $\sigma _{mt}$, which we construct using the Compustat
+%%%%annual files. The other is the\ logarithm of the HHI by four-digit SIC\ code reported by the
+%%%%U.S. Census Bureau or lnHHI, which is limited to manufacturing industries only. In line with
+%%%%\cite{ali}, we do not compute the HHI\ using CRSP/Compustat sales data, because such an index is
+%%%%not highly correlated with the U.S. Census Bureau concentration index.
+%%%%
+%%%%We also use the logarithm of the concentration ratios CR4 and CR8 for manufacturing industries as
+%%%%additional measures of competition in our empirical tests. The concentration ratio CR4 is the
+%%%%sum of the largest four market shares in the industry reported by the U.S.\ Census Bureau. Similarly, the CR8 equals the sum of the largest eight market shares in the industry.
+%%%%
+%%%%We apply the same empirical methodology to test all our implications on investment and risk.
+%%%%Because in our model the underlying industry determinants of demand and the number of firms are
+%%%%constant, we run all tests using cross-sectional regressions, as in \cite{macbeth}. To account for
+%%%%serial correlation, we consider Newey-West standard errors. We have also run all tests using OLS
+%%%%regressions with year dummies, with qualitatively similar results.
+
+%%%%%\begin{table}[!b]%T2
+%%%%%\tableparts{\caption{Investment and the intraindustry value spread}\label{t2}}
+%%%%%{\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ld{3,5}d{3,5}d{3,5}d{3,5}d{3,5}d{3,6}@{}} &
+%%%%%\multicolumn{3}{c}{Firm level} & \multicolumn{3}{c}{Industry
+%%%%%level}\down\\\cline{2-4}\cline{5-7}\up & \mcc{(A)}   & \mcc{(B)}   & \mcc{(C)}  & \mcc{(D)}   &
+%%%%%\mcc{(E)}  & \mcc{(F)}\\\colrule
+%%%%%{$\frac{V}{K}$}   & 0.131^{***} & 0.115^{***} & 0.121^{***} & 0.151^{***} & 0.145^{***} & 0.138^{***}\\
+%%%%%& (0.010) & (0.009) & (0.009) & (0.012) & (0.016) & (0.012) \\
+%%%%%{$\frac{\pi}{K}$} & -0.084* & -0.067 & -0.067 & -0.182^{***} & -0.123^{***} & -0.120^{***}\\
+%%%%%& (0.046) & (0.044) & (0.044) & (0.064) & (0.053) & (0.059) \\
+%%%%%$\sigma_{\frac{V}{K}}$ &       & 0.090^{***} &       &       & 0.013^{***} &  \\
+%%%%%&       & (0.012) &       &       & (0.002) &  \\
+%%%%%$\sigma_{\frac{V-B}{K-B}}$  &       &       & 0.039^{***} &       &       & 0.017^{***}\\
+%%%%%&       &       & (0.005) &       &       & (0.005) \\
+%%%%%N     & \mcc{107,749}&\mcc{105,633}&\mcc{105,243}&\mcc{14,672}&\mcc{12,552}&\mcc{12,385}\\
+%%%%%Avg. $R^2$    & 0.053 & 0.057 & 0.054 & 0.081 & 0.097 & 0.097 \\\bottomrule
+%%%%%\end{tabular*}}
+%%%%%{This table reports the \cite{macbeth} regressions on the investment to capital ratios
+%%%%%$\frac{I}{K}$ at the firm and industry levels. The data used are in annual frequency. $\frac{V}{K}$ is the market-to-book asset ratio; $\frac{V-B}{K-B}$ is the market-to-book equity
+%%%%%ratio; $\frac{\pi }{K}$ is operating profits to assets; and $\sigma _{x}$ denotes the
+%%%%%intraindustry standard deviation in variable $x$. Newey-West corrected standard errors are
+%%%%%reported in parentheses. ***$p<0.01$, **$p<0.05,$ and *$p<0.1$.}
+%%%%%\end{table}
+
+%%%%Finally, the model assumes that firms are unlevered, while most firms in our
+%%%%working sample are levered. We run our tests using two alternative
+%%%%definitions of the intraindustry value spread. One definition is based on
+%%%%the asset value spread or $\sigma _{\frac{V}{K}t}$, and another is based on
+%%%%the equity value spread $\sigma _{\frac{V-B}{K-B}t}$.
+%%%%
+%%%%\subsection{Investment, betas, and returns}
+%%%%
+%%%%The asset-pricing implication that the firms' betas comove more positively in industries with low
+%%%%value spread relies on three important theoretical predictions. The first is that firms'
+%%%%investments relate significantly to the intraindustry value spread. We provide the corresponding
+%%%%empirical evidence in Table~\ref{t2}. We find that the intraindustry value spread is significant
+%%%%in explaining investment, both at the firm level (panels B and C) and at the industry level
+%%%%(panels E and F). We obtain similar results when using the intraindustry asset value spread
+%%%%(panels B and E), and when using the intraindustry equity value spread (panels C and F).
+%%%%
+%%%%The second prediction is that firms' investment decisions affect their exposure to systematic
+%%%%risk. We provide the supporting empirical evidence of this result in panels A$-$F of
+%%%%Table~\ref{t3}, by showing that the intraindustry comovement in betas and returns are
+%%%%significantly related to the intraindustry comovement in investment. Similarly, the intraindustry
+%%%%comovement in betas and returns are significantly related to the intraindustry comovement in
+%%%%market-to-book ratios.
+
+%%%%\begin{table}[!t]%T3
+%%%%\tableparts{\caption{Investment, betas, and returns}\label{t3}}
+%%%%{\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ld{3,5}d{3,5}d{3,5}d{3,5}d{3,5}d{3,5}d{3,6}@{}}
+%%%%& \multicolumn{3}{c}{Comovement in betas $\omega_{\beta}$ } & \multicolumn{4}{c}{Comovement in returns $\omega_{R}$}\down\\\cline{2-4}\cline{5-8}\up
+%%%%& \mcc{(A)}&\mcc{(B)}  & \mcc{(C)}&\mcc{(D)}&\mcc{(E)}&\mcc{(F)}&\mcc{(G)}\\\colrule
+%%%%$\omega_{\frac{I}{K}}$ & 0.055^{***} &       &       & 0.036^{***} &       &       &  \\
+%%%%& (0.002) &       &       & (0.001) &       &       &  \\
+%%%%$\omega_{\frac{V}{K}}$ &       & 0.028^{***} &       &       & 0.013^{***} &       &  \\
+%%%%&       & (0.003) &       &       & (0.001) &       &  \\
+%%%%$\omega_{\frac{V-B}{K-B}}$ &       &       & 0.020^{***} &       &       & 0.013^{***} &  \\
+%%%%&       &       & (0.002) &       &       & (0.001) &  \\
+%%%%$\omega_{\beta}$ &       &       &       &       &       &       & 0.372^{***}\\
+%%%%&       &       &       &       &       &       & (0.038) \\
+%%%%N     & \mcc{147,241}&\mcc{147,243}&\mcc{145,245}&\mcc{147,241}&\mcc{147,243}&\mcc{145,245}&\mcc{147,857}\\
+%%%%Avg. $R^2$    & 0.034 & 0.062 & 0.034 & 0.056 & 0.062 & 0.062 & 0.366 \\\bottomrule
+%%%%\end{tabular*}}
+%%%%{This table reports the \cite{macbeth} regressions on comovement in betas and returns. The data
+%%%%are used in monthly frequency. $\omega _{x}$ denotes the intraindustry comovement in variable
+%%%%$x$; $\beta $ is the equity beta; $R $ is the stock return; $\frac{I}{K}$ is the investment rate;
+%%%%$\frac{V-B}{K-B} $ is the market-to-book equity ratio; and $\frac{V}{K}$ is the market-to-book
+%%%%asset ratio. Newey-West corrected standard errors are reported in parentheses. ***$p<0.01$,
+%%%%**$p<0.05,$ and *$p<0.1$.}
+%%%%\end{table}
+
+%%%Finally, the predictions of our single-factor model apply to both betas and
+%%%returns. As in other research papers, we acknowledge that our
+%%%single-factor model does not explain why value and size premia exist in
+%%%returns. However, both in the model and in the data, the intraindustry
+%%%comovement in betas is significantly related to the intraindustry comovement
+%%%in returns. The average $R$-squared in panel G of Table~\ref{t3} indicates that
+%%%the intraindustry comovement in betas explains on average $37\%$ of the
+%%%intraindustry comovement in returns.
+%%%
+%%%\subsection{Industry risk dynamics and product markets}
+%%%
+%%%The model predicts a negative and significant correlation between the intraindustry comovement in
+%%%betas and returns and the intraindustry value spread. Table~\ref{t4} provides the corresponding
+%%%empirical evidence. We find a negative and significant correlation between the intraindustry
+%%%comovement in betas and the intraindustry value spread (panels A and B). We also find a negative
+%%%and significant correlation between the intraindustry comovement in returns and the intraindustry
+%%%value spread (panels E and F).
+
+%%%%\begin{table}[!t]%T4
+%%%%\tableparts{\caption{Industry risk dynamics, the value spread and static measures of competition}\label{t4}}
+%%%%{\tabcolsep=0pt\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ld{3,5}d{3,5}d{3,5}d{3,5}d{3,5}d{3,5}d{3,5}d{3,7}@{}}
+%%%%& \multicolumn{4}{c}{Comovement in betas $\omega_{\beta}$} & \multicolumn{4}{c}{Comovement in returns $\omega_{R}$}\down\\\cline{2-5}\cline{6-9}\up
+%%%%& \mcc{(A)}&\mcc{(B)}&\mcc{(C)}&\mcc{(D)}&\mcc{(E)}&\mcc{(F)}&\mcc{(G)}&\mcc{(H)}\\\colrule
+%%%%{$\sigma_{\frac{V}{K}}$} & -0.0024^{***} &       &       &       & -0.0012^{***} &       &       &  \\
+%%%%& (0.0008) &       &       &       & (0.0003) &       &       &  \\
+%%%%{$\sigma_{\frac{V-B}{K-B}}$} &       & -0.0016^{***} &       &       &       & -0.0009^{***} &       &  \\
+%%%%&       & (0.0004) &       &       &       & (0.0002) &       &  \\
+%%%%{$\sigma_{m}$} &       &       & -0.0316^{***} &       &       &       & -0.0132^{***} &  \\
+%%%%&       &       & (0.0018) &       &       &       & (0.0008) &  \\
+%%%%lnHHI &       &       &       & -0.0004^{***} &       &       &       & -0.0001^{***} \\
+%%%%&       &       &       & (0.0001) &       &       &       & (0.0000) \\
+%%%%N     & \mcc{147,243}&\mcc{145,245}&\mcc{148,412}&\mcc{84,623}&\mcc{147,243}&\mcc{145,245}&\mcc{148,412}&\mcc{84,623}\\
+%%%%Avg. $R^2$    & 0.023 & 0.021 & 0.032 & 0.015 & 0.026 & 0.023 & 0.031 & 0.012\\\bottomrule
+%%%%\end{tabular*}}
+%%%%{This table reports the \cite{macbeth} regressions on comovement measures as a function of the
+%%%%intraindustry value spread and other static measures capturing competition. The data are used in
+%%%%monthly frequency. $\omega _{x}$ denotes the intraindustry comovement in variable $x$; $\beta $
+%%%%is the equity beta; $R$ is the stock return; $\frac{V}{K}$ is the market-to-book asset ratio;
+%%%%$\frac{V-B}{K-B}$ is the market-to-book equity ratio; $m$ is the markup on operating profits; and
+%%%%lnHHI\ is the logarithm of the U.S. Census HHI. Newey-West corrected standard errors are
+%%%%reported in parentheses. ***$p<0.01$, **$p<0.05$, and *$p<0.1$.}\vspace*{6pt}
+%%%%\end{table}
+
+%%%The model further suggests that those industries with low value spread may also have low standard
+%%%deviation in markups and low HHI. This holds when the intraindustry value spread is positively
+%%%correlated with the intraindustry standard deviation in markups and with the HHI. In our data
+%%%set, we observe a significant and positive correlation between the intraindustry asset value
+%%%spread, the equity value spread, the standard deviation in markups, and the log of the HHI. The
+%%%pairwise correlation
+%%%between the asset (equity)\ value spread and the dispersion in markups is $%
+%%%17.55\%$ (resp. $19.73\%$). The pairwise correlation between the asset
+%%%(equity)\ value spread and the logarithm of the HHI is $16.51\%$ (resp. $%
+%%%16.46\%$).
+%%%
+%%%\looseness=1The corresponding testable implication is that of a negative and significant
+%%%correlation between these static measures of competition and the intraindustry comovement in betas
+%%%or returns. As suggested by the model, we\ report in Table~\ref{t4} a negative and significant
+%%%relation between the comovement in betas and the static measures of competition given by $\sigma
+%%%_{m}$ and lnHHI (panels C and D). We also find a negative and significant relation between the
+%%%comovement in returns, and the static measures of competition given by $\sigma _{m}$ and lnHHI
+%%%(panels G and H). Using an alternative empirical approach, \cite{hoberg} also show that returns
+%%%comove more positively in industries with low~HHI.
+%%%
+%%%\subsection{Discussion}
+%%%
+%%%The evidence in Table~\ref{t4} is consistent with the predictions of our model. It need not follow, however, that our model is the only theory that explains
+%%%the results in Table~\ref{t4}. Empirically, it is very difficult to isolate
+%%%the intraindustry heterogeneity across firms that leads to differences in
+%%%firms' investment strategies as predicted by the model, from the
+%%%intraindustry heterogeneity attributable to poor industry definitions or
+%%%other technological differences that need not affect firms' strategic
+%%%behavior. We derive testable implications out of a game of strategic
+%%%interaction by relating unobservable differences in firms' production
+%%%technologies to their market-to-book ratios. In doing so, however, we are
+%%%subject to the empirical concern of identification.
+%%%
+%%%To address this concern, we provide additional empirical evidence on the
+%%%asset-pricing implication that the intraindustry comovement in firms'
+%%%exposure to risk is higher in more competitive industries, that is,
+%%%industries in which firms' strategic interaction does not lead to negative
+%%%comovement in firms' betas. Our results in Table~\ref{t5} complement those in
+%%%Table~\ref{t4} and the evidence by \cite{hoberg}, because we regress our measures
+%%%of comovement in betas and returns with alternative measures of competition
+%%%that are not defined as intraindustry measures of dispersion.
+
+%%%%\begin{table}[!t]%T5
+%%%%\tableparts{\caption{Industry risk dynamics and other measures of competition}\label{t5}}
+%%%%{\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ld{3,5}d{3,5}d{3,5}d{3,5}d{3,5}d{3,7}@{}} &
+%%%%\multicolumn{3}{c}{Comovement in betas $\omega_{\beta}$} & \multicolumn{3}{c}{Comovement in
+%%%%returns $\omega_{R}$}\down\\\cline{2-4}\cline{5-7}\up & \mcc{(A)}&\mcc{(B)}&\mcc{(C)}&
+%%%%\mcc{(D)}&\mcc{(E)}&\mcc{(F)}\\\colrule
+%%%%{$\mu_m$} & -0.0155^{***}  &                    &           &  -0.0062^{***}   &  &       \\
+%%%%& (0.0041)     &                    &           &   (0.0023)    &  &         \\
+%%%%{lnCR4}        &                    & -0.0020^{***} &       &          & -0.0004^{***}     &   \\
+%%%%&                      & (0.0004)    &       &       &  (0.0001)      &    \\
+%%%%{lnCR8}          &                  &                     &  -0.0032^{***} &       &       &  -0.0014^{***}     \\
+%%%%&                  &                      & (0.0005) &       &          &    (0.0002)        \\
+%%%%N     & \mcc{148,412}&\mcc{84,623 }&\mcc{84,623  }&\mcc{148,412}&\mcc{84,623 }&\mcc{84,623}\\
+%%%%Avg. $R^2$    &   0.008 & 0.018 & 0.023 & 0.012 & 0.009 & 0.013\\\bottomrule
+%%%%\end{tabular*}}
+%%%%{This table reports the \cite{macbeth} regressions on comovement measures as a function of the
+%%%%intraindustry value spread and static measures of competition. The data used are in monthly
+%%%%frequency. $\omega _{x}$ denotes the intraindustry comovement in variable $x$; $\beta $ is the
+%%%%equity beta; $R$ is the stock return; $\mu _{m}$ is the average industry markup on operating
+%%%%profits; lnCR4\ is the logarithm of the sum of the four largest market shares in the industry as
+%%%%reported by the U.S. Census Bureau; and lnCR8\ is the logarithm of the sum of the eight largest
+%%%%market shares in the industry as reported by the U.S. Census Bureau. Newey-West corrected
+%%%%standard errors are reported in parentheses. ***$p<0.01$, **$p<0.05$, and
+%%%%*$p<0.1$.}\vspace*{6pt}
+%%%%\end{table}
+
+%%Table~\ref{t5} shows that the intraindustry comovement in betas and returns is negatively related
+%%to the average industry markup. This indicates that there is more comovement in betas and
+%%returns in more competitive industries. Similarly, the intraindustry comovement in betas and
+%%returns is negatively related to the log concentration ratios lnCR4 and lnCR8 for manufacturing
+%%industries. Hence, there is less comovement in betas and returns in industries in which few
+%%firms have a high market share.
+
+\section{Conclusion}\label{s4}
+
+In this paper we study how strategic interaction affects the intraindustry dynamics of corporate
+investment and expected returns. Under imperfect competition, a firms' exposure to systematic
+risk or beta is affected significantly not only by its own investment decisions but also by the
+investment decisions of its industry peers.
+
+In imperfectly competitive industries, we predict that the investment strategy and exposure to
+systematic risk of each firm is affected by the marginal product of capital of all its
+competitors; this suggests why the empirically observed value spread is predominantly
+intraindustry. In the model and in the data, we find that firms' betas and returns correlate
+more positively in industries with low value spread. We also show empirically and explain
+theoretically why firms' betas and returns correlate more positively in industries with low HHI,
+and low intraindustry standard deviation in markups.
+
+To conclude, we note that the fundamental insight of our paper is that product markets have
+nontrivial effects on firms' investment decisions and their expected returns. In this context,
+dynamic models of strategic interaction typically studied in the industrial organization
+literature become a useful tool to explain empirical regularities in the cross-section of returns.
+
+\appendix
+
+\renewcommand{\thesection}{\Roman{section}}%
+\renewcommand{\thesubsection}{\Alph{subsection}}%
+\renewcommand{\thesubsubsection}{\Alph{subsection}.\arabic{subsubsection}.}%
+
+\section*{Appendix A. Firm Value}\label{appendix: fval}
+
+%%%The proof of the expression for $V_{jt}$ in (\ref{fval}) follows \cite{carlson2004}. For any
+%%%strategy $x_{j}$, we denote $A_{jt}^{^{-}}=\frac{\pi _{j}^{-}}{\delta }+\frac{\Delta \pi
+%%%_{j}^{-}}{\delta }$ as the value of the assets in place of firm $j$ before investment, and
+%%%$A_{jt}^{^{+}}=\frac{\pi _{j}^{+}}{\delta }+\frac{\Delta \pi _{j}^{+}}{\delta }$ as the value of
+%%%the assets in place of firm $j$ after investment.
+
+At the investment threshold $X_{t}=x_{j}$, the value-matching condition ensures that the firm can
+pay $fK$ to increase the value of its assets in place from $A_{jt}^{^{-}}$ to $A_{jt}^{^{+}}$.
+Given exercise at $X_{t}\geq x_{j}$, the value of the growth option to invest is calculated as a
+perpetual binary option with payoff $A_{jt}^{^{+}}-A_{jt}^{^{-}}-fK$. We then observe\footnote{See
+\cite{dixit}. The details of the derivation of $\upsilon >1$ are provided in Chapter 5.} that the
+expected value of the growth option to invest is given by $G_{jt}\equiv \left(
+A_{jt}^{^{+}}-A_{jt}^{^{-}}-fK\right) \left( \frac{X_{t}}{x_{j}}\right) ^{\upsilon }$, where
+$\left( \frac{X_{t}}{x_{j}}\right) ^{\upsilon }$ is the price of a contingent claim that pays~one
+if the firm invests and zero otherwise, and the parameter $\upsilon >1$ equals
+\[
+\upsilon =\frac{1}{2}-\frac{r-\delta }{\sigma _{x}^{2}}+\left[ \left( \frac{%
+r-\delta }{\sigma _{x}^{2}}-\frac{1}{2}\right) ^{2}+\frac{2r}{\sigma _{x}^{2}%
+}\right] ^{\frac{1}{2}}.
+\]
+\noindent For any investment strategy $x_{j}$,\ we conclude that $V_{jt}$ equals $%
+A_{jt}^{^{-}}+G_{jt}$ if $X_{t}<x_{j}$ and $A_{jt}^{^{+}}$ if $%
+X_{t}\geq x_{j}$.
+
+In what follows, we specify the functional form of firms' value functions when firms invest
+sequentially and simultaneously. In doing so, we do not characterize explicitly firms'
+investment strategies.  We use these expressions in the derivation of the equilibrium outcome in
+Appendix B.
+
+Consider first the values of firms $L$\ and $M$\ when both firms invest simultaneously at a given
+threshold $x$. For any value of $X_{t}$, the value of firm $j=L,M\ $equals
+\[
+V_{jt}=\left\{
+\begin{array}{ll}
+\left( 2K\right) ^{-\frac{1}{\varepsilon }}\frac{K}{\delta }X_{t}+\left[ \left( \Lambda
+_{L}K+\Lambda _{M}K\right) ^{-\frac{1}{\varepsilon }}\Lambda
+_{j}\frac{K}{\delta }x-fK-\left( 2K\right) ^{-\frac{1}{\varepsilon }}\frac{K%
+}{\delta }x\right] \left( \frac{X_{t}}{x}\right) ^{\upsilon } & \text{ if }
+X_{t}<x \\
+&\\
+\left( \Lambda _{L}K+\Lambda _{M}K\right) ^{-\frac{1}{\varepsilon }}\Lambda
+_{j}K\frac{X_{t}}{\delta }  & \text{ if } X_{t}>x.
+\end{array}%
+\right.
+\]
+
+%%%%%Consider now the valuations of firms $L$\ and $M$\ in a leader-follower game in which
+%%%%%$x_{L}<x_{M}$. For any value of $X_{t}$, the value of the leading firm $L\ $is given by
+%%%%%\[
+%%%%%V_{Lt}=\left\{
+%%%%%\arraycolsep=1pt\begin{array}{ll}
+%%%%%\left( 2K\right) ^{-\frac{1}{\varepsilon }}\frac{K}{\delta }X_{t}+\left[\left( \Lambda _{L}K+K\right) ^{-\frac{1}{\varepsilon }}\Lambda _{L}\frac{K}{\delta }x_{L}-fK-\left( 2K\right) ^{-\frac{1}{\varepsilon }}\frac{K}{\delta }x_{L}\right] \left( \frac{X_{t}}{x_{L}}\right) ^{\upsilon }+\\[6pt]
+%%%%%\left[ \left( \Lambda _{M}K+\Lambda _{L}K\right) ^{-\frac{1}{\varepsilon }
+%%%%%}\Lambda _{L}\frac{K}{\delta }x_{M}-\left( \Lambda _{L}K+K\right) ^{-\frac{1
+%%%%%}{\varepsilon }}\Lambda _{L}\frac{K}{\delta }x_{M}\right] \left( \frac{X_{t}
+%%%%%}{x_{M}}\right) ^{\upsilon } & \text{ if } X_{t}<x_{L} \\[6pt]
+%%%%%\left( \Lambda _{L}K+K\right) ^{-\frac{1}{\varepsilon }}\Lambda _{L}\frac{K}{\delta }X_{t}+ \\[6pt]
+%%%%%\left[ \left( \Lambda _{L}K+\Lambda _{M}K\right) ^{-\frac{1}{\varepsilon }
+%%%%%}-\left( \Lambda _{L}K+K\right) ^{-\frac{1}{\varepsilon }}\right] \Lambda
+%%%%%_{L}\frac{K}{\delta }x_{M}\left( \frac{X_{t}}{x_{M}}\right) ^{\upsilon }& \text{ if } x_{L}<X_{t}<x_{M} \\[6pt]
+%%%%%\left( \Lambda _{L}K+\Lambda _{M}K\right) ^{-\frac{1}{\varepsilon }}\Lambda
+%%%%%_{L}K\frac{X_{t}}{\delta } & \text{ if } X_{t}>x_{M}.
+%%%%%\end{array}
+%%%%%\right.
+%%%%%\]
+%%%%%
+%%%%%\noindent For any value of $X_{t}$, the value of firm $M\ $is given by
+%%%%%\[
+%%%%%V_{Mt}^{s}=\left\{
+%%%%%\begin{array}{ll}
+%%%%%\left( 2K\right) ^{-\frac{1}{\varepsilon }}\frac{K}{\delta }X_{t}+\left[\left( \Lambda _{L}K+K\right) ^{-\frac{1}{\varepsilon }}-\left( 2K\right)^{-\frac{1}{\varepsilon }}\right] \frac{K}{\delta }x_{L}\left( \frac{X_{t}}{x_{L}}\right) ^{\upsilon }+\\[6pt]
+%%%%%\left[ \left( \Lambda _{L}K+\Lambda _{M}K\right) ^{-\frac{1}{\varepsilon }}\Lambda _{M}\frac{K}{\delta }x_{M}-fK-\left( \Lambda _{L}K+K\right)^{-\frac{1}{\varepsilon }}\frac{K}{\delta }x_{M}\right] \left( \frac{X_{t}}{x_{M}}\right) ^{\upsilon }
+%%%%%& \text{ if } X_{t}<x_{L} \\[6pt]
+%%%%%\left( \Lambda _{L}K+K\right) ^{-\frac{1}{\varepsilon }}\frac{K}{\delta }X_{t}+ \\[6pt]
+%%%%%\left[ \left( \Lambda _{L}K+\Lambda _{M}K\right) ^{-\frac{1}{\varepsilon }
+%%%%%}\Lambda _{M}\frac{K}{\delta }x_{M}-\left( \Lambda _{L}K+K\right) ^{-\frac{1}{\varepsilon }}\frac{K}{\delta }x_{M}-fK\right] \left( \frac{X_{t}}{x_{M}}\right) ^{\upsilon }
+%%%%%& \text{ if } x_{L}<X_{t}<x_{M}\\[6pt]
+%%%%%\left( \Lambda _{L}K+\Lambda _{M}K\right) ^{-\frac{1}{\varepsilon }}\Lambda
+%%%%%_{M}K\frac{X_{t}}{\delta } & \text{ if } X_{t}>x_{M}.
+%%%%%\end{array}
+%%%%%\right.
+%%%%%\]
+%%%%%
+%%%%%Consider the off-equilibrium value of firm $M$\ when it deviates from its
+%%%%%strategy as a follower and invests instead as a leader at the threshold $%
+%%%%%\widetilde{x}_{M}.$ We denote the corresponding value function by $%
+%%%%%\widetilde{V_{Mt}}$. This function does not correspond to any particular
+%%%%%type of equilibrium in the paper. We also denote the threshold of firm $L$%
+%%%%%\ when it invests as a follower by $\widetilde{x}_{L}$. \[
+%%%%%\widetilde{V_{Mt}}=\left\{
+%%%%%\arraycolsep=0pt\begin{array}{l>{\hspace*{-7pt}}l}
+%%%%%\left( 2K\right) ^{-\frac{1}{\varepsilon }}\frac{K}{\delta }X_{t}+\left[
+%%%%%\left( \Lambda _{M}K+K\right) ^{-\frac{1}{\varepsilon }}\Lambda _{M}\frac{K}{%
+%%%%%\delta }\widetilde{x}_{M}-fK-\left( 2K\right) ^{-\frac{1}{\varepsilon }}%
+%%%%%\frac{K}{\delta }\widetilde{x}_{M}\right] \left( \frac{X_{t}}{\widetilde{x}%
+%%%%%_{M}}\right) ^{\upsilon }+ \\[6pt]
+%%%%%\left[ \left( \Lambda _{M}K+\Lambda _{L}K\right) ^{-\frac{1}{\varepsilon }%
+%%%%%}\Lambda _{M}\frac{K}{\delta }\widetilde{x}_{L}-\left( \Lambda
+%%%%%_{M}K+K\right) ^{-\frac{1}{\varepsilon }}\Lambda _{M}\frac{K}{\delta }%
+%%%%%\widetilde{x}_{L}\right] \left( \frac{X_{t}}{\widetilde{x}_{L}}\right)
+%%%%%^{\upsilon }
+%%%%%& \text{ if } X_{t}<\widetilde{x}_{M}\\[6pt]
+%%%%%\left( \Lambda _{L}K+K\right) ^{-\frac{1}{\varepsilon }}\Lambda _{L}\frac{K%
+%%%%%}{\delta }X_{t}+\\[6pt]
+%%%%%\left[ \left( \Lambda _{M}K+\Lambda _{L}K\right) ^{-\frac{1}{\varepsilon }%
+%%%%%}-\left( \Lambda _{M}K+K\right) ^{-\frac{1}{\varepsilon }}\right] \Lambda
+%%%%%_{M}\frac{K}{\delta }\widetilde{x}_{L}\left( \frac{X_{t}}{\widetilde{x}_{L}}%
+%%%%%\right) ^{\upsilon }
+%%%%%& \text{ if } \widetilde{x}_{M}<X_{t}<\widetilde{x}_{L}\\[6pt]
+%%%%%\left( \Lambda _{M}K+\Lambda _{L}K\right) ^{-\frac{1}{\varepsilon }}\Lambda
+%%%%%_{M}K\frac{X_{t}}{\delta } & \text{ if }X_{t}>\widetilde{x}_{L},
+%%%%%\end{array}
+%%%%%\right.
+%%%%%\]
+%%%%%
+%%%%%Finally, consider the off-equilibrium value of firm $L$\ when it deviates from its strategy as a
+%%%%%leader and invests instead as a leader at the threshold $\widetilde{x}_{L}$. We denote the
+%%%%%corresponding value function by $\widetilde{V_{Lt}}$. This function does not correspond to any
+%%%%%particular type of equilibrium in the paper.
+%%%%%\[
+%%%%%\widetilde{V_{Lt}}=\left\{
+%%%%%\begin{array}{ll}
+%%%%%\left( 2K\right) ^{-\frac{1}{\varepsilon }}\frac{K}{\delta }X_{t}+\left[
+%%%%%\left( \Lambda _{M}K+K\right) ^{-\frac{1}{\varepsilon }}-\left( 2K\right) ^{-%
+%%%%%\frac{1}{\varepsilon }}\right] \frac{K}{\delta }\widetilde{x}_{M}\left(
+%%%%%\frac{X_{t}}{\widetilde{x}_{M}}\right) ^{\upsilon }+\\[6pt]
+%%%%%\left[ \left( \Lambda _{L}K+\Lambda _{M}K\right) ^{-\frac{1}{\varepsilon }%
+%%%%%}\Lambda _{L}\frac{K}{\delta }\widetilde{x}_{L}-fK-\left( \Lambda
+%%%%%_{M}K+K\right) ^{-\frac{1}{\varepsilon }}\frac{K}{\delta }\widetilde{x}_{L}%
+%%%%%\right] \left( \frac{X_{t}}{\widetilde{x}_{L}}\right) ^{\upsilon }
+%%%%%& \text{ if } X_{t}<\widetilde{x}_{M}\\[6pt]
+%%%%%\left( \Lambda _{M}K+K\right) ^{-\frac{1}{\varepsilon }}\frac{K}{\delta }%
+%%%%%X_{t}+\\[6pt]
+%%%%%\left[ \left( \Lambda _{L}K+\Lambda _{M}K\right) ^{-\frac{1}{\varepsilon }%
+%%%%%}\Lambda _{L}\frac{K}{\delta }\widetilde{x}_{L}-\left( \Lambda
+%%%%%_{L}K+K\right) ^{-\frac{1}{\varepsilon }}\frac{K}{\delta }\widetilde{x}%
+%%%%%_{L}-fK\right] \left( \frac{X_{t}}{\widetilde{x}_{L}}\right) ^{\upsilon }%
+%%%%%& \text{ if } \widetilde{x}_{M}<X_{t}<\widetilde{x}_{L}\\[6pt]
+%%%%%\left( \Lambda _{L}K+\Lambda _{M}K\right) ^{-\frac{1}{\varepsilon }}\Lambda
+%%%%%_{L}K\frac{X_{t}}{\delta } & \text{ if } X_{t}>\widetilde{x}_{L}.
+%%%%%\end{array}%
+%%%%%\right.
+%%%%%\]
+
+\section*{Appendix B. Equilibrium Outcome of the Basic Model}\label{appendix: duopoly equilibrium}
+
+We derive the proof of the equilibrium outcome in several steps. As a first step, we consider
+the sorting condition of the game, and we derive firms' leader-follower investment strategies
+$x_{L}^{s}<x_{M}^{s}$. The derivation relies on the premise that firm $M$\ must be indifferent
+between investing as a leader and as a follower. We then show that firm $L$ has no incentive to
+deviate as a follower and that there exists no alternative leader-follower equilibrium in which
+firm $M$ invests first.
+
+As a second step, we characterize the clustering equilibria $x^{c}$. We prove that firm $M$
+has no incentives to deviate from the clustering equilibrium. We consider a refinement to select
+the Pareto optimal clustering equilibrium out of all possible clustering equilibria. We obtain a
+unique cutoff value $\Theta _{\Lambda }$ so that firm $L$\ has incentives to invest jointly with
+firm $M$\ at the Pareto optimal clustering equilibrium if $\sigma _{\Lambda }<\Theta _{\Lambda }$.
+
+\setcounter{section}{1}
+\def\thesubsection{B.\arabic{subsection}}
+\renewcommand\theequation{B\arabic{equation}}
+\subsection{Sorting Condition}
+
+The strategy pursued by firm $j$ is given by $x_{j}.$ We denote by $X_{t}%
+\widehat{Y}_{j}^{-\frac{1}{\varepsilon }}$ the expected price by firm $j$ at time $t$. In
+equilibrium, $X_{t}\widehat{Y}_{j}^{-\frac{1}{\varepsilon }}$
+is equal to the market price $p_{t}$ when $\Delta \pi _{jt}^{-}=0$ and $%
+\Delta \pi _{jt}^{+}=0$; we use a more general notation, because the sorting conditions hold for
+any given investment strategy of firm $j$, conditional on any strategy of firm $-j$. Using this
+notation, the preinvestment value function $V_{jt}$ defined in $X_{t}<x_{j}$ for any investment
+strategy $x_{j} $ of firm $j$ and taking as given the strategy of firm $-j$ equals
+\begin{align}
+V_{jt}=\left( \widehat{Y}_{j}^{-}\right) ^{-\frac{1}{\varepsilon }}K\frac{%
+X_{t}}{\delta }+\left[ \left( \widehat{Y}_{j}^{+}\right) ^{-\frac{1}{%
+\varepsilon }}\frac{x_{j}}{\delta }\Lambda _{j}K-\left( \widehat{Y}%
+_{j}^{-}\right) ^{-\frac{1}{\varepsilon }}\frac{x_{j}}{\delta }K-fK\right] \left(
+\text{$\frac{X_{t}}{x_{j}}$}\right) ^{\upsilon }.
+\end{align}
+
+%%%%%%Denote the market share of firm $j$ upon investment by $\mathbf{s}%
+%%%%%%_{j}^{+}\equiv \frac{\Lambda _{j}K_{j}}{\widehat{Y}_{j}^{+}}$. The sorting condition reflects
+%%%%%%that, for any possible investment strategy $x_{j}$, firms with more profitable growth
+%%%%%%opportunities find it less costly to invest earlier, namely,
+%%%%%%\[
+%%%%%%\frac{\partial }{\partial \Lambda _{j}}\left[ \frac{\partial V_{jt}}{%
+%%%%%%\partial x_{j}}\right] =\left( 1-\upsilon \right) \left( 1-\frac{1}{%
+%%%%%%\varepsilon }\mathbf{s}_{j}^{+}\right) \left( \text{$\frac{X_{t}}{x_{j}}$}%
+%%%%%%\right) ^{\upsilon }\frac{K}{\delta }\left( \widehat{Y}_{j}^{+}\right) ^{-%
+%%%%%%\frac{1}{\varepsilon }}<0.
+%%%%%%\]
+%%%%%%
+%%%%%%The first factor is strictly negative given that $\upsilon >1$. The second factor is strictly
+%%%%%%positive given that $\varepsilon >1$ by assumption and the market share of any firm is lower than
+%%%%%%unity by construction (i.e., $\mathbf{s}_{j}^{+}<1$). The remaining factors are strictly
+%%%%%%positive.
+%%%%%%
+%%%%%%\subsection{Leader-follower Equilibrium}
+%%%%%%
+%%%%%%The leader-follower equilibrium is so that $x_{L}^{s}<x_{M}^{s}$. We derive the leader-follower
+%%%%%%equilibrium in steps. First, we obtain the thresholds $x_{j}^{s}$. Second, we analyze the
+%%%%%%incentives of firm $j$ to invest at the threshold $x_{j}^{s}$ to understand why the derived
+%%%%%%strategies are an equilibrium outcome. As a corollary, we prove that the shadow cost of
+%%%%%%preemption $\lambda ^{s}$ induces firm $L$\ to accelerate investment.
+%%%%%%
+%%%%%%Firm $M$ maximizes its value conditional on firm $L$\ being a leader. To ensure that $x_{M}$ is
+%%%%%%chosen optimally, the derivative of $V_{Mt}$ with
+%%%%%%respect to $x_{M}$ equals zero. The corresponding optimal strategy $%
+%%%%%%x_{M}^{s}$ satisfies (\ref{xm}). The threshold $x_{M}^{s}$ is the same that obtains in a
+%%%%%%Stackelberg game in which firm $M$\ invests second by
+%%%%%%assumption. Using our notation in Section~\ref{s1}, this implies $%
+%%%%%%x_{M}^{s}\equiv x_{M}^{s\ast }$. Furthermore, by rewriting $x_{M}^{s}$ as
+%%%%%%\[
+%%%%%%\frac{x_{M}^{s}}{\delta }\left[ \left( \Lambda _{L}K+\Lambda _{M}K\right)
+%%%%%%^{-\frac{1}{\varepsilon }}\Lambda _{M}K-\left( \Lambda _{L}K+K\right) ^{-%
+%%%%%%\frac{1}{\varepsilon }}\right] ^{-1}=\frac{\upsilon }{\upsilon -1}fK,
+%%%%%%\]
+%%%%%%\noindent we note that the optimal investment rule of the follower is a modified net present value
+%%%%%%formula with markup $\frac{\upsilon }{\upsilon -1}>1.$ This markup reflects the impact of
+%%%%%%irreversibility on the investment policy\vpb{}, and
+%%%%%%it is increasing in uncertainty given that $\upsilon >1$ is increasing in $%
+%%%%%%\sigma $. This is consistent with the\ stylized prediction that the value of waiting to invest
+%%%%%%increases with uncertainty.
+%%%%%%
+%%%%%%Firm $L$ determines the threshold $x_{L}^{s}$ that maximizes its value subject to the incentive
+%%%%%%compatibility constraint of firm $M$, namely,
+%%%%%%\[
+%%%%%%\underset{x_{L}^{s}}{\text{max }}V_{Lt} \ \text{ s.t. } \ \widetilde{V_{Mt}} \leq
+%%%%%%V_{Mt}^{s}.
+%%%%%%\]
+%%%%%%
+%%%%%%We solve for the optimization problem of firm $L$\ using Kuhn-Tucker. The Lagrangian considers
+%%%%%%both the value function of firm $L$ and the complementary slackness condition in (\ref{ic3}). The constrained optimization problem of firm $L$ at $X_{t}<x_{L}^{s}$ is given by
+%%%%%%\[
+%%%%%%\tciLaplace =V_{Lt}-\lambda ^{s}\left( \widetilde{V_{Mt}}-V_{Mt}^{s}\right) ,
+%%%%%%\]
+%%%%%%\noindent where the first-order conditions that stem from the optimization problem are
+%%%%%%\[
+%%%%%%\frac{\partial \tciLaplace }{\partial x_{L}}=0 \quad \text{ and } \quad  \frac{\partial
+%%%%%%\tciLaplace }{\partial \lambda }=0,
+%%%%%%\]
+%%%%%%\noindent and the optimal threshold $x_{L}^{s}$ satisfies (\ref{xl}). The multiplier $\lambda
+%%%%%%^{s}$ quantifies the shadow cost of preemption for firm $L$. The optimality condition
+%%%%%%$\frac{\partial \tciLaplace }{\partial \lambda }=0$ yields the multiplier $\lambda ^{s}>0$ so that
+%%%%%%the second term in (\ref{ic3}) equals zero.
+%%%%%%
+%%%%%%The threshold $x_{L}^{s}$ is so that, conditional on firm $L$ investing at $%
+%%%%%%x_{L}^{s}$, the best response of its competitor is to invest at the follower threshold
+%%%%%%$x_{M}^{s}$. Consider first the incentives of firm $L$. If firm $L$ invests earlier than
+%%%%%%$x_{L}^{s}$, firm $M$ prefers to stay as a follower, so a leader-follower equilibrium would be
+%%%%%%feasible. However, firm $L$\ has no incentives to invest earlier: it would imply a shadow cost
+%%%%%%strictly higher than $\lambda ^{s}.$ If firm $L$\ invests later than $%
+%%%%%%x_{L}^{s}$, firm $M$ has incentives to preempt firm $L$; hence, the leader-follower equilibrium is
+%%%%%%not feasible. Once firm $M$ has incentives to wait, the threshold $x_{M}^{s}$ is unconditionally
+%%%%%%the optimal strategy to follow.
+%%%%%%
+%%%%%%As a corollary, we show that in the leader-follower equilibrium, preemption erodes its option
+%%%%%%value of waiting to invest of firm $L$. We compare the investment threshold $x_{L}^{s}\ $in the
+%%%%%%leader-follower equilibrium in which $\lambda ^{s}>0$, with the investment threshold $x_{L}^{s\ast
+%%%%%%}$\ in a Stackelberg game in which firm $L$\ leads by assumption. It is straightforward to show
+%%%%%%that the Stackelberg threshold $x_{L}^{s\ast }$ equals $x_{L}^{s}$ for the special case in which
+%%%%%%$\lambda ^{s}=0$ (i.e., firm $M$\ has no incentive to preempt firm $L$). In what follows, we
+%%%%%%prove that $x_{L}^{s}<x_{L}^{s\ast }$, namely,
+%%%%%%\[
+%%%%%%\frac{x_{L}^{s}}{x_{L}^{s\ast }}=\frac{1-\lambda ^{s}}{1-\lambda ^{s}\vartheta }<1 \
+%%%%%%\text{where} \ \vartheta \equiv \frac{\left( \Lambda _{M}+1\right) ^{-\frac{1}{\varepsilon
+%%%%%%}}\Lambda _{M}-\left( \Lambda
+%%%%%%_{L}+1\right) ^{-\frac{1}{\varepsilon }}}{\left( \Lambda _{L}+1\right) ^{-%
+%%%%%%\frac{1}{\varepsilon }}\Lambda _{L}-2^{-\frac{1}{\varepsilon }}},
+%%%%%%\]
+%%%%%%\noindent and the inequality above indicates that if firm $M$ has incentives to invest
+%%%%%%preemptively, firm $L$\ optimally accelerates its investment to deter firm $M $.
+%%%%%%
+%%%%%%The proof that $x_{L}^{s}<x_{L}^{s\ast }$ relies on two key properties of the model. The first
+%%%%%%relates to the fact that $x_{L}^{s\ast }<x_{M}^{s\ast }$. Reordering the terms, this inequality
+%%%%%%implies that
+%%%%%%\[
+%%%%%%\vartheta \equiv \frac{\left( \Lambda _{M}+1\right) ^{-\frac{1}{\varepsilon
+%%%%%%}}\Lambda _{M}-\left( \Lambda _{L}+1\right) ^{-\frac{1}{\varepsilon }}}{%
+%%%%%%\left( \Lambda _{L}+1\right) ^{-\frac{1}{\varepsilon }}\Lambda _{L}-2^{-%
+%%%%%%\frac{1}{\varepsilon }}}<1,
+%%%%%%\]
+%%%%%%\noindent where $\vartheta <1$ indicates that the marginal increase in profits of firm $M$ when
+%%%%%%deviating from its strategy as a follower is lower that the marginal increase in profits of firm
+%%%%%%$L$\ when investing as a leader. This ensures that firm $L$\ is willing to incur a cost to
+%%%%%%preserve its position as a leader if firm $M$ deviates from its follower strategy.
+%%%%%%
+%%%%%%The second property is that $\lambda ^{s}\in \left( 0,1\right) $. Note
+%%%%%%that the investment threshold $x_{L}^{s}\ $is strictly positive whenever $%
+%%%%%%\frac{1-\lambda ^{s}}{1-\lambda ^{s}\vartheta }>0$. One possible configuration to ensure that
+%%%%%%$x_{L}^{s}>0$ is $\lambda ^{s}\in \left( 0,1\right) $ and $\vartheta <1.$ An alternative
+%%%%%%configuration would require $\lambda ^{s}>1$ and $\lambda \vartheta >1.$ Given the expression
+%%%%%%for $\lambda ^{s}$ discussed above, it is straightforward to see that $%
+%%%%%%\lambda ^{s}\vartheta >1$ holds if and only if $\vartheta >1.$ Hence, the only possible case is
+%%%%%%$\lambda ^{s}\in \left( 0,1\right) $ and $\vartheta <1$.
+%%%%%%
+%%%%%%\subsection{Equilibrium Implication of Sorting on Leader-follower
+%%%%%%Strategies}
+%%%%%%
+%%%%%%Just as in the literature of mechanism design, the sorting condition has two important
+%%%%%%implications. The first is that if the incentive compatibility
+%%%%%%constraint (ICC)\ of firm $M$\ as follower is binding, the ICC\ of the firm $%
+%%%%%%L$ is slack, so that firm $L$ has no incentives to become a follower. This
+%%%%%%implies that if $V_{Mt}^{s}=\widetilde{V}_{Mt}$, then $V_{Lt}^{s}>\widetilde{%
+%%%%%%V}_{Lt}$ at $X_{t}\leq x_{L}^{s}$. The second implication is that there exists no alternative
+%%%%%%leader-follower equilibrium in which firm $M$\ invests first. Hence, if
+%%%%%%$\widetilde{V}_{Lt}=V_{Lt}^{s}$ so that firm $L$\
+%%%%%%is indifferent between being a leader and a follower, then $\widetilde{V}%
+%%%%%%_{Mt}<V_{Mt}^{s}$ at $X_{t}\leq \widetilde{x}_{M}$.
+%%%%%%
+%%%%%%We prove both of these statements by showing that the leader-follower equilibrium Markov
+%%%%%%strategies $x_{j}^{s}$ are decreasing in firm type. Given this argument, firm $M$ does not
+%%%%%%invest earlier than firm $L$ in equilibrium, nor firm $L$\ becomes a follower. The proof builds
+%%%%%%on the proof of Theorem 13.1 in Chapter 13 of \cite{fudenberg1991}. The derivation relates the
+%%%%%%ICCs\ of both firms to the sorting condition of the model.
+%%%%%%
+%%%%%%By definition of the leader-follower equilibrium in our model, firm $L$ strictly prefers investing
+%%%%%%as a leader to deviating and investing as a follower, namely,
+%%%%%%\[
+%%%%%%V_{Lt}^{s}>\widetilde{V}_{Lt},
+%%%%%%\]
+%%%%%%\noindent where firms' values are preinvestment values before any firm invests, so that $X_{t}\leq
+%%%%%%x_{L}^{s}$. Similarly, in equilibrium, firm $M$\ weakly prefers investing as a follower to
+%%%%%%investing as a leader, so that
+%%%%%%\[
+%%%%%%V_{Mt}^{s}\geq \widetilde{V}_{Mt}
+%%%%%%\]
+%%%%%%\noindent at $X_{t}\leq x_{L}^{s},$ where $V_{Mt}^{s}$ is strictly equal to $\widetilde{V}_{Mt}$
+%%%%%%at $X_{t}=x_{L}^{s}$. Put together, these inequalities are the ICCs of firm $L$\ and firm $M$\
+%%%%%%in the leader-follower equilibrium of our model. Adding them up, we can rewrite them so that
+%%%%%%\begin{equation}
+%%%%%%\left( V_{Lt}^{s}-\widetilde{V}_{Mt}\right) -\left( \widetilde{V}%
+%%%%%%_{Lt}-V_{Mt}^{s}\right) >0  \label{ineqkey}
+%%%%%%\end{equation}
+%%%%%%\noindent at $X_{t}\leq x_{L}^{s}$, where the first term in parentheses in (\ref%
+%%%%%%{ineqkey}) compares the values of firm $L$\ and firm $M$\ as leaders, and the second term compares
+%%%%%%the values of both firms when investing as followers.
+%%%%%%
+%%%%%%For convenience, we decompose the value of any firm $j$ into two terms so
+%%%%%%that%
+%%%%%%\begin{equation}
+%%%%%%V_{jt}\equiv \underset{v_{jt}>0}{\underbrace{\frac{\pi _{jt}^{-}}{\delta }%
+%%%%%%+\left( \frac{X_{t}}{x_{j}}\right) ^{\upsilon }\left( \frac{\pi _{j}^{+}}{%
+%%%%%%\delta }-\frac{\pi _{j}^{-}}{\delta }-fK\right) }}+\underset{c_{\left[ j,-j%
+%%%%%%\right] ,t}<0}{\underbrace{\frac{\Delta \pi _{jt}^{-}}{\delta }+\left( \frac{%
+%%%%%%X_{t}}{x_{j}}\right) ^{\upsilon }\left. \left( \frac{\Delta \pi _{j}^{+}}{%
+%%%%%%\delta }\right) \right\vert _{X_{t}=x_{j}}}},  \label{fval2}
+%%%%%%\end{equation}%
+%%%%%%where $v_{jt}$ corresponds to the value of the firm as if the firm were idle. The term
+%%%%%%$c_{\left[ j,-j\right] ,t}<0$ denotes the expected
+%%%%%%reduction in the value of firm $j$ due to the investment of its competitor $%
+%%%%%%-j$.
+%%%%%%
+%%%%%%To cancel out the heterogeneity in the values of firm $j$ due to changes in the strategy of its
+%%%%%%competitor, we state and later verify that a sufficient
+%%%%%%yet not necessary condition so that (\ref{ineqkey}) holds is given by%
+%%%%%%\begin{equation}
+%%%%%%\left( v_{Lt}^{s}-\widetilde{v}_{Mt}\right) -\left( \widetilde{v}%
+%%%%%%_{Lt}-v_{Mt}^{s}\right) >0,  \label{ineqkey2}
+%%%%%%\end{equation}%
+%%%%%%because it also holds that%
+%%%%%%\begin{equation}
+%%%%%%c_{\left[ L,M\right] ,t}^{s}-\widetilde{c}_{\left[ M,L\right] ,t}>0\text{ and }\widetilde{c}_{\left[ L,M\right] ,t}-c_{\left[ M,L\right] ,t}^{s}<0. \label{surpluses}
+%%%%%%\end{equation}
+%%%%%%
+%%%%%%The inequality in (\ref{ineqkey2}) focuses on the variation in firm type and firm strategy
+%%%%%%controlling for the strategy of the rival firm. Considering that both the firm type $\Lambda
+%%%%%%_{j}$ and the strategy $x_{j}$ are defined
+%%%%%%in the domain of real numbers, we rewrite (\ref{ineqkey2}) so that%
+%%%%%%\begin{equation}
+%%%%%%\underset{x_{M}}{\overset{x_{L}}{\dint }}\left[ \underset{\Lambda _{M}}{%
+%%%%%%\overset{\Lambda _{L}}{\dint }}\frac{\partial ^{2}v_{jt}}{\partial \Lambda _{j}\partial
+%%%%%%x_{j}}d\Lambda _{j}\right] dx_{j}>0,  \label{sort4}
+%%%%%%\end{equation}%
+%%%%%%where the sign of $\frac{\partial ^{2}v_{jt}}{\partial \Lambda _{j}\partial x_{j}}$ in
+%%%%%%(\ref{sort4}) is exactly the same as the sign of the sorting
+%%%%%%condition in (\ref{sort1}). Given $\Lambda _{L}>\Lambda _{M}$ and $\frac{%
+%%%%%%\partial ^{2}v_{jt}}{\partial \Lambda _{j}\partial x_{j}}<0$, the ICCs of
+%%%%%%both firms hold as long as $x_{L}<x_{M}$. As a result, the leader-follower
+%%%%%%equilibrium Markov strategies $x_{j}^{s}$ are decreasing in firm type $%
+%%%%%%\Lambda _{j}$.
+%%%%%%
+%%%%%%We conclude by verifying that the expressions in (\ref{surpluses}) hold. The term $c_{\left[
+%%%%%%L,M\right] ,t}^{s}$ is the expected reduction in value
+%%%%%%for firm $L$\ as a leader when $M$\ invests as a follower. The term $%
+%%%%%%\widetilde{c}_{\left[ M,L\right] ,t}$ is the off-equilibrium expected reduction in value for firm
+%%%%%%$M$\ as a leader when firm $L$\ invests as a
+%%%%%%follower. The inequality $c_{\left[ L,M\right] ,t}^{s}-\widetilde{c}_{%
+%%%%%%\left[ M,L\right] ,t}>0$ implies
+%%%%%%\begin{align*}
+%%%%%%& \left[ \left( \Lambda _{L}K+\Lambda _{M}K\right) ^{-\frac{1}{\varepsilon }%
+%%%%%%}-\left( \Lambda _{L}K+K\right) ^{-\frac{1}{\varepsilon }}\right] \frac{K}{%
+%%%%%%\delta }x_{M}^{s}\left( \frac{X_{t}}{x_{M}^{s}}\right) ^{\upsilon }\\
+%%%%%%> & \left[ \left( \Lambda _{L}K+\Lambda _{M}K\right) ^{-\frac{1}{\varepsilon }}-\left(
+%%%%%%\Lambda _{M}K+K\right) ^{-\frac{1}{\varepsilon }}\right] \frac{K}{\delta }%
+%%%%%%\widetilde{x}_{L}\left( \frac{X_{t}}{\widetilde{x}_{L}}\right) ^{\upsilon }.
+%%%%%%\end{align*}
+%%%%%%
+%%%%%%Reordering the terms, the condition implies that if firm $L$\ invests as a follower, it does so
+%%%%%%earlier that firm $M$\ as a follower, namely,
+%%%%%%\[
+%%%%%%\frac{\widetilde{x}_{L}}{x_{M}^{s}}<\left[ \frac{\left( \Lambda _{M}K+K\right)
+%%%%%%^{-\frac{1}{\varepsilon }}-\left( \Lambda _{L}K+\Lambda
+%%%%%%_{M}K\right) ^{-\frac{1}{\varepsilon }}}{\left( \Lambda _{L}K+K\right) ^{-%
+%%%%%%\frac{1}{\varepsilon }}-\left( \Lambda _{L}K+\Lambda _{M}K\right) ^{-\frac{1%
+%%%%%%}{\varepsilon }}}\right] ^{\frac{1}{\upsilon -1}}<1,
+%%%%%%\]
+%%%%%%\noindent where the prediction that $\widetilde{x}_{L}<x_{M}^{s}$ can be easily
+%%%%%%checked by computing the optimal follower threshold for firm $\widetilde{x}%
+%%%%%%_{L}.$ The optimal off-equilibrium follower threshold for firm $L$\ equals%
+%%%%%%\begin{equation}
+%%%%%%\widetilde{x}_{L}=\frac{fK^{\frac{1}{\varepsilon }}\frac{\delta \upsilon }{%
+%%%%%%\upsilon -1}}{\left( \Lambda _{L}+\Lambda _{M}\right) ^{-\frac{1}{%
+%%%%%%\varepsilon }}\Lambda _{L}-\left( \Lambda _{M}+1\right) ^{-\frac{1}{%
+%%%%%%\varepsilon }}}<x_{M}^{s}.  \label{xmdev}
+%%%%%%\end{equation}
+%%%%%%
+%%%%%%Similarly, the term $\widetilde{c}_{\left[ L,M\right] ,t}$ is the off-equilibrium expected
+%%%%%%reduction in value for firm $L$\ as a follower when $M$\ invests as a leader. The term
+%%%%%%$c_{\left[ M,L\right] ,t}^{s}$ is the expected reduction in value for firm $M$\ as a follower when
+%%%%%%firm $L$\ invests as a leader. The inequality $\widetilde{c}_{\left[ L,M\right] ,t}<c_{\left[
+%%%%%%M,L\right] ,t}^{s}$ therefore implies
+%%%%%%\[
+%%%%%%\left[ \left( \Lambda _{M}K+K\right) ^{-\frac{1}{\varepsilon }}-\left(
+%%%%%%2K\right) ^{-\frac{1}{\varepsilon }}\right] \frac{K}{\delta }\widetilde{x}%
+%%%%%%_{M}\left( \frac{X_{t}}{\widetilde{x}_{M}}\right) ^{\upsilon }<\left[ \left(
+%%%%%%\Lambda _{L}K+K\right) ^{-\frac{1}{\varepsilon }}-\left( 2K\right) ^{-\frac{1%
+%%%%%%}{\varepsilon }}\right] \frac{K}{\delta }x_{L}^{s}\left( \frac{X_{t}}{%
+%%%%%%x_{L}^{s}}\right) ^{\upsilon }.
+%%%%%%\]
+%%%%%%
+%%%%%%The condition above implies that if firm $M$\ wants to deviate as a leader, it should invest
+%%%%%%earlier than firm $L$\ as a leader so that
+%%%%%%\[
+%%%%%%\frac{x_{L}^{s}}{\widetilde{x}_{M}}>\left[ \frac{2^{-\frac{1}{\varepsilon }%
+%%%%%%}-\left( \Lambda _{L}+1\right) ^{-\frac{1}{\varepsilon }}}{2^{-\frac{1}{%
+%%%%%%\varepsilon }}-\left( \Lambda _{M}+1\right) ^{-\frac{1}{\varepsilon }}}%
+%%%%%%\right] ^{\frac{1}{\upsilon -1}}>1,
+%%%%%%\]
+%%%%%%\noindent where the prediction that $\widetilde{x}_{M}<x_{L}^{s}$ relates to the sorting condition
+%%%%%%of the game. All else equal, the growth option of firm $L $ is more valuable than that of firm
+%%%%%%$M$. Consequently, if firm $M$\ is indifferent between being a follower and a leader
+%%%%%%$X_{t}=x_{L}^{s}$, then frm $L$\ is indifferent between being a follower and a leader at a lower
+%%%%%%threshold $\widetilde{x}_{M}<x_{L}^{s}$.
+
+\subsection{Sufficient Conditions for Clustering Equilibria}
+
+Consistent with Weeds (2002), we predict multiple clustering equilibria $%
+x^{c}\in \lbrack \underline{x}_{L}^{c},x_{L}^{c\ast }]$, and we claim that the Pareto optimal
+equilibrium is given by $x^{c}=x_{L}^{\ast c}$. We denote by $\underline{x}_{L}^{c}$ the lowest
+clustering threshold that can be sustained as an equilibrium outcome, and is equal to the minimum
+joint-investment threshold of firm $L$\ so that its value-matching condition holds and
+$V_{Lt}^{s}\leq V_{Lt}^{c}$. We denote by $x_{L}^{c\ast }$ the highest clustering threshold that
+can be sustained in equilibrium, which is the optimal joint-investment threshold for firm $L$.
+
+To prove these statements, we first analyze the conditions so that both firms expand capacity at
+some threshold $x^{c}$. Consider the incentives of firm $L$ to deviate from the equilibrium
+threshold $x^{c}$. We assume for now and later verify that firm $M$\ has no unilateral incentives
+to deviate so that if firm $L$\ invests,\ then firm $M$\ invests immediately. Consider then the
+incentives of firm $L$\ to deviate from $x^{c}$and invest earlier at $X_{t}<x^{c}$. We require
+that\ $V_{Lt}^{s}\leq V_{Lt}^{c}$ at any point in time, so that firm $L$\ has no unilateral
+incentive to invest as a leader. Given the definition of $\underline{x}_{L}^{c}$ in, this implies
+$x^{c}\geq \underline{x}_{L}^{c}$.
+
+Consider the incentives of firm $L$ to deviate from the equilibrium threshold $x^{c}$ and invest
+later at $X_{t}>x^{c}$. Note that the minimum investment threshold at which firm $L$\ has a
+unilateral incentive to invest jointly with firm $M$\ is given by $\underline{x}_{L}^{c}$. Assuming that firm $M$\ has no unilateral incentive to deviate as a follower, firm $M$\
+invests immediately if firm $L$ invests, and hence it follows that $%
+\underline{x}_{L}^{c}$ is a feasible joint-investment threshold as long as firm $L$\ believes that
+firm $M$\ will invest at $\underline{x}_{L}^{c}$. This argument applies to any investment threshold in the range $x^{c}\in (%
+\underline{x}_{L}^{c},x_{L}^{\ast c}).$ At the optimal joint-investment threshold $x_{L}^{c\ast
+}$, it is a dominant strategy for firm $L$\ to invest regardless of the beliefs about firm $M$,
+and firm $M$\ invests immediately. Hence, $x^{c}\leq x_{L}^{c\ast }$.
+
+Consider the incentives of firm $M$ to deviate from the equilibrium threshold $x^{c}$ and invest
+later at $X_{t}>x^{c}$. For this sake, we take into account the optionality of investment: if
+firm $M$\ does not invest when firm $L$\ does, it will invest optimally in the future. The
+optimal threshold of firm $M$\ as a follower is given by $x_{L}^{s}$. Consistent with
+\cite{pawlina2006}, we conjecture and later verify that a sufficient condition so that firm $M$\
+has no incentives to delay its
+investment at $x^{c}$ is given by $x_{L}^{s}\leq x^{c}$. Given $%
+x_{L}^{s}\leq x^{c}$, and conditional on firm $L$\ investing at $x^{c}$%
+, firm $L$\ invests immediately.
+
+Last, consider the incentives of firm $M$ to invest earlier than the joint-investment threshold
+for some $X_{t}<x^{c}$. Two alternative cases may arise. The first is that firm $M$\ deviates
+by investing earlier in the range $x_{M}^{s}<X_{t}<x^{c}$. In this range, firm $M$ has no
+incentive to become a leader, because $X_{t}$ is already above its optimal follower threshold;
+hence, if firm $L$\ invests at $x^{c}$, firm $M$\ will optimally invest at the same time. The
+second case is that firm $M$\ deviates in the range $X_{t}<x_{M}^{s}$. The value of firm $M$\ as
+a leader may be lower, equal, or higher than its value as a follower in the range $x_{L}^{s}\leq
+X_{t}<x_{M}^{s}$. If its value as a leader is lower than as a follower, then firm $M$\ optimally
+waits. If its value as a leader is higher than as a follower, the optimal threshold at which
+firm $M $\ should invest as a leader is equal to $x_{L}^{s}$; by construction, however, the
+threshold $x_{L}^{s}$ is so that firm $M$\ is indifferent between investing as a follower and as a
+leader. Hence, firm $M$\ has no incentives to invest earlier than $x^{c}$ at
+$X_{t}<x_{M}^{s}<x^{c}$.
+
+Put together, the conditions so that neither firm $L$\ nor firm $M$ deviate from the clustering
+threshold $x^{c}$ are given by $V_{Lt}^{s}\leq
+V_{Lt}^{c}$ and $x_{L}^{s}\leq x^{c}$. Consistent with \cite%
+{pawlina2006}, we prove that if $V_{Lt}^{s}\leq V_{Lt}^{c}$, then $%
+x_{M}^{s}<x^{c}.$ Moreover, given that $\widetilde{x}_{L}<x_{M}^{s}$, it
+follows that $V_{Lt}^{s}\leq V_{Lt}^{c}$ also implies $x^{c}>\widetilde{%
+x}_{L}$. Therefore, if firm $M$ has no incentive to deviate as a follower, then neither does
+firm $L$. The only relevant condition for a clustering equilibrium to hold is $V_{Lt}^{s}\leq
+V_{Lt}^{c}$.
+
+%%%%\subsection{Threshold $\protect\underline{x}_{L}^{c}$}
+%%%%
+%%%%In the body of the paper, we define the threshold $\underline{x}_{L}^{c}$ so
+%%%%that firm $L$\ has no unilateral incentives to deviate, namely,%
+%%%%\begin{equation*}
+%%%%\underline{x}_{L}^{c}=\inf \{x^{c}\in (0,x_{L}^{c\ast }]:V_{Lt}^{s}\leq V_{Lt}^{c}\forall x^{c}\in
+%%%%(0,x_{L}^{c\ast }]\},
+%%%%\end{equation*}%
+%%%%where $V_{Lt}^{c}$ is the preinvestment value of firm $L$\ when both firms
+%%%%invest at a given clustering equilibrium threshold $x^{c}$. To derive $%
+%%%%\underline{x}_{L}^{c}$ analytically, we define the surplus function $\xi
+%%%%_{Lt}=V_{Lt}^{s}-V_{Lt}^{c}$, assuming immediate exercise at the leader investment threshold so
+%%%%that {\fontsize{7.5}{10}\selectfont\mathtight\begin{align*} \xi _{Lt} & = \left[ \left( \Lambda
+%%%%_{L}K+K\right) ^{-\frac{1}{\varepsilon
+%%%%}}\Lambda _{L}-\left( 2K\right) ^{-\frac{1}{\varepsilon }}\right] \frac{K}{%
+%%%%\delta }X_{t}-fK+\left[ \left( \Lambda _{L}K+\Lambda _{M}K\right) ^{-\frac{1%
+%%%%}{\varepsilon }}-\left( \Lambda _{L}K+K\right) ^{-\frac{1}{\varepsilon }}%
+%%%%\right]\\
+%%%%& \times \Lambda _{L}\frac{K}{\delta }\left( X_{t}\right) ^{\upsilon }\left( x_{M}^{s\ast }\right)
+%%%%^{1-\upsilon } - \left[ \left( \Lambda _{L}K+\Lambda _{M}K\right) ^{-\frac{1}{\varepsilon
+%%%%}}\Lambda _{L}-\left( 2K\right) ^{-\frac{1}{\varepsilon }}\right] \frac{K}{%
+%%%%\delta }\left( X_{t}\right) ^{\upsilon }\left( x^{c}\right) ^{1-\upsilon }+fK\left( X_{t}\right)
+%%%%^{\upsilon }\left( x^{c}\right) ^{-\upsilon }.
+%%%%\end{align*}}
+%%%%
+%%%%It is straightforward to show that $\xi _{Lt}$ is strictly concave in $X_{t}$%
+%%%%. Moreover, the function $\xi _{Lt}$ has a unique maximum given by $\frac{%
+%%%%\partial \xi _{Lt}}{\partial X_{t}}=0.$ Consistent with \cite%
+%%%%{fudenberg1985}, such maximum is attained at $X_{t}=$ $x_{L}^{s\ast }$, where $x_{L}^{s\ast }$ is
+%%%%the Stackelberg leader investment threshold defined in Proposition~\ref{p2}. By construction,
+%%%%$V_{Lt}^{s}$ attains its maximum value at the first-best leader strategy for firm $L$. Hence, if
+%%%%we
+%%%%search for an $X_{t}$ so that $V_{Lt}^{c}$ is to be equal or higher than $%
+%%%%V_{Lt}^{s}$, the minimum value to do so is at the highest value for $%
+%%%%V_{Lt}^{s}$.
+%%%%
+%%%%We thus obtain $\underline{x}_{L}^{c}$ by evaluating $\xi _{Lt}$ at $X_{t}=$ $x_{L}^{s\ast }$ and
+%%%%equating $\xi _{Lt}$ to zero. The corresponding
+%%%%equation that solves $\underline{x}_{L}^{c}$ is given by%
+%%%%\begin{align}
+%%%%& \frac{f}{\upsilon -1}+\left[ \left( \Lambda _{L}K+\Lambda _{M}K\right) ^{-%
+%%%%\frac{1}{\varepsilon }}-\left( \Lambda _{L}K+K\right) ^{-\frac{1}{%
+%%%%\varepsilon }}\right] \frac{\Lambda _{L}}{\delta }x_{M}^{s\ast }\left( \frac{%
+%%%%x_{L}^{s\ast }}{x_{M}^{s\ast }}\right) ^{\upsilon }= \notag\\
+%%%%& \quad \left[ \left( \Lambda _{L}K+\Lambda _{M}K\right) ^{-\frac{1}{\varepsilon }%
+%%%%}\Lambda _{L}\frac{\underline{x}_{L}^{c}}{\delta }-\left( 2K\right) ^{-\frac{%
+%%%%1}{\varepsilon }}\frac{\underline{x}_{L}^{c}}{\delta }-f\right] \left( \frac{%
+%%%%x_{L}^{s\ast }}{\underline{x}_{L}^{c}}\right) ^{\upsilon }. \label{xlowerbar}
+%%%%\end{align}
+%%%%
+%%%%\subsection{Proof that $V_{Lt}^{s}\leq V_{Lt}^{c}$ Implies $x^{c}>x_{M}^{s}$}
+%%%%
+%%%%For a clustering equilibrium to occur, we require that $V_{Lt}^{s}\leq
+%%%%V_{Lt}^{c}$ and $x_{M}^{s}<x^{c}$. We hereby prove that if $%
+%%%%V_{Lt}^{s}\leq V_{Lt}^{c}$ for firm $L$, it also holds that $%
+%%%%x_{M}^{s}<x^{c}$ for firm $M$. The study by \cite{pawlina2006} provides a similar proof and yet
+%%%%focuses on the Pareto optimal equilibrium of the game in which $x^{c}=x_{L}^{c\ast }$. Given
+%%%%that we predict multiple clustering equilibria in the range $x^{c}\in \lbrack
+%%%%\underline{x}_{L}^{c},x_{L}^{c\ast }]$, we show that the aforementioned property holds for the
+%%%%entire range of values of $x^{c}$.
+%%%%
+%%%%For the sake of exposition, we denote a feasible clustering equilibrium threshold of the model as
+%%%%$x^{c}\equiv \rho x_{L}^{c\ast }$ for $\rho \leq 1$. The case of $\rho =1$ corresponds to the
+%%%%upper bound of the
+%%%%clustering equilibrium thresholds and the Pareto optimal strategy $%
+%%%%x_{L}^{c\ast }$. The lower bound of $\rho $ corresponds to the minimum clustering equilibrium
+%%%%threshold $x^{c}=\underline{x}_{L}^{c}$. While we can infer such lower bound from
+%%%%(\ref{xlowerbar}), this is not necessary for the sake of exposition.
+%%%%
+%%%%As a first step, we consider the surplus function $\xi _{Lt}=V_{Lt}^{s}-V_{Lt}^{c}$ and assume
+%%%%immediate exercise at the leader investment threshold $x_{L}^{s\ast }$. The rationale for this
+%%%%assumption follows \cite{fudenberg1985}. Because $V_{Lt}^{s}$ attains its maximum value at the
+%%%%first-best leader strategy for firm $L$, we require $V_{Lt}^{c\ast }$ to be equal or higher than
+%%%%$V_{Lt}^{s}$ at $X_{t}=x_{L}^{s\ast }.$ In other words, we require $\xi _{Lt}\leq 0$ at
+%%%%$X_{t}=x_{L}^{s\ast }$.
+%%%%
+%%%%As a second step, we re-express the value of firm $L$\ under the clustering equilibrium strategy
+%%%%$x^{c}$ $\forall X_{t}<x^{c}$ so that
+%%%%\[
+%%%%V_{Lt}^{c}=\left( 2K\right) ^{-\frac{1}{\varepsilon }}\frac{K}{\delta }%
+%%%%X_{t}+\frac{fK}{\upsilon -1}\left[ 1+\upsilon \left( \rho -1\right) \right] \left(
+%%%%\frac{X_{t}}{x^{c}}\right) ^{\upsilon },
+%%%%\]
+%%%%\noindent where this alternative expression of $V_{Lt}^{c}$ relies on the value-matching condition
+%%%%discussed in Appendix A.
+%%%%
+%%%%When $\rho =1,$ the clustering strategy is the optimal strategy for firm $L$%
+%%%%\ so that the smooth pasting condition also holds. When $\rho <1$, the value-matching condition
+%%%%of firm $L$\ ensures that firm $L$\ invests at a threshold $x^{c}$ so that its growth option value
+%%%%before joint investment is
+%%%%positive. By construction, then, the value-matching condition for firm $L$%
+%%%%\ ensures $\rho >\frac{\upsilon -1}{\upsilon }$. We replace $V_{Lt}^{c}$ by the expression above
+%%%%in $\xi _{Lt}$.
+%%%%
+%%%%Reordering, we obtain%
+%%%%\begin{equation}
+%%%%1-\left[ 1+\upsilon \left( \rho -1\right) \right] \left( \frac{x_{L}^{s\ast }%
+%%%%}{x^{c}}\right) ^{\upsilon }+\upsilon \left[ \frac{\left( \Lambda _{L}+\Lambda _{M}\right)
+%%%%^{-\frac{1}{\varepsilon }}\Lambda _{L}-\left( \Lambda _{L}+1\right) ^{-\frac{1}{\varepsilon
+%%%%}}\Lambda _{L}}{\left( \Lambda _{L}+\Lambda _{M}\right) ^{-\frac{1}{\varepsilon }}\Lambda
+%%%%_{M}-\left(
+%%%%\Lambda _{L}+1\right) ^{-\frac{1}{\varepsilon }}}\right] \left( \frac{%
+%%%%x_{L}^{s\ast }}{x_{M}^{s\ast }}\right) ^{\upsilon }\leq 0, \label{eqproof}
+%%%%\end{equation}%
+%%%%\noindent where this expression already suggests that the inequality $\xi _{Lt}\leq 0$ is affected
+%%%%by the ranking of the thresholds $x_{L}^{s\ast }$, $x_{M}^{s\ast }$, and $x^{c}\equiv \rho
+%%%%x_{L}^{c\ast }$.
+%%%%
+%%%%As a third step, we re-express the inequality in (\ref{eqproof}), focusing
+%%%%on the ratio $\frac{x_{M}^{s}}{x^{c}}$ so that%
+%%%%\begin{equation*}
+%%%%\left( \frac{x_{M}^{s\ast }}{x^{c}}\right) ^{\upsilon }\leq \frac{%
+%%%%\upsilon \frac{\left( \Lambda _{L}+1\right) ^{-\frac{1}{\varepsilon }%
+%%%%}\Lambda _{L}-\left( \Lambda _{L}+\Lambda _{M}\right) ^{-\frac{1}{%
+%%%%\varepsilon }}\Lambda _{L}}{\left( \Lambda _{L}+\Lambda _{M}\right) ^{-\frac{%
+%%%%1}{\varepsilon }}\Lambda _{M}-\left( \Lambda _{L}+1\right) ^{-\frac{1}{%
+%%%%\varepsilon }}}}{\left( \frac{x^{c}}{x_{L}^{s\ast }}\right) ^{\upsilon }-%
+%%%%\left[ 1+\upsilon \left( \rho -1\right) \right] }.
+%%%%\end{equation*}
+%%%%\noindent Last, we argue that the right-hand side of the inequality above is strictly
+%%%%lower than one, so that $V_{Lt}^{s}\leq V_{Lt}^{c\ast }$ implies $%
+%%%%x_{M}^{s}<x^{c}$ for any parameter value. In other words, we prove that
+%%%%\begin{equation*}
+%%%%\frac{\upsilon \frac{\left( \Lambda _{L}+1\right) ^{-\frac{1}{\varepsilon }%
+%%%%}\Lambda _{L}-\left( \Lambda _{L}+\Lambda _{M}\right) ^{-\frac{1}{%
+%%%%\varepsilon }}\Lambda _{L}}{\left( \Lambda _{L}+\Lambda _{M}\right) ^{-\frac{%
+%%%%1}{\varepsilon }}\Lambda _{M}-\left( \Lambda _{L}+1\right) ^{-\frac{1}{%
+%%%%\varepsilon }}}}{\left( \frac{x^{c}}{x_{L}^{s\ast }}\right) ^{\upsilon }-%
+%%%%\left[ 1+\upsilon \left( \rho -1\right) \right] }<1.
+%%%%\end{equation*}
+%%%%\noindent Reordering, the expression above implies%
+%%%%\begin{equation*}
+%%%%\left( \frac{x_{L}^{s\ast }}{x^{c}}\right) ^{\upsilon }<\left[ 1+\upsilon \frac{\left( \Lambda
+%%%%_{L}+1\right) ^{-\frac{1}{\varepsilon }}\Lambda
+%%%%_{L}-\left( \Lambda _{L}+\Lambda _{M}\right) ^{-\frac{1}{\varepsilon }%
+%%%%}\Lambda _{L}}{\left( \Lambda _{L}+\Lambda _{M}\right) ^{-\frac{1}{%
+%%%%\varepsilon }}\Lambda _{M}-\left( \Lambda _{L}+1\right) ^{-\frac{1}{%
+%%%%\varepsilon }}}+\upsilon \left( \rho -1\right) \right] ^{-1}<1,
+%%%%\end{equation*}%
+%%%%which is true for any parameter value given $\rho \in \left[ \frac{\upsilon
+%%%%-1}{\upsilon },1\right] $. As a result, we conclude that $%
+%%%%V_{Lt}^{s}\leq V_{Lt}^{c}$ implies $x_{M}^{s\ast }<x^{c}.$ Note that
+%%%%because $x_{M}^{s\ast }>\widetilde{x}_{L}$, it follows that if $%
+%%%%V_{Lt}^{s}\leq V_{Lt}^{c}$ also implies $x^{c}>\widetilde{x}_{L}$.
+%%%%
+%%%%\subsection{Pareto-dominance Criterion to Rank Clustering Equilibria}
+%%%%
+%%%%We predict that the only Pareto optimal clustering equilibrium threshold is
+%%%%given by $x_{L}^{\ast c}$. To prove this statement, we denote by $\widehat{%
+%%%%V}_{Lt}$ the value of firm $L$\ given a clustering strategy so that $%
+%%%%\widehat{x}\in \lbrack \underline{x}_{L}^{c},x_{L}^{\ast c}]$, so that $%
+%%%%\widehat{V}_{Lt}$ has the functional form specified in Appendix B.1 for firms playing simultaneous
+%%%%investment strategies. By construction, the
+%%%%maximum possible value of $\widehat{V}_{Lt}$ obtains under the threshold $%
+%%%%x_{L}^{c\ast }$. Following \cite{weeds2002}, we argue that $[\underline{x}%
+%%%%_{L}^{c},x_{L}^{\ast c}]$ forms a connected set such that there exists a
+%%%%continuum of clustering equilibria in this range. We note that $\widehat{V}%
+%%%%_{Lt}$ is increasing in both $X_{t}\ $and $\widehat{x}$ $\forall \widehat{x}%
+%%%%\in \lbrack \underline{x}_{L}^{c},x_{L}^{\ast c}]$. It is straightforward to show that
+%%%%\[
+%%%%\frac{\partial \widehat{V}_{Lt}}{\partial \widehat{x}}\geq 0 \forall \widehat{x}\in \left[
+%%%%\underline{x}_{L}^{c},x_{L}^{\ast c}\right] .
+%%%%\]
+%%%%
+%%%%The property that $\widehat{V}_{Lt}$ is increasing in $\widehat{x}$ up to $%
+%%%%x_{L}^{c\ast }$ explains why $x_{L}^{c\ast }$ is the optimal investment
+%%%%strategy for firm $L$. Similarly, $\frac{\partial \widehat{V}_{Mt}}{%
+%%%%\partial \widehat{x}}$ is increasing in $\widehat{x}$, it holds that firm $M$
+%%%%attains its highest value under the clustering equilibrium threshold $%
+%%%%x_{L}^{c\ast }$. The Pareto optimal strategy for both firms is to invest at $x_{L}^{c\ast }.$
+%%%%
+%%%%\subsection{Uniqueness of Cutoff Threshold $\Theta _{\Lambda }$}
+%%%%
+%%%%Given assumption~\ref{a1}, we prove that there exists a unique cutoff threshold $%
+%%%%\Theta _{\Lambda }\equiv \left( \Lambda _{L}-\mathbf{\Lambda }_{M}\right) /2$ so that $V_{Lt}^{s}\
+%%%%$and $V_{Lt}^{c\ast }$ intersect and are tangent to each other.
+%%%%
+%%%%As a remark, the proof of the uniqueness of the cutoff threshold $\Theta
+%%%%_{\Lambda }$ does not rely explicitly on a specific clustering threshold $%
+%%%%x^{c}.$ However, the value of the cutoff threshold $\Theta _{\Lambda }$ \textit{itself} depends
+%%%%on the clustering equilibrium threshold $x^{c}$ being considered. In the body of the paper, we
+%%%%apply the Pareto-dominance criterion to obtain testable implications, and we refer to the cutoff
+%%%%parameter $\Theta _{\Lambda }$ as the cutoff value that corresponds to the specific case in which
+%%%%firms invest jointly at the Pareto optimal clustering equilibrium strategy $x_{L}^{c\ast }$.
+%%%%
+%%%%We prove the uniqueness of the cutoff threshold $\Theta _{\Lambda }\equiv \left( \Lambda
+%%%%_{L}-\mathbf{\Lambda }_{M}\right) /2$ in multiple steps. First, we evaluate the surplus function
+%%%%$\xi _{Lt}=V_{Lt}^{s}-V_{Lt}^{c}$ at $X_{t}=x_{L}^{s\ast }$. Second, we prove that $\xi _{Lt}$
+%%%%is strictly
+%%%%decreasing in $\Lambda _{M}$. Consider first the proof that $\frac{%
+%%%%\partial V_{Lt}^{s}}{\partial \Lambda _{M}}<0$. This derivative implies
+%%%%\begin{align*}
+%%%%\frac{\partial V_{Lt}^{s}}{\partial \Lambda _{M}} & = -\frac{1}{\varepsilon }\frac{\Lambda
+%%%%_{L}}{\Lambda _{L}+\Lambda _{M}}\left( \Lambda _{L}K+\Lambda _{M}K\right) ^{-\frac{1}{\varepsilon
+%%%%}}\frac{K}{\delta }\left(X_{t}\right) ^{\upsilon }\left( x_{M}^{s}\right) ^{1-\upsilon }\\
+%%%%& \quad +\left[ \left( \Lambda _{L}K+\Lambda _{M}K\right) ^{-\frac{1}{\varepsilon }}-\left(
+%%%%\Lambda _{L}K+K\right) ^{-\frac{1}{\varepsilon }}\right] \Lambda _{L}\frac{K}{\delta }\left(
+%%%%\frac{X_{t}}{x_{M}^{s\ast }}\right) ^{\upsilon }\left( 1-\upsilon \right) \frac{\partial
+%%%%x_{M}^{s\ast }}{\partial \Lambda _{M}},
+%%%%\end{align*}
+%%%%\noindent where the term $\frac{\partial x_{M}^{s\ast }}{\partial \Lambda _{M}}$ is given by
+%%%%\[
+%%%%\frac{\partial x_{M}^{s\ast }}{\partial \Lambda _{M}}=-x_{M}^{s\ast }\left[ \left( \Lambda
+%%%%_{L}+\Lambda _{M}\right) ^{-\frac{1}{\varepsilon }}\Lambda _{M}-\left( \Lambda _{L}+1\right)
+%%%%^{-\frac{1}{\varepsilon }}\right]
+%%%%^{-1}\left( \Lambda _{L}+\Lambda _{M}\right) ^{-\frac{1}{\varepsilon }%
+%%%%}\left( 1-\frac{1}{\varepsilon }\frac{\Lambda _{M}}{\Lambda _{L}+\Lambda _{M}%
+%%%%}\right) <0.
+%%%%\]
+%%%%\noindent Replacing $\frac{\partial x_{M}^{s\ast }}{\partial \Lambda _{M}}$ in the equation for
+%%%%$\frac{\partial V_{Lt}^{s}}{\partial \Lambda _{M}}$, we conclude that $\frac{\partial
+%%%%V_{Lt}^{s}}{\partial \Lambda _{M}}<0$.
+%%%%
+%%%%Consider now the proof that $\frac{\partial V_{Lt}^{c}}{\partial \Lambda _{M}%
+%%%%}<0$. The derivative $\frac{\partial V_{Lt}^{c}}{\partial \Lambda _{M}}$ $%
+%%%%\forall X_{t}<x^{c}$ is given by
+%%%%\[
+%%%%\frac{\partial V_{Lt}^{c}}{\partial \Lambda _{M}}=-\left[ \left( \Lambda
+%%%%_{L}+\Lambda _{M}\right) ^{-\frac{1}{\varepsilon }}\Lambda _{L}-2^{-\frac{1}{%
+%%%%\varepsilon }}\right] ^{-1}\left( \frac{X_{t}}{x^{c}}\right) ^{\upsilon }%
+%%%%\frac{\partial x^{c}}{\partial \Lambda _{M}}<0.
+%%%%\]
+%%%%\noindent To characterize the sign of this derivative, we rely on the additional result that
+%%%%\[
+%%%%\frac{\partial x^{c}}{\partial \Lambda _{M}}=x^{c}\left[ \left( \Lambda
+%%%%_{L}+\Lambda _{M}\right) ^{-\frac{1}{\varepsilon }}\Lambda _{L}-2^{-\frac{1}{%
+%%%%\varepsilon }}\right] ^{-1}\left( \Lambda _{L}+\Lambda _{M}\right) ^{-\frac{1%
+%%%%}{\varepsilon }}\left( \frac{1}{\varepsilon }\frac{\Lambda _{L}}{\Lambda _{L}+\Lambda _{M}}\right)
+%%%%>0.
+%%%%\]
+%%%%
+%%%%Intuitively, the derivative $\frac{\partial V_{Lt}^{c}}{\partial \Lambda _{M}%
+%%%%}$ is strictly negative, because as $\Lambda _{M}$ increases, the market share of firm $L$\ goes
+%%%%down and so does its expected value. Reordering the terms in our previous equations,
+%%%%$\frac{\partial \xi _{Lt}}{\partial \Lambda _{M}}$ evaluated at $X_{t}=x_{L}^{s\ast }$ is equal to
+%%%%\begin{align*}
+%%%%\frac{\partial \xi _{Lt}}{\partial \Lambda _{M}} & = -\left( \Lambda _{L}K+\Lambda _{M}K\right)
+%%%%^{-\frac{1}{\varepsilon }}\frac{K}{\delta }\left( x_{L}^{s\ast }\right) ^{\upsilon }\left(
+%%%%x_{M}^{s\ast }\right) ^{1-\upsilon }\left( 1-\frac{1}{\varepsilon }\frac{\Lambda _{M}}{\Lambda
+%%%%_{L}+\Lambda _{M}}\right)\\
+%%%%& \quad \quad \left( \upsilon -1\right) \frac{\left( \Lambda _{L}K+\Lambda _{M}K\right)
+%%%%^{-\frac{1}{\varepsilon }}\Lambda _{L}-\left( \Lambda _{L}K+K\right) ^{-\frac{1}{\varepsilon
+%%%%}}\Lambda _{L}}{\left( \Lambda _{L}+\Lambda _{M}\right) ^{-\frac{1}{\varepsilon }}\Lambda
+%%%%_{M}-\left(
+%%%%\Lambda _{L}+1\right) ^{-\frac{1}{\varepsilon }}}\\
+%%%%& \quad -\left( \Lambda _{L}K+\Lambda _{M}K\right) ^{-\frac{1}{\varepsilon }}%
+%%%%\frac{K}{\delta }\left( \frac{1}{\varepsilon }\frac{\Lambda _{L}}{\Lambda _{L}+\Lambda
+%%%%_{M}}\right) \left( x_{L}^{s\ast }\right) ^{\upsilon }\left(
+%%%%x_{M}^{s\ast }\right) ^{1-\upsilon } \\
+%%%%& \quad + \left( \Lambda _{L}K+\Lambda _{M}K\right) ^{-\frac{1}{\varepsilon }}%
+%%%%\frac{K}{\delta }\left( \frac{1}{\varepsilon }\frac{\Lambda _{L}}{\Lambda _{L}+\Lambda
+%%%%_{M}}\right) \left( x_{L}^{s\ast }\right) ^{\upsilon }\left( x^{c}\right) ^{1-\upsilon }.
+%%%%\end{align*}
+%%%%
+%%%%The first term in the expression above is strictly negative, given $\upsilon
+%%%%>1$. The net effect of the second and third terms is strictly negative,
+%%%%given $x_{M}^{s\ast }<x^{c}$. As a result, if a clustering equilibrium can be sustained so that
+%%%%$\xi _{Lt}<0$ and $x_{M}^{s\ast }<x^{c}$, there exists a unique parameter value $\mathbf{\Lambda
+%%%%}_{M}\equiv \Lambda _{L}+2\Theta _{\Lambda }$, at which $V_{Lt}^{s}$ is equal and tangent to
+%%%%$V_{Lt}^{c}$.
+
+%%%%%%%%\section*{Appendix C. Asset-pricing Implications}\label{appendix: expected returns}
+%%%%%%%%
+%%%%%%%%\setcounter{section}{1}
+%%%%%%%%\def\thesubsection{C.\arabic{subsection}}
+%%%%%%%%\setcounter{subsection}{0}
+%%%%%%%%\renewcommand\theequation{C\arabic{equation}}
+%%%%%%%%
+%%%%%%%%\subsection{Identity for Firms' Betas}
+%%%%%%%%
+%%%%%%%%The derivation of $\beta _{jt}$ follows from \cite{carlson2004}. Applying Ito's lemma to $V$,
+%%%%%%%%we\ note that the exposure to systematic risk of the firm equals the proportion of the replicating
+%%%%%%%%portfolio invested in the
+%%%%%%%%risky asset, so that $\beta =\frac{xV_{x}}{V}$. The exact expression for $%
+%%%%%%%%\beta _{jt}$ depends on the equilibrium outcome. In the leader-follower equilibrium, the beta of
+%%%%%%%%firm $L$ or $\beta _{Lt}^{s}$ equals $1+\left(
+%%%%%%%%\upsilon -1\right) \frac{1}{\delta V_{Lt}^{s}}2^{-\frac{1}{\varepsilon }%
+%%%%%%%%}K^{1-\frac{1}{\varepsilon }}>1$ if $X_{t}\leq x_{L}^{s}$, $1+\left( \upsilon -1\right)
+%%%%%%%%\frac{1}{\delta V_{Lt}^{s}}\left( 1+\Lambda _{L}\right) K^{1-\frac{1}{\varepsilon }}<1$ if
+%%%%%%%%$x_{L}^{s}<X_{t}\leq x_{M}^{s},$ and
+%%%%%%%%equals one otherwise. The beta of firm $M$ or $\beta _{Mt}^{s}$ equals $%
+%%%%%%%%1+\left( \upsilon -1\right) \frac{1}{\delta V_{Mt}^{s}}2^{-\frac{1}{%
+%%%%%%%%\varepsilon }}K^{1-\frac{1}{\varepsilon }}<1$ if $X_{t}\leq x_{L}^{s}$, $1+\left( \upsilon
+%%%%%%%%-1\right) \frac{1}{\delta V_{Mt}^{s}}\left( 1+\Lambda _{L}\right) K^{1-\frac{1}{\varepsilon }}>1$
+%%%%%%%%if $x_{L}^{s}<X_{t}\leq
+%%%%%%%%x_{M}^{s},$ and equals one otherwise. In the clustering equilibrium, $%
+%%%%%%%%\beta _{jt}^{c}$ equals $1+\left( \upsilon -1\right) \frac{1}{\delta
+%%%%%%%%V_{t}^{c}}2^{-\frac{1}{\varepsilon }}K^{1-\frac{1}{\varepsilon }}$ if $%
+%%%%%%%%X_{t}\leq x^{c}$ and equals one if $X_{t}>x^{c}$.
+%%%%%%%%
+%%%%%%%%\subsection{Intraindustry Comovement in Betas}
+%%%%%%%%
+%%%%%%%%For any investment strategy, the definition of firms' betas in (\ref{beta}) implies that the covariance in firms'
+%%%%%%%%betas depends on the covariance in firms' earnings-to-value ratios, and hence
+%%%%%%%%\[
+%%%%%%%%sign\left[ cov\left( \beta _{Lt},\beta _{Mt}\right) \right] =sign\left[
+%%%%%%%%cov\left( V_{Lt}-\frac{\pi _{Lt}}{\delta },V_{Mt}-\frac{\pi _{Mt}}{\delta }%
+%%%%%%%%\right) \right] .
+%%%%%%%%\]
+%%%%%%%%
+%%%%%%%%When $\sigma _{\Lambda }\leq \Theta _{\Lambda }$, both firms expect an increase in value upon
+%%%%%%%%investment, $\Delta \pi _{jt}^{c-}=0$ and $\Delta \pi _{jt}^{c+}=0$. This implies that, before
+%%%%%%%%investment, $V_{jt}-\frac{\pi _{jt}}{\delta }=G_{jt}$, where $G_{jt}$ is the value of the growth
+%%%%%%%%option of firm $j$, and
+%%%%%%%%\[
+%%%%%%%%cov\left( G_{Lt},G_{Mt}\right) =\kappa _{L}^{c}\times \kappa _{M}^{c}\times \sigma
+%%%%%%%%_{x}^{2}X_{t}^{2\upsilon }>0,
+%%%%%%%%\]
+%%%%%%%%\noindent where we define $\kappa _{j}>0$ so that $G_{jt}\equiv \kappa _{j}X_{t}^{\upsilon }$. Hence, we conclude that $cov\left( \beta _{Lt},\beta _{Mt}\right) >0$ if $X_{t}<x^{c}.$
+%%%%%%%%
+%%%%%%%%Conversely, when $\sigma _{\Lambda }>\Theta _{\Lambda }$, each firm expects
+%%%%%%%%a reduction in its profits upon the investment of its competitor, where $%
+%%%%%%%%\Delta \pi _{Mt}^{s-}<0$ and $\Delta \pi _{Lt}^{s+}<0$. Consider first the interval
+%%%%%%%%$x_{L}^{s}<X_{t}<x_{M}^{s}$. In this case, firm $L$ only expects a reduction in its profits,
+%%%%%%%%whereas firm $M$ only expects an increase in its
+%%%%%%%%profits upon investment. As a result, $V_{Lt}-\frac{\pi _{Lt}}{\delta }%
+%%%%%%%%=\Delta \pi _{Lt}^{s+}<0$, while $V_{Mt}-\frac{\pi _{Mt}}{\delta }=G_{Mt}$. Put together, this
+%%%%%%%%implies that $cov\left( \beta _{Lt},\beta _{Mt}\right) <0$ if $x_{L}^{s}<X_{t}<x_{M}^{s}$ because
+%%%%%%%%\[
+%%%%%%%%cov\left( \Delta \pi _{Lt}^{s+},G_{Mt}\right) =\Psi _{L}^{s}\times \Upsilon _{M}^{s}\times \sigma
+%%%%%%%%_{x}^{2}X_{t}^{2\upsilon }<0,
+%%%%%%%%\]
+%%%%%%%%\noindent where $\Psi _{L}^{s}=$ $\Delta \pi _{Lt}^{s+}X_{t}^{-\upsilon }<0.$ Similarly, given
+%%%%%%%%$\Delta \pi _{Mt}^{s-}<0$, the same argument applies to show that $cov\left( \beta _{Lt},\beta
+%%%%%%%%_{Mt}\right) <0$ when $X_{t}<x_{L}^{s} $.
+%%%%%%%%
+%%%%%%%%\subsection{Cross-sectional Effects}
+%%%%%%%%
+%%%%%%%%Consider the leader-follower equilibrium in which $\lambda ^{s}>0.$ Consider the interval
+%%%%%%%%$X_{t}<x_{L}^{s}$. To prove that $\sigma _{\beta t}^{s}>\sigma _{\beta t}^{s\ast }$, it suffices
+%%%%%%%%to show that $\beta _{Lt}^{s}-\beta _{Mt}^{s}>\beta _{Lt}^{s\ast }-\beta _{Mt}^{s\ast }.$ By
+%%%%%%%%construction, we know that $V_{Lt}^{s}<V_{Lt}^{s\ast }$ if $\lambda ^{s}>0\ $%
+%%%%%%%%so that $\beta _{Lt}^{s}-\beta _{Lt}^{s\ast }>0$. Because $%
+%%%%%%%%x_{L}^{s}<x_{L}^{s\ast }$, the expected reduction in prices is stronger in the leader-follower
+%%%%%%%%equilibrium in which $\lambda ^{s}>0$ so that $\beta _{Mt}^{s}-\beta _{Mt}^{s\ast }<0$. Hence,
+%%%%%%%%$\beta _{Lt}^{s}-\beta _{Mt}^{s}>\beta _{Lt}^{s\ast }-\beta _{Mt}^{s\ast }$ holds, because $\beta
+%%%%%%%%_{Lt}^{s}-\beta _{Lt}^{s\ast }>0>\beta _{Mt}^{s}-\beta _{Mt}^{s\ast }$. Consider the interval
+%%%%%%%%$x_{L}^{s}<X_{t}<x_{L}^{s\ast }$. Because $\beta _{Mt}^{s}>\beta _{Lt}^{s}$, we prove that
+%%%%%%%%$\sigma _{\beta t}^{s}>\sigma _{\beta t}^{s\ast }$\ by showing that $\beta _{Mt}^{s}-\beta
+%%%%%%%%_{Lt}^{s}>\beta _{Lt}^{s\ast }-\beta _{Mt}^{s\ast }$. Because $\beta _{Mt}^{s}>1$ and $\beta
+%%%%%%%%_{Lt}^{s}<1$, we know that $\beta _{Mt}^{s}-\beta _{Lt}^{s}>0.$ Conversely, because $\beta
+%%%%%%%%_{Lt}^{s\ast }>1$ and $\beta _{Mt}^{s\ast }<1$, we know that $\beta _{Lt}^{s\ast }-\beta
+%%%%%%%%_{Mt}^{s\ast }>0.$ Hence, $\beta _{Mt}^{s}-\beta _{Lt}^{s}>\beta _{Lt}^{s\ast }-\beta
+%%%%%%%%_{Mt}^{s\ast }$ holds, because $\beta _{Mt}^{s}-\beta _{Lt}^{s}>0>\beta _{Lt}^{s\ast }-\beta
+%%%%%%%%_{Mt}^{s\ast }$.
+%%%%%%%%
+%%%%%%%%Consider the Pareto optimal clustering equilibrium. Consider the interval $%
+%%%%%%%%X_{t}<x_{L}^{s}$. To prove that $\sigma _{\beta t}^{s}>\sigma _{\beta t}^{c\ast }$, it suffices
+%%%%%%%%to show that $\beta _{Lt}^{s}-\beta _{Mt}^{s}>\beta _{Lt}^{c\ast }-\beta _{Mt}^{c\ast }$. All
+%%%%%%%%else equal,
+%%%%%%%%given that the option of firm $L$\ is more in the money, because $%
+%%%%%%%%x_{L}^{s}<x_{L}^{c\ast }$, it is straightforward to show that $\beta _{Lt}^{s}-\beta _{Lt}^{c\ast
+%%%%%%%%}>0$ for any parameter value. Analogously,
+%%%%%%%%given that the option of firm $M$\ is less in the money, because $%
+%%%%%%%%x_{M}^{s}>x_{L}^{c\ast }$, it is straightforward to show that $\beta _{Mt}^{s}-\beta _{Mt}^{c\ast
+%%%%%%%%}<0$. Hence, $\beta _{Lt}^{s}-\beta _{Lt}^{c\ast }>\beta _{Mt}^{s}-\beta _{Mt}^{c\ast }$ holds,
+%%%%%%%%because $\beta _{Lt}^{s}-\beta _{Lt}^{c\ast }>0>\beta _{Mt}^{s}-\beta _{Mt}^{c\ast }$. Consider
+%%%%%%%%the interval $x_{L}^{s}<X_{t}<x_{M}^{s}$. In this case, it suffices to show that $\beta
+%%%%%%%%_{Mt}^{s}-\beta _{Lt}^{s}>\beta _{Lt}^{c\ast }-\beta _{Mt}^{c\ast }$. A sufficient yet not
+%%%%%%%%necessary condition for this to happen is $\beta _{Mt}^{s}-\beta _{Lt}^{s}>\beta _{Lt}^{c\ast
+%%%%%%%%}-\beta _{Mt}^{c\ast }$, which does hold in our setting, because $\beta _{Mt}^{s}>\beta
+%%%%%%%%_{Lt}^{c\ast }$ and $\beta _{Lt}^{s}<\beta _{Mt}^{c\ast }$. The corresponding lengthy derivation
+%%%%%%%%is omitted for brevity and is available upon request.
+%%%%%%%%
+%%%%%%%%\section*{Appendix D. Model with Heterogeneous-installed Capacities}\label{appendix: proposition installed capacities}
+%%%%%%%%
+%%%%%%%%Consider first the sorting condition. We denote by $X_{t}\widehat{Y}_{j}^{-%
+%%%%%%%%\frac{1}{\varepsilon }}$ the expected price by firm $j$ at time $t$. In equilibrium,
+%%%%%%%%$X_{t}\widehat{Y}_{j}^{-\frac{1}{\varepsilon }}$ is equal to the market price $p_{t}$ when $\Delta
+%%%%%%%%\pi _{jt}^{-}=0$ and $\Delta \pi _{jt}^{+}=0$; we use a more general notation, because the sorting
+%%%%%%%%conditions should hold for any given investment strategy $x_{j}$. The preinvestment value
+%%%%%%%%function $V_{jt}$ is defined for $X_{t}<x_{j}$ for any investment strategy $x_{j}$ and taking as
+%%%%%%%%given the strategy of firm $-j$ so that
+%%%%%%%%\[
+%%%%%%%%V_{jt}=\left( \widehat{Y}_{j}^{-}\right) ^{-\frac{1}{\varepsilon }}K_{j}%
+%%%%%%%%\frac{X_{t}}{\delta }+\left[ \left( \widehat{Y}_{j}^{+}\right) ^{-\frac{1}{%
+%%%%%%%%\varepsilon }}\frac{x_{j}}{\delta }\Lambda K_{j}-\left( \widehat{Y}%
+%%%%%%%%_{j}^{-}\right) ^{-\frac{1}{\varepsilon }}\frac{x_{j}}{\delta }K_{j}-fK_{j}%
+%%%%%%%%\right] \left( \text{$\frac{X_{t}}{x_{j}}$}\right) ^{\upsilon }.
+%%%%%%%%\]
+%%%%%%%%
+%%%%%%%%Denote the market share of firm $j$ before investment by $\mathbf{s}%
+%%%%%%%%_{j}^{-}\equiv \frac{K_{j}}{\widehat{Y}_{j}^{-}}$, and upon investment by $%
+%%%%%%%%\mathbf{s}_{j}^{+}\equiv \frac{\Lambda K_{j}}{\widehat{Y}_{j}^{+}}$. All else being equal, firms
+%%%%%%%%with more installed capacity $K_{j}$ wait longer to invest, namely,
+%%%%%%%%{\fontsize{7.6}{10}\selectfont\begin{align*}
+%%%%%%%%\frac{\partial }{\partial K_{j}}\left[ \frac{\partial V_{jt}}{\partial x_{j}%
+%%%%%%%%}\right] =\upsilon \frac{f}{x_{j}}\left( \text{$\frac{X_{t}}{x_{j}}$}\right) ^{\upsilon }+\left(
+%%%%%%%%\upsilon -1\right) \frac{1}{\delta }\left[ \left(
+%%%%%%%%\widehat{Y}_{j}^{-}\right) ^{-\frac{1}{\varepsilon }}\left( 1-\frac{1}{%
+%%%%%%%%\varepsilon }\mathbf{s}_{j}^{-}\right) -\left( \widehat{Y}_{j}^{+}\right) ^{-%
+%%%%%%%%\frac{1}{\varepsilon }}\left( 1-\frac{1}{\varepsilon }\mathbf{s}%
+%%%%%%%%_{j}^{+}\right) \Lambda \right] \left( \text{$\frac{X_{t}}{x_{j}}$}\right) ^{\upsilon }>0.
+%%%%%%%%\end{align*}}\noindent The sorting condition shows that the net gain from investing in capital\ for firm $j$ is
+%%%%%%%%decreasing in $K_{j}$. The first term shows that firms with higher $K_{j}$ are subject to higher
+%%%%%%%%fixed costs of investment, which gives them an incentive to delay. In the second term, the first
+%%%%%%%%factor is strictly positive, because $\upsilon >1$.
+%%%%%%%%
+%%%%%%%%We solve for the equilibrium strategies of the duopoly game, as in Appendix B. The
+%%%%%%%%subgame-perfect leader-follower equilibrium strategies for $N=2$ with $K_{L}<K_{M}$ are so that
+%%%%%%%%$x_{L}^{s}<x_{M}^{s}$, where the threshold of firm $L$\ $x_{L}^{s}$ is equal to
+%%%%%%%%\begin{align*}
+%%%%%%%%&x_{L}^{s}=\\
+%%%%%%%%&\frac{f\left( K_{L}-\lambda ^{s}K_{M}\right) \frac{\upsilon
+%%%%%%%%\delta }{\upsilon -1}}{\left[ \left( \Lambda K_{L}+K_{M}\right) ^{-\frac{1}{%
+%%%%%%%%\varepsilon }}\Lambda K_{L}-\left( K_{L}+K_{M}\right) ^{-\frac{1}{%
+%%%%%%%%\varepsilon }}K_{L}\right] -\lambda ^{s}\left[ \left( \Lambda K_{M}+K_{L}\right)
+%%%%%%%%^{-\frac{1}{\varepsilon }}\Lambda K_{M}-\left( \Lambda K_{L}+K_{M}\right) ^{-\frac{1}{\varepsilon
+%%%%%%%%}}K_{M}\right] },
+%%%%%%%%\end{align*}
+%%%%%%%%and the investment threshold of firm $M$\ equals
+%%%%%%%%\[
+%%%%%%%%x_{M}^{s}=\frac{fK_{M}\frac{\delta \upsilon }{\upsilon -1}}{\left( \Lambda K_{L}+\Lambda
+%%%%%%%%K_{M}\right) ^{-\frac{1}{\varepsilon }}\Lambda K_{M}-\left( \Lambda K_{L}+K_{M}\right)
+%%%%%%%%^{-\frac{1}{\varepsilon }}K_{M}},
+%%%%%%%%\]
+%%%%%%%%\noindent where the multiplier $\lambda ^{s}\geq 0$ is so that (\ref{ic3}) holds
+%%%%%%%%in equilibrium. The Pareto optimal clustering equilibrium strategy for $%
+%%%%%%%%N=2 $ with $K_{L}<K_{M}$ is so that both firms invest at the threshold
+%%%%%%%%\[
+%%%%%%%%x_{L}^{c\ast }=\frac{fK_{L}\frac{\delta \upsilon }{\upsilon -1}}{\left( \Lambda K_{L}+\Lambda
+%%%%%%%%K_{M}\right) ^{-\frac{1}{\varepsilon }}\Lambda K_{L}-\left( K_{L}+K_{M}\right)
+%%%%%%%%^{-\frac{1}{\varepsilon }}K_{L}}.
+%%%%%%%%\]
+%%%%%%%%
+%%%%%%%%Consistent with our analysis in Section~\ref{s1}, we consider the Pareto-dominance refinement to
+%%%%%%%%eliminate the alternative clustering equilibria of the game that are not Pareto optimal. We then
+%%%%%%%%use (\ref{indif}) to determine the level of $\sigma _{K}\ $at which firm $L$\ is indifferent
+%%%%%%%%between the leader-follower and the Pareto optimal clustering equilibria, and we define such a
+%%%%%%%%parameter by $\Theta _{K}.$ When $\sigma _{K}>\Theta _{K}$, firm $L$\ strictly prefers to become
+%%%%%%%%a leader and enjoy early monopoly rents. Conversely, when $\sigma _{K}\leq \Theta _{K}$, it is
+%%%%%%%%Pareto optimal for both firms to invest jointly at the threshold $x_{L}^{c\ast }$.\vs{6}
+%%%%%%%%
+%%%%%%%%\enlargethispage{6pt}
+%%%%%%%%
+%%%%%%%%\section*{Appendix E. Industry Dynamics and the Intraindustry Value Spread}
+%%%%%%%%\label{appendix: qtheory duopolies}
+%%%%%%%%
+%%%%%%%%We solve the implications of the model in terms of the intraindustry value spread in three steps.
+%%%%%%%%\ First, we derive the sorting condition of the game in terms of firms' marginal product of
+%%%%%%%%capital. Second, we derive firms' equilibrium investment strategies using the same approach as
+%%%%%%%%in\break Appendix~B.
+%%%%%%%%
+%%%%%%%%\setcounter{section}{1}
+%%%%%%%%\def\thesubsection{E.\arabic{subsection}}
+%%%%%%%%\setcounter{subsection}{0}
+%%%%%%%%\renewcommand\theequation{E\arabic{equation}}
+%%%%%%%%
+%%%%%%%%\subsection{Sorting Condition}
+%%%%%%%%
+%%%%%%%%We begin by re-expressing the marginal product of capital in\ Lemma~\ref{l1} so that
+%%%%%%%%\[
+%%%%%%%%q_{jt}\equiv \frac{V_{jt}}{K_{j}}\left( 1-\frac{1}{\varepsilon }\right) -%
+%%%%%%%%\frac{1}{\varepsilon }\frac{f}{x_{j}}\left( \frac{X_{t}}{x_{j}}\right) ^{\upsilon }.
+%%%%%%%%\]
+%%%%%%%%\removelastskip\pagebreak
+%%%%%%%%
+%%%%%%%%
+%%%%%%%%We derive the sorting condition with respect to $q_{j0}$ for three difference cases: one in which
+%%%%%%%%firms differ only in $\Lambda _{j}$, another in which firms only differ on $K_{j}$, and a third in
+%%%%%%%%which firms differ both in $K_{j}$ and $\Lambda _{j}$. Consider first the case in which firms
+%%%%%%%%differ exclusively in $\Lambda _{j}$. The sorting condition with respect to $\Lambda _{j}$ is
+%%%%%%%%provided in (\ref{sort1}) and derived in Appendix B. Furthermore, for any investment strategy
+%%%%%%%%$x_{j}$, the marginal product of capital $q_{jt}$ is a monotone, strictly increasing function of
+%%%%%%%%$\Lambda _{j} $. To prove this, we derive the expression for $q_{jt}$ above with respect to
+%%%%%%%%$\Lambda _{j}$ so that
+%%%%%%%%\[
+%%%%%%%%\frac{\partial q_{jt}}{\partial \Lambda _{j}}=\frac{1}{K}\frac{\partial V_{jt}}{\partial \Lambda
+%%%%%%%%_{j}}\left( 1-\frac{1}{\varepsilon }\right) >0.
+%%%%%%%%\]
+%%%%%%%%\noindent Put together, the sorting condition in (\ref{sort1}) and the inequality above imply that
+%%%%%%%%firms with a higher $q_{j0}$ have the ability to invest earlier, namely,
+%%%%%%%%\[
+%%%%%%%%\frac{\partial }{\partial q_{j0}}\left[ \frac{\partial V_{jt}}{\partial x_{j}}\right] \equiv
+%%%%%%%%\frac{\partial \left[ \frac{\partial V_{jt}}{\partial x_{j}}\right] }{\partial \Lambda
+%%%%%%%%_{j}}\frac{\partial \Lambda _{j}}{\partial q_{j0}}>0.
+%%%%%%%%\]
+%%%%%%%%
+%%%%%%%%Consider now the case in which firms differ exclusively in $K_{j}$. We derive the expression for
+%%%%%%%%$q_{jt}$ above with respect to $K_{j}$ so that
+%%%%%%%%\[
+%%%%%%%%\frac{\partial q_{jt}}{\partial K_{j}}=\frac{1}{K_{j}}\left( 1-\frac{1}{%
+%%%%%%%%\varepsilon }\right) q_{jt}-\left( 1-\frac{1}{\varepsilon }\right) \frac{%
+%%%%%%%%V_{jt}}{K_{j}^{2}}=-\frac{1}{\varepsilon }\left[ \frac{1}{K_{j}}q_{jt}+\frac{%
+%%%%%%%%f}{x_{j}}\left( \frac{X_{t}}{x_{j}}\right) ^{\upsilon }\right] <0.
+%%%%%%%%\]
+%%%%%%%%\noindent Put together, the sorting condition in (\ref{sort2}) and the inequality above imply that
+%%%%%%%%firms with a higher $q_{j0}$ have the ability to invest earlier, namely,
+%%%%%%%%\[
+%%%%%%%%\frac{\partial }{\partial q_{j0}}\left[ \frac{\partial V_{jt}}{\partial x_{j}}\right] \equiv
+%%%%%%%%\frac{\partial \left[ \frac{\partial V_{jt}}{\partial x_{j}}\right] }{\partial
+%%%%%%%%K_{j}}\frac{\partial K_{j}}{\partial q_{j0}}>0.
+%%%%%%%%\]
+%%%%%%%%
+%%%%%%%%Lastly, consider the case in which firms differ both in their installed capacity before investment
+%%%%%%%%$K_{j}$ and their scale of production after investment $\Lambda _{j}$. Firm type is determined
+%%%%%%%%by the pair $\left\{ K_{j};c_{j}\right\} $. When firms differ in $K_{j}$ and $\Lambda _{j}$, the
+%%%%%%%%corresponding marginal sorting condition equals
+%%%%%%%%\[
+%%%%%%%%\frac{\partial }{\partial \Lambda _{j}}\left[ \frac{\partial V_{jt}}{%
+%%%%%%%%\partial x_{j}}\right] +\frac{\partial }{\partial K_{j}}\left[ \frac{%
+%%%%%%%%\partial V_{jt}}{\partial x_{j}}\right] >0.
+%%%%%%%%\]
+%%%%%%%%\noindent We redefine firm type $\left\{ K_{j};c_{j}\right\} $ in terms of firms' marginal product
+%%%%%%%%of capital. Given our results above, $q_{jt}$ is strictly decreasing in $K_{j}$ and strictly
+%%%%%%%%increasing in $\Lambda _{j}$. Consequently, for any strategy $x_{j}$, firms with a higher
+%%%%%%%%$q_{jt}$ have the ability to invest earlier.
+%%%%%%%%
+%%%%%%%%\subsection{Investment Strategies}
+%%%%%%%%
+%%%%%%%%When firms differ in $\Lambda $, we derive firms' equilibrium strategies as in Appendix B. We
+%%%%%%%%get the investment threshold $\Theta _{\Lambda }$ at which firm $L$\ is indifferent between
+%%%%%%%%investing simultaneously or sequentially using (\ref{indif}). The threshold $\Theta _{q0}$ is
+%%%%%%%%given by the function $\sigma _{q0}$ when $\sigma _{\Lambda }$ equals $\Theta _{\Lambda }$.
+%%%%%%%%Because $q_{j0}$ is strictly monotone in $\Lambda _{j}$, we restate the equilibrium outcome
+%%%%%%%%derived in Appendix B\ in terms of $q_{j0}$.
+%%%%%%%%We solve for the equilibrium strategies when firms differ exclusively in $%
+%%%%%%%%K_{j}$ in the same way. Because $q_{j0}$ is strictly monotone in $K_{j}$, we
+%%%%%%%%can restate the equilibrium outcome derived in Appendix D\ in terms of $%
+%%%%%%%%q_{j0}$.
+%%%%%%%%
+%%%%%%%%When firms differ in both $K_{j}$ and $\Lambda _{j}$, firms with higher $%
+%%%%%%%%q_{j0}$ have the ability to invest earlier, and hence the qualitative predictions of the model in
+%%%%%%%%Section~\ref{s1} also apply here. However, with
+%%%%%%%%multiple sources of heterogeneity there is no unique correspondence between (%
+%%%%%%%%\ref{indif}) and $\Theta _{q0}$. There exist multiple combinations of the pairs of $\sigma
+%%%%%%%%_{\Lambda }$ and $\sigma _{K}$ that yield the same $\sigma _{q0}$. In untabulated numerical
+%%%%%%%%examples, we obtain a clustering equilibrium when $\sigma _{q0}$ is sufficiently low (i.e.,\vpb{}
+%%%%%%%%$\sigma _{\Lambda }$ or $\sigma _{K}$ are sufficiently low), and we obtain a leader-follower
+%%%%%%%%equilibrium if $\sigma _{q0}$ is sufficiently high (i.e., $\sigma _{\Lambda } $ or $\sigma _{K}$
+%%%%%%%%are very high).
+%%%%%%%%
+%%%%%%%%\section*{Appendix F. Database Construction}
+%%%%%%%%
+%%%%%%%%The working sample is drawn from a merged CRSP/Compustat\ database spanning 1968 to 2008. We
+%%%%%%%%estimate the beta of each firm as the sum of the coefficients of monthly returns on lagged, lead,
+%%%%%%%%and contemporary market returns of the stock return of each firm\ in the sample. We compute
+%%%%%%%%betas at a monthly frequency, using five-year rolling windows containing the sixty previous
+%%%%%%%%observations. We compute stock returns in excess of the risk-free rate reported in CRSP.
+%%%%%%%%
+%%%%%%%%\looseness=1We estimate betas as the sum of the coefficients of monthly returns on lead, lagged,
+%%%%%%%%and contemporary market returns of the stock return of each firm\ in
+%%%%%%%%the sample. We compute betas at a monthly frequency. We follow \cite%
+%%%%%%%%{fama} and match each firm's CRSP stock return and betas from July of year $t $ until June of year
+%%%%%%%%$t+1$ to the corresponding accounting information in Compustat\ for the fiscal year ending in year
+%%%%%%%%$t-1.$ With the exception of lnHHI, we construct the remaining explanatory variables using
+%%%%%%%%Compustat\ tapes. lnHHI is the logarithm of the HHI\ for manufacturing industries reported by
+%%%%%%%%the U.S. Census Bureau; lnCR4 and lnCR8 are the concentration ratios for four and eight firms
+%%%%%%%%reported by the U.S. Census Bureau. Because the U.S.\ Census of Manufacturers is done every five
+%%%%%%%%years, we repeat the HHI, CR4, and CR8 of Census year $t$ over the next four years for every
+%%%%%%%%industry.
+%%%%%%%%
+%%%%%%%%The market value of equity is the product of item PRCC\_F times CSHO. The market value of assets
+%%%%%%%%$V$ is the market value of equity plus total liabilities. The total liabilities $B$ are computed
+%%%%%%%%as AT\ minus CEQ minus TXDB. Operating cash flows $\pi $ are the sum of SALE minus COGS minus
+%%%%%%%%XSGA. Investment $I\equiv \left( \Lambda -1\right) K$ is CAPX. We consider $K$ to be total
+%%%%%%%%assets AT, with the exception of $\frac{I}{K}$ where $K$ is set as lagged PPENT. The operating
+%%%%%%%%markup $m$ is the ratio of $\pi $ over SALE. All Compustat\ variables are winsorized at $1\%.$
+%%%%%%%%
+%%%%%%%%We construct the intraindustry comovement in variable $x$ at time $t$ or $%
+%%%%%%%%\omega _{xt}$ as in \cite{thomas}. For variables $x=\left\{ \beta ;R;\frac{%
+%%%%%%%%V}{K};\frac{V-B}{K-B};\frac{I}{K}\right\} $, and for each month, we consider the average of the
+%%%%%%%%correlation coefficients $C_{ij}$ between the variable $x$ of each unrepeated pair of firms $i$
+%%%%%%%%and $j$ within the same industry, so that
+%%%%%%%%\[
+%%%%%%%%C_{ij}=\frac{Cov\left( i,j\right) }{\sqrt{Var(i)\times Var(j)}}
+%%%%%%%%\]
+%%%%%%%%\noindent where $Cov\left( i,j\right) $ is the covariance between the variable $x$ of
+%%%%%%%%firms $i$ and $j$ during the window between month $t$ and month $t-60$, $%
+%%%%%%%%Var(i)$ is the variance of firm $i$'s variable $x$ in such window, and $%
+%%%%%%%%Var(j)$\ is the variance of firm $j$'s monthly variable $x$. To compute the comovement in the
+%%%%%%%%ratios $\frac{V}{K}$ and $\frac{V-B}{K-B}$, we compute the market value of equity at a monthly
+%%%%%%%%frequency, using the time series of PRCC and CSHO reported in CRSP.
+%%%%%%%%
+%%%%%%%%\section*{Appendix G. Parameter Choice}
+%%%%%%%%
+%%%%%%%%The parameters in Figures~\ref{f1},\ref{f3}, and $5$ are $r=3.5\%$, $\delta =4\%,$ $%
+%%%%%%%%\sigma =10\%$, $f=1,K=1,$ and $\Lambda _{M}=2$. In Figure~\ref{f1}, $\varepsilon =2.4$ in panel
+%%%%%%%%A, $\varepsilon =1.3$ in panel B, and $\Lambda _{L}=\Lambda _{M}+\sigma _{\Lambda }\ast 2\ $in all
+%%%%%%%%cases. In Figure~\ref{f5}, $\varepsilon =2.4$ and $X_{0}=0.05$ in panel A, $\varepsilon =1.3$
+%%%%%%%%and $X_{0}=0.15$\ in panel B, and $\Lambda _{L}=\Lambda _{M}+\sigma _{\Lambda }\ast 2\ $in all
+%%%%%%%%cases. The parameter choice for $\Lambda _{L}$ in Figure~\ref{f2} and panel A of Figure~\ref{f4}
+%%%%%%%%is $\Lambda _{L}=\Lambda _{M}+0.53$. The parameter choice for $\Lambda _{L}$ in panel B of
+%%%%%%%%Figure~\ref{f4} is $\Lambda _{L}=\Lambda _{M}+0.3$. In Figures~\ref{f2} and \ref{f4}, we represent
+%%%%%%%%firms' expected values and betas by reporting the corresponding average of firm's values and betas
+%%%%%%%%given $350$ simulations of the Brownian demand shocks.
+
+
+\begin{thebibliography}{}
+\bibitem[Ali, Klasa, and Yeung(2009)]{ali}
+Ali, A., S. Klasa, and E. Yeung. 2009. The limitations of industry concentration measures
+constructed with Compustat data:\ Implications for finance research. \textit{Review of Financial
+Studies} 22:3839--71.
+
+\bibitem[Aguerrevere(2009)]{aguerrevere} Aguerrevere, F. 2009. Real
+options, product market competition, and asset returns. \textit{Journal of Finance} 64:957--983.
+
+\bibitem[Back and Paulsen(2009)]{back} Back, K., and D. Paulsen. 2009. Open
+loop equilibria and perfect competition in option exercise games. \textit{%
+Review of Financial Studies} 22:4531--52.
+
+\bibitem[Berk, Green, and Naik(1999)]{berk} Berk, J., R. Green, and V.
+Naik. 1999. Optimal investment, growth options and security returns. \textit{%
+Journal of Finance} 54:1153--1607.
+
+\bibitem[Boyer et al.(2001)]{boyer} Boyer, M., P. Lasserre, T. Mariotti,
+and M. Moreaux. 2001. Real options, preemption, and the dynamics of industry investments. Working
+Paper.
+
+\bibitem[Carlson et al.(2014)]{carlson2012} Carlson,\ M., E. Dockner, A.
+Fisher, and R. Giammarino, 2014. Leaders, followers, and risk\ dynamics in industry equilibrium.
+\textit{Journal of Financial and Quantitative Analysis}.  Advance Access published June~4, 2014,
+10.1017/S0022109014000337.\vs{-.2}
+
+\bibitem[Carlson, Fisher, and Giammarino(2004)]{carlson2004} Carlson, M.,
+A. Fisher, and R. Giammarino. 2004. Corporate investment and asset price dynamics: Implications
+for the cross-section of returns. \textit{Journal of Finance} 59:2577--603.\vs{-.2}
+
+\bibitem[Cohen and Polk(1996)]{cohen1996} Cohen, R., and C. Polk, 1996. An
+investigation of the impact of industry factors in asset pricing tests.
+Working Paper.\vs{-.2}
+
+\bibitem[Cohen, Polk, and Vuolteenaho(2003)]{cohen} Cohen, R., C. Polk, and
+T. Vuolteenaho. 2003. The value spread. \textit{Journal of Finance} 58:609--41.\vs{-.2}
+
+\bibitem[Dixit and Pindyck(1994)]{dixit} Dixit, A., and R. Pindyck. 1994.
+\textit{Investment under uncertainty. }Princeton, NJ:\ Princeton University
+Press.
+
+\bibitem[Fama and French(1992)]{fama} Fama, E., and K. French. 1992. The
+cross-section of expected stock returns. \textit{Journal of Finance} 47:427--65.
+
+\bibitem[Fama and MacBeth(1973)]{macbeth} Fama, E., and J. MacBeth. 1973.
+Risk, return, and equilibrium: Empirical tests. \textit{Journal of Political Economy} 81:607--36.
+
+\bibitem[Fudenberg and Tirole(1985)]{fudenberg1985} Fudenberg, D., and J.
+Tirole. 1985. Preemption and rent equalization in the adoption of new technology. \textit{Review
+of Economic Studies} 52:383--401.
+
+\bibitem[Fudenberg and Tirole(1991)]{fudenberg1991}
+---------. 1991. \textit{Game theory}. Boston: MIT Press.
+
+\bibitem[Greene(2003)]{greene} Greene, W. 2003. \textit{Econometric analysis}. Upper Saddle River, NJ: Pearson.
+
+\bibitem[Grenadier(1996)]{grenadier1996} Grenadier, S. 1996. The strategic
+exercise of options:\ Development cascades and overbuilding in\ real estate markets.
+\textit{Journal of Finance} 51:1653--79.
+
+\bibitem[Grenadier(2002)]{grenadier2002} ---------. 2002. Option exercise games:
+An application to the equilibrium investment strategies of firms. \textit{Review of Financial
+Studies} 15:691--721.
+
+\bibitem[Hayashi(1982)]{hayashi} Hayashi, F. 1982. Tobin's marginal q and
+average Q: A neoclassical interpretation. \textit{Econometrica} 50:213--24.
+
+\bibitem[Hoberg and Phillips(2010)]{hoberg} Hoberg, G., and G. Phillips.
+2010. Real and financial industry booms and busts. \textit{Journal of Finance} 65:45--86.
+
+\bibitem[Khanna and Thomas(2009)]{thomas} Khanna, T., and C. Thomas. 2009.
+Synchronicity and firm interlocks in an emerging market. \textit{Journal of
+Financial Economics} 92:182--204.
+
+\bibitem[Lambrecht and Perraudin(2003)]{lambrecht} Lambrecht, B., and W.
+Perraudin. 2003. Real options and preemption under incomplete information. \textit{Journal of
+Economic Dynamics \& Control} 27:619--43.
+
+\bibitem[Moskowitz and Grimblatt(1999)]{mosk} Moskowitz, T., and M.\
+Grimblatt. 1999. Do industries explain momentum? \textit{Journal of Finance }%
+54:1249--90.
+
+\bibitem[Maskin and Tirole(1988)]{maskin} Maskin, E., and J. Tirole. 1988.
+A theory of dynamic oligopoly I: Overview and quantity competition with large fixed costs.
+\textit{Econometrica} 56:549--69.
+
+\bibitem[Mason and Weeds(2010)]{weeds2010} Mason, R., and H. Weeds. 2010.
+Investment, uncertainty and preemption. \textit{International Journal of Industrial Organization}
+28:278--87.
+
+\bibitem[Pawlina and Kort(2006)]{pawlina2006} Pawlina, G., and P. Kort.
+2006. Real options in an asymmetric duopoly: Who benefits from your competitive advantage?
+\textit{Journal of Economics and Management Strategy} 15:{\penalty 0}\hbox{1--35}.
+
+\bibitem[Posner(1975)]{posner} Posner, R. 1975. The social costs of
+monopoly and regulation. \textit{Journal of Political\ Economy} 83:807--27.
+
+\bibitem[Weeds(2002)]{weeds2002} Weeds, H. 2002. Strategic delay in a real
+options model of R\&D competition. \textit{Review of Economic Studies} 69:729--47.
+
+\bibitem[Zhang(2005)]{zhang} Zhang, L. 2005. The value premium. \textit{Journal of Finance} 60:67--103.
+\end{thebibliography}
+
+%\clearpage \thispagestyle{empty} \setcounter{figure}{0}
+%\def\thefigure{\arabic{figure}}
+%\begin{figure}[!t]%F1
+%\centerline{\includegraphics{./Art/Sample/OP-REVF140069f1.eps}} \caption{}
+%\end{figure}
+%
+%\clearpage \thispagestyle{empty}
+%\begin{figure}[!t]%F1
+%\centerline{\includegraphics{./Art/Sample/OP-REVF140069f2.eps}} \caption{}
+%\end{figure}
+%
+%\clearpage \thispagestyle{empty}
+%\begin{figure}[!t]%F1
+%\centerline{\includegraphics{./Art/Sample/OP-REVF140069f3.eps}} \caption{}
+%\end{figure}
+%
+%\clearpage \thispagestyle{empty}
+%\begin{figure}[!t]%F1
+%\centerline{\includegraphics{./Art/Sample/OP-REVF140069f4.eps}} \caption{}
+%\end{figure}
+%\clearpage \thispagestyle{empty}
+%\begin{figure}[!t]%F1
+%\centerline{\includegraphics{./Art/Sample/OP-REVF140069f5.eps}} \caption{}
+%\end{figure}
+
+
+
+
+
+
+\end{document}

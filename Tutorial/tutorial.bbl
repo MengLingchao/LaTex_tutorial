@@ -1,0 +1,9 @@
+\begin{thebibliography}{1}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[Jiang et~al.(2019)Jiang, Lee, Martin, and Zhou]{jiang2019manager}
+Jiang, Fuwei, Joshua Lee, Xiumin Martin, and Guofu Zhou, 2019, Manager
+  sentiment and stock returns, {\em Journal of Financial Economics\/} 132,
+  126--149.
+
+\end{thebibliography}

@@ -1,0 +1,143 @@
+AEA LaTeX Style and Supporting Files: Installation Instructions
+===============================================================
+
+This distribution is for users of latex who do not expect to share files with
+Scientific Word/Workplace (SW) users or to use SW. 
+
+If you use SW, you should download this distribution:
+http://www.aeaweb.org/templates/sw_templates.zip
+
+If you do not use SW, but you anticipate sharing files with SW users, you should 
+download this distribution:
+http://www.aeaweb.org/templates/latex_sw-supported_templates.zip
+
+The present distribution (http://www.aeaweb.org/templates/latex_templates.zip)
+should contain these files:
+
+aea.bst
+AEA.cls
+AEA-LaTeX-AuthorInstructions.pdf 
+AEA-LaTeX-StyleInstallation.txt (this file)
+AEJ-Article.tex
+AER-Article.tex
+JEL-Article.tex
+PP-Article.tex
+multicol.sty
+setspace.sty
+natbib.pdf
+natnotes.pdf
+harvard.pdf
+
+Installation Instructions:
+-------------------------
+
+1. Place AEA.cls in your TEXINPUTS path. 
+
+   For miktex this should be something like: <MiKTeX Home>\texmf\tex\latex\AEA\
+   where <MiKTeX Home> is wherever miktex is installed and you will most likely
+   have to create the AEA directory if you have not done so before.
+   
+   If you are unsure where to place this file, try placing it in the same 
+   subdirectory tree as other *.cls files which are known to be properly installed
+   on your system.
+
+2. The multicol and setspace packages are used by the AEA style. 
+
+   You should already have multicol.sty as part of your latex installation. 
+   
+   If your tex installation uses a package manager, please install setspace from 
+   the package manager. For miktex users, the package manager is here:
+   Start Menu > Miktex > Maintenance (Admin) > Package Manager (Admin)
+   
+   For Miktex Package Manager: 
+   Type setspace in the "name" box and click the "filter" button and right-click
+   on the setspace package entry for an install option, if the package is not installed.
+   
+   If you don't have a package manager, install the following files to your 
+   TEXINPUTS path if they are not already present (do not install multiple copies):
+   multicol.sty
+   setspace.sty
+   
+3. If you will be using BibTeX we recommend that you use either the natbib package
+   or the harvard package to support a wider variety of citation commands. 
+   
+   If you have a package manager, please install one of these from your package
+   manager. If you don't have a package manager, natbib is available here:
+   http://www.ctan.org/tex-archive/macros/latex/contrib/natbib
+   and harvard is available here:
+   http://www.ctan.org/tex-archive/macros/latex/contrib/harvard
+   
+   For your convenience, the following documentation is included for these packages:
+      natbib.pdf
+      natnotes.pdf
+      harvard.pdf
+
+4. Place aea.bst with your bibTeX styles, if you use bibTeX. Make sure to remove 
+   or rename all other older versions of any files called aea.bst from any input 
+   paths to avoid the wrong style being accidentally used. 
+   
+   Note that this version of aea.bst places a comment with version number at the 
+   top of the bbl file (Bibstyle aea.bst version 2009.05.20) so that you can 
+   confirm that the correct version of aea.bst is being used. If you
+   do not see this message at the top of your newly-created bbl files, then you 
+   should rename or remove all old copies of aea.bst and install the copy included 
+   in this distribution.
+   
+   The bibstyle AER.bst is not supported. Please use aea.bst instead.
+
+5. Miktex users may need to refresh the filename database. This is found in the
+   Start Menu > Miktex > Maintenance (Admin) > Settings (Admin) > General Tab:
+   Click the Refresh FNDB button. Failure to find AEA.cls means either the file
+   is misplaced (in a directory where TeX is not looking) or the filename database 
+   was not refreshed.
+
+6. The supplied *.tex files may be used as templates to prepare your article. There
+   is a specific template for each journal:
+      AER-Article.tex: The American Economic Review
+      PP-Article.tex:  Papers and Proceedings
+      JEL-Article.tex: Journal of Economic Literature
+      AEJ-Article.tex: American Economics Journal
+   To use one of these files as a template, make a copy of the supplied tex file, 
+   rename it, and edit it in your prefered text editor.
+
+7. The document class provides these class options:
+   Journal selection:
+      AER: The American Economic Review
+      PP:  Papers and Proceedings
+      JEL: Journal of Economic Literature
+      AEJ: American Economics Journal
+   Typesetting mode selection:
+      finalmode:  to typeset the manuscript for submission for publication
+      reviewmode: to typeset a review copy
+      draftmode:  to typeset a draft copy with 1.5-line spacing 
+                  (or your own choice of spacing); journal name doesn't appear in head
+
+Example usage: review copy for AER: \documentclass[AER,reviewmode]{AEA}
+				  
+8. Review the Instructions to Authors in the file AEA-LaTeX-AuthorInstructions.pdf.
+
+9. Note that we have some new environments (figurenotes, JEL, Keywords). 
+   If you collaborate with an author who does not have a recent version of 
+   the style then please either provide them with a copy of your AEA.cls or 
+   have them update from the AEA website if they receive a latex compile error 
+   suggesting that one of these environments is undefined. 
+     
+Further Assistance:
+------------------
+
+* MikTeX documentation can be found here: http://miktex.org/docs
+
+* TeXLive documentation can be found here: http://www.tug.org/texlive/doc.html
+  
+* MikTeX and Mathtime: miktex configures the mathtime package, by default, for
+  use with commercial fonts which you probably don't have. If you get a compile-time
+  error regarding missing fonts (mtex.pfb, mtsy.pfb, or rmtmi.pfb) then see our 
+  technical support page at http://www.aeaweb.org/templates/technical_support.pdf
+  Alternatively, if you are not submitting to P&P, you may simply remove the mathtime
+  package.
+
+* If you are still experiencing difficulties, please see our technical support page at 
+  http://www.aeaweb.org/templates/technical_support.pdf or send email to aeraccept@aeapubs.org.
+
+File: AEA-LaTeX-StyleInstallation.txt 
+Last revised: 22 November 2011

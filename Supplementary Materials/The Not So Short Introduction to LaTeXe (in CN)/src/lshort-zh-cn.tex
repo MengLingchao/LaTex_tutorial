@@ -1,0 +1,55 @@
+\documentclass[a4paper]{book}
+\usepackage{lshort-zh-cn-style}
+
+\def\lshortversionoriginal{6.2}
+\def\lshortdateoriginal{Februrary 28, 2018}
+\def\lshortversioncn{6.01}
+
+\hypersetup{%
+  pdftitle={The Short Introduction to LaTeX2e (Chinese Simplified)},%
+  pdfkeywords={LaTeX, LaTeX2e},
+  pdfcreator={XeLaTeX with `ctex' package}
+}
+
+\newcounter{minutes}
+
+% 第四章用到的自定义算符
+\DeclareMathOperator{\argh}{argh}
+\DeclareMathOperator*{\nut}{Nut}
+% 第四章的 \proofname 用原先的英文定义
+\def\proofname{Proof}
+
+\makeindex
+
+\begin{document}
+
+\pagenumbering{Alph}
+\input{titlepage}
+
+\frontmatter
+\input{preface.contrib}
+\input{preface.overview}
+\tableofcontents
+
+\mainmatter
+\input{chap.01.basics}
+\input{chap.02.text}
+\input{chap.03.elements}
+\input{chap.04.math}
+\input{sec.symbol.table}
+\input{chap.05.style}
+\input{chap.06.spec}
+\input{chap.07.graphic}
+\input{chap.08.custom}
+
+\appendix
+\input{app.A.install}
+\input{app.B.error.help}
+\refstepcounter{minutes}\label{lshort-minutes}
+
+\backmatter
+\input{biblio}
+\input{fdl}
+\printindex
+
+\end{document}

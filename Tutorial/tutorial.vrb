@@ -1,4 +1,15 @@
-\frametitle{Special characters}
-\begin{LTXexample}[caption={Special characters}]
-\# \$ \% \^{} \& \_ \{ \} \~{} \textbackslash
-\end{LTXexample}
+\frametitle{BibTeX Sample}
+
+\begin{itemize}
+	\cprotect\item[-] \verb+\cite{jiang2019manager}+ constructs a manager sentiment index based on the aggregated textual tone of corporate financial disclosures.
+	\cprotect\item[-] \verb+\bibliographystyle{jf}+
+	\cprotect\item[-] \verb+\bibliography{ref}+
+\end{itemize}
+	
+\vskip 0.6cm
+	%	\hrule
+\cite{jiang2019manager} constructs a manager sentiment index based on the aggregated textual tone of corporate financial disclosures.
+
+\bibliographystyle{jf}
+\bibliography{ref}	
+

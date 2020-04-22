@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.9.6)  22 APR 2020 10:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.9.6)  22 APR 2020 11:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1364,49 +1364,6 @@ Package pdftex.def Info: figs/overleaf.png  used on input line 162.
  (./tutorial.vrb) [13
 
 ]
-LaTeX Font Info:    Try loading font information for C70+gkai on input line 194
-.
-
-(d:/Program Files/texlive/2019/texmf-dist/tex/latex/cjk/texinput/UTF8/c70gkai.f
-d
-File: c70gkai.fd 2015/04/18 4.8.4
-)
-(d:/Program Files/texlive/2019/texmf-dist/tex/latex/cjk/texinput/UTF8/c70gkai.f
-dx
-File: c70gkai.fdx 2015/04/18 4.8.4
-) [14
-
-]
-\openout4 = `tutorial.vrb'.
-
- (./tutorial.vrb
-\openout6 = `tutorial.tmp'.
-
- (./tutorial.tmp
-
-Package hyperref Warning: Option `pdfauthor' has already been used,
-(hyperref)                setting the option has no effect on input line 3.
-
-)
---------------------------------
-pos=l
-width=171.21765pt
-hsep=10.0pt
-vsep=12.0pt
-overhang=0pt
-rframe=single
-codefile=tutorial.tmp
-\lst@firstline=1\relax 
-\lst@lastline=9999999\relax 
-\lst@linerange=
-\if@SX@wide=FALSE
-\if@SX@rangeaccept=FALSE
-\if@SX@varwidth=FALSE
-graphicfile=, graphicparameter=[width=\linewidth ]
---------------------------------
-(./tutorial.tmp)) [15
-
-]
 \openout4 = `tutorial.vrb'.
 
  (./tutorial.vrb
@@ -1414,11 +1371,25 @@ LaTeX Font Info:    Try loading font information for T1+lmtt on input line 4.
 
 (d:/Program Files/texlive/2019/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
+)) [14
+
+]
+\openout4 = `tutorial.vrb'.
+
+
+(./tutorial.vrb) [15
+
+] [16
+
+] [17
+
+]
+\openout4 = `tutorial.vrb'.
+
+ (./tutorial.vrb
 \openout6 = `tutorial.tmp'.
 
-
-(./tutorial.tmp)
+ (./tutorial.tmp)
 --------------------------------
 pos=l
 width=171.21765pt
@@ -1435,9 +1406,7 @@ codefile=tutorial.tmp
 \if@SX@varwidth=FALSE
 graphicfile=, graphicparameter=[width=\linewidth ]
 --------------------------------
-(./tutorial.tmp)) [16
-
-] [17
+(./tutorial.tmp)) [18
 
 ]
 \openout4 = `tutorial.vrb'.
@@ -1472,7 +1441,7 @@ codefile=tutorial.tmp
 \if@SX@varwidth=FALSE
 graphicfile=, graphicparameter=[width=\linewidth ]
 --------------------------------
-(./tutorial.tmp)) [18
+(./tutorial.tmp)) [19
 
 ]
 \openout4 = `tutorial.vrb'.
@@ -1497,17 +1466,125 @@ codefile=tutorial.tmp
 \if@SX@varwidth=FALSE
 graphicfile=, graphicparameter=[width=\linewidth ]
 --------------------------------
-(./tutorial.tmp)) [19
+(./tutorial.tmp)) [20
 
-] [20
+]
+\openout4 = `tutorial.vrb'.
 
-] [21
+ (./tutorial.vrb
+\openout6 = `tutorial.tmp'.
 
-] [22
+ (./tutorial.tmp)
+--------------------------------
+pos=l
+width=171.21765pt
+hsep=10.0pt
+vsep=12.0pt
+overhang=0pt
+rframe=single
+codefile=tutorial.tmp
+\lst@firstline=1\relax 
+\lst@lastline=9999999\relax 
+\lst@linerange=
+\if@SX@wide=FALSE
+\if@SX@rangeaccept=FALSE
+\if@SX@varwidth=FALSE
+graphicfile=, graphicparameter=[width=\linewidth ]
+--------------------------------
+(./tutorial.tmp)) [21
 
-] [23
+]
+\openout4 = `tutorial.vrb'.
 
-] [24
+ (./tutorial.vrb
+\openout6 = `tutorial.tmp'.
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 11.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <9> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 11.
+ (./tutorial.tmp)
+--------------------------------
+pos=l
+width=171.21765pt
+hsep=10.0pt
+vsep=12.0pt
+overhang=0pt
+rframe=single
+codefile=tutorial.tmp
+\lst@firstline=1\relax 
+\lst@lastline=9999999\relax 
+\lst@linerange=
+\if@SX@wide=FALSE
+\if@SX@rangeaccept=FALSE
+\if@SX@varwidth=FALSE
+graphicfile=, graphicparameter=[width=\linewidth ]
+--------------------------------
+(./tutorial.tmp)) [22
+
+]
+\openout4 = `tutorial.vrb'.
+
+ (./tutorial.vrb
+\openout6 = `tutorial.tmp'.
+
+ (./tutorial.tmp)
+--------------------------------
+pos=l
+width=171.21765pt
+hsep=10.0pt
+vsep=12.0pt
+overhang=0pt
+rframe=single
+codefile=tutorial.tmp
+\lst@firstline=1\relax 
+\lst@lastline=9999999\relax 
+\lst@linerange=
+\if@SX@wide=FALSE
+\if@SX@rangeaccept=FALSE
+\if@SX@varwidth=FALSE
+graphicfile=, graphicparameter=[width=\linewidth ]
+--------------------------------
+(./tutorial.tmp))
+Overfull \vbox (28.82475pt too high) detected at line 336
+ []
+
+[23
+
+]
+\openout4 = `tutorial.vrb'.
+
+ (./tutorial.vrb
+\openout6 = `tutorial.tmp'.
+
+ (./tutorial.tmp)
+--------------------------------
+pos=l
+width=171.21765pt
+hsep=10.0pt
+vsep=12.0pt
+overhang=0pt
+rframe=single
+codefile=tutorial.tmp
+\lst@firstline=1\relax 
+\lst@lastline=9999999\relax 
+\lst@linerange=
+\if@SX@wide=FALSE
+\if@SX@rangeaccept=FALSE
+\if@SX@varwidth=FALSE
+graphicfile=, graphicparameter=[width=\linewidth ]
+--------------------------------
+(./tutorial.tmp)) [24
+
+] [25
+
+] [26
+
+] [27
+
+] [28
+
+] [29
 
 ] (./tutorial.bbl)
 \tf@nav=\write8
@@ -1519,40 +1596,41 @@ graphicfile=, graphicparameter=[width=\linewidth ]
 \tf@snm=\write10
 \openout10 = `tutorial.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 299.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 299.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 381.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 381.
 
 (./tutorial.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 299.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 299.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 381.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 381.
 Package rerunfilecheck Info: File `tutorial.out' has not changed.
-(rerunfilecheck)             Checksum: C5658336FF3A5E2155E7F7973FAD0C28;494.
+(rerunfilecheck)             Checksum: 3BA35CD80B4B422050DDB6564B8D34B8;494.
  ) 
 Here is how much of TeX's memory you used:
- 23817 strings out of 494490
- 427967 string characters out of 6174093
- 729416 words of memory out of 5000000
- 26802 multiletter control sequences out of 15000+600000
- 85846 words of font info for 75 fonts, out of 8000000 for 9000
+ 23873 strings out of 494490
+ 428240 string characters out of 6174093
+ 757420 words of memory out of 5000000
+ 26827 multiletter control sequences out of 15000+600000
+ 103021 words of font info for 83 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  59i,19n,84p,802b,2827s stack positions out of 5000i,500n,10000p,200000b,80000s
-{d:/Program Files/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}<d:/Pr
-ogram Files/texlive/2019/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu51.pfb><d:/Pr
-ogram Files/texlive/2019/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu5b.pfb><d:/Pr
-ogram Files/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcircl
-e1.pfb><d:/Program Files/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.
-pfb><d:/Program Files/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb><
-d:/Program Files/texlive/2019/texmf-dist/fonts/type1/public/lm/lmss10.pfb><d:/P
-rogram Files/texlive/2019/texmf-dist/fonts/type1/public/lm/lmss12.pfb><d:/Progr
-am Files/texlive/2019/texmf-dist/fonts/type1/public/lm/lmss8.pfb><d:/Program Fi
-les/texlive/2019/texmf-dist/fonts/type1/public/lm/lmss9.pfb><d:/Program Files/t
-exlive/2019/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><d:/Program Files/tex
-live/2019/texmf-dist/fonts/type1/public/lm/lmsso10.pfb><d:/Program Files/texliv
-e/2019/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on tutorial.pdf (24 pages, 625276 bytes).
+{d:/Program Files/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{d
+:/Program Files/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}<d:/Progra
+m Files/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcircle1.p
+fb><d:/Program Files/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb>
+<d:/Program Files/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb><d:/P
+rogram Files/texlive/2019/texmf-dist/fonts/type1/public/lm/lmss10.pfb><d:/Progr
+am Files/texlive/2019/texmf-dist/fonts/type1/public/lm/lmss12.pfb><d:/Program F
+iles/texlive/2019/texmf-dist/fonts/type1/public/lm/lmss17.pfb><d:/Program Files
+/texlive/2019/texmf-dist/fonts/type1/public/lm/lmss8.pfb><d:/Program Files/texl
+ive/2019/texmf-dist/fonts/type1/public/lm/lmss9.pfb><d:/Program Files/texlive/2
+019/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><d:/Program Files/texlive/201
+9/texmf-dist/fonts/type1/public/lm/lmsso10.pfb><d:/Program Files/texlive/2019/t
+exmf-dist/fonts/type1/public/lm/lmsy9.pfb><d:/Program Files/texlive/2019/texmf-
+dist/fonts/type1/public/lm/lmtt10.pfb>
+Output written on tutorial.pdf (29 pages, 660679 bytes).
 PDF statistics:
- 815 PDF objects out of 1000 (max. 8388607)
- 748 compressed objects within 8 object streams
- 65 named destinations out of 1000 (max. 500000)
- 166 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 957 PDF objects out of 1000 (max. 8388607)
+ 886 compressed objects within 9 object streams
+ 78 named destinations out of 1000 (max. 500000)
+ 158 words of extra memory for PDF output out of 10000 (max. 10000000)
 

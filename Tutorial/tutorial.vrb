@@ -1,13 +1,4 @@
-\frametitle{Colored text}
-\begin{itemize}
-		\cprotect\item Include the xcolor package in the preamble by \verb+\usepackage{xcolor}+.
-		\cprotect\item Also can define customized color \verb+\definecolor{myred}{RGB}{231, 76, 60}+.
-	\end{itemize}
-	
-	 \begin{LTXexample}[caption={Colored text}]
-\begin{itemize}
-	\item \textcolor{red}{Red}
-	\item \textcolor{gray}{Gray}
-	\item \textcolor{myred}{Myred}
-\end{itemize}
-	 \end{LTXexample}
+\frametitle{Special characters}
+\begin{LTXexample}[caption={Special characters}]
+\# \$ \% \^{} \& \_ \{ \} \~{} \textbackslash
+\end{LTXexample}

@@ -5,12 +5,12 @@ Release version: 3.71 (04 mar 2019)
 The 8-bit codepage and sorting file: 88591lat.csf
 The top-level auxiliary file: tutorial.aux
 I couldn't open style file jf.bst
----line 119 of file tutorial.aux
+---line 143 of file tutorial.aux
  : \bibstyle{jf
  :             }
 I'm skipping whatever remains of this command
 I couldn't open database file ref.bib
----line 120 of file tutorial.aux
+---line 144 of file tutorial.aux
  : \bibdata{ref
  :             }
 I'm skipping whatever remains of this command

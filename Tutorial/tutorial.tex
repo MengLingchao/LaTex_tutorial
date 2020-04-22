@@ -35,7 +35,7 @@
 	stepnumber=1,                   % the step between two line-numbers. If it's 1, each line 
 	% will be numbered
 	%numbersep=5pt,                  % how far the line-numbers are from the code
-	backgroundcolor=\color[RGB]{254,249,231},      % choose the background color. You must add \usepackage{color}
+	backgroundcolor=\color[RGB]{215, 204, 200},      % choose the background color. You must add \usepackage{color}
 	showspaces=false,               % show spaces adding particular underscores
 	showstringspaces=false,         % underline spaces within strings
 	showtabs=false,                 % show tabs within strings adding particular underscores
@@ -189,22 +189,42 @@ Recommend Tex Live with TexStudio, you can refer to https://blog.csdn.net/zywheh
 	\end{lstlisting}
 \end{frame}
 
-\begin{frame}{title}
-	内容...
+
+\begin{frame}[fragile]{Document Structure}
+	\LaTeX\ can organize, number, and index chapters and sections of document. There are up to 7 levels of depth for defining sections depending on the document class
+	\begin{itemize}
+		\cprotect\item \verb+\part{title}+
+		\cprotect\item \verb+\chapter{title}+
+		\cprotect\item \verb+\section{title}+
+		\cprotect\item \verb+\subsection{title}+
+		\cprotect\item \verb+\subsubsection{title}+
+		\cprotect\item \verb+\paragraph{title}+
+		\cprotect\item \verb+\subparagraph{title}+
+	\end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]
-	\begin{LTXexample}[caption={the basic document structure}]
-	\documentclass[a4paper,12pt]{article}
-	\title{My First Document}
-	\author{My Name}
-	\date{\today}
-	\maketitle
-	\begin{document}
-		A sentence of text.
-	\end{document}
 
-\end{LTXexample}
+\begin{frame}[fragile]{\LaTeX\ vocabulary}
+	\begin{itemize}
+		\cprotect\item \textbf{Commands}: produce text or space, like \verb+\textit{it}+.
+		\cprotect\item \textbf{Declarations}: affect the following text, like \verb+\Large+ or \verb+{\Large }+.
+		\cprotect\item \textbf{Environments}:receive special processing and are defined by \verb+\begin{name} ... \end{name}+.
+		\cprotect\item \textbf{Mandatory arguments}: are included in braces, like \verb+\hspace{2in}+.
+		\cprotect\item \textbf{Optional arguments}: are enclosed in brackets [ ], like \verb+\documentclass[11pt]{article}+.
+		\item \textbf{*}: indicates a variation on a command or environment.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{A little sample}
+	\begin{center}
+		\alert{{\Large See the simple sample!}}
+	\end{center}
+\end{frame}
+
+\section{Basic Typesetting}
+
+\begin{frame}
+	\sectionpage
 \end{frame}
 
 \begin{frame}[fragile]{Basic Typesetting}
@@ -222,11 +242,7 @@ The third paragraph.
 \end{LTXexample}
 \end{frame}
 
-\section{Basic Typesetting}
 
-\begin{frame}
-	\sectionpage
-\end{frame}
 \begin{frame}[fragile]{Font effects}
 There are \LaTeX\ commands for a variety of font effects:
 \begin{LTXexample}[caption={Font effects}]
@@ -242,22 +258,88 @@ There are \LaTeX\ commands for a variety of font effects:
 \end{LTXexample}
 \end{frame}
 
+
+
  \begin{frame}[fragile]{Colored text}
 	\begin{itemize}
 		\cprotect\item Include the xcolor package in the preamble by \verb+\usepackage{xcolor}+.
-		\cprotect\item Also can define customized color \verb+\definecolor{myred}{RGB}{231, 76, 60}+.
+		\cprotect\item Also can define customized color, such as \verb+\definecolor{myred}{RGB}{231, 76, 60}+.
 	\end{itemize}
-	 
-	 \begin{LTXexample}[caption={Colored text}]
-\begin{itemize}
-	\item \textcolor{red}{Red}
-	\item \textcolor{gray}{Gray}
-	\item \textcolor{myred}{Myred}
-\end{itemize}
-	 \end{LTXexample}
+	
+	\begin{LTXexample}[caption={Colored text}]
+		\begin{itemize}
+			\item \textcolor{red}{Red}
+			\item \textcolor{gray}{Gray}
+			\item \textcolor{myred}{Myred}
+		\end{itemize}
+	\end{LTXexample}
 \end{frame}
 
 
+ \begin{frame}[fragile]{Font size}
+\begin{itemize}
+	\item The global font size can be set by the documentclass option.
+	\item The local font size can be changed by the following commands.
+\end{itemize}
+\begin{LTXexample}[caption={Font size}]
+{\tiny tiny}\\
+{\scriptsize scriptsize}\\
+{\footnotesize footnotesize}\\
+{\small small}\\
+{\normalsize normalsize}\\
+{\large large}\\
+{\Large Large}\\
+{\LARGE LARGE}\\
+{\huge huge}\\
+{\Huge Huge}
+\end{LTXexample}
+\end{frame}
+
+ \begin{frame}[fragile]{Lists}
+ 	\begin{itemize}
+ 		\cprotect\item \LaTeX\ supports two types of lists: \textit{enumerate} produces numbered lists, while \textit{itemize} is for bulleted lists. Each list item is defined by \verb+\item+. Lists can be nested to produce sub-lists.
+ 	\end{itemize}
+
+\begin{LTXexample}[caption={Lists}]
+\begin{enumerate}
+	\item First thing
+	\item Second thing
+	\begin{itemize}
+		\item A sub-thing
+		\item[-] Another sub-thing
+	\end{itemize}
+	\item[(3)] Third thing
+\end{enumerate}
+\end{LTXexample}
+\end{frame}
+
+ \begin{frame}[fragile]{Comments and Spacing}
+	\begin{itemize}
+		\cprotect\item \LaTeX\ Comments are created using \%. When \LaTeX\ encounters a \% character while	processing a .tex file, it ignores the rest of the line.
+		\item Multiple consecutive spaces in\LaTeX\ are treated as a single space. Several empty lines are treated as one empty line.
+		\cprotect\item Use \verb*+\ + to produce more space and \verb+\vspace{length}+ to produce vertical space.
+	\end{itemize}
+	
+\begin{LTXexample}[caption={Comments and Spacing}]
+%comments 1
+The following is comments 2. % comments 2
+
+more space in line  like \ \ \ ahh.
+
+
+more vertical space like following.
+
+\vspace{0.5in}
+
+third paragraph.
+\end{LTXexample}
+\end{frame}
+
+\begin{frame}[fragile]{Special characters}
+\begin{LTXexample}[caption={Special characters}]
+\# \$ \% \^{} \& \_ \{ \} \~{} \textbackslash
+\end{LTXexample}
+\end{frame}
 
 \section{Capital Reallocation: the Theory}
 \begin{frame}

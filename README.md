@@ -22,6 +22,7 @@
 - AER: the LaTeX template of American Economic Review
 - ECTA: the LaTeX template of Econometrica
 - RFS:  LaTeX template of Review of Financial Studies
+- 经济研究：经济研究LaTeX模板
 
 **Supplementary Materials**
 

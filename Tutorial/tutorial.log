@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.9.6)  22 APR 2020 21:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.9.6)  26 APR 2020 00:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -930,6 +930,320 @@ File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
 \ResultBoxRule=\dimen259
 \c@ltxexample=\count175
 )
+(d:/Program Files/texlive/2019/texmf-dist/tex/latex/oberdiek/accsupp.sty
+Package: accsupp 2018/03/28 v0.5 Accessibility support by marked content (HO)
+
+(d:/Program Files/texlive/2019/texmf-dist/tex/latex/oberdiek/accsupp-pdftex.def
+File: accsupp-pdftex.def 2018/03/28 v0.5 accsupp driver for pdfTeX (HO)
+)) (d:/Program Files/texlive/2019/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2019/03/02 version 4.20 text color boxes
+
+(d:/Program Files/texlive/2019/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+Package: pgf 2019/02/02 v3.1.1 (3.1.1)
+
+(d:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/modules/pgfmoduleshap
+es.code.tex
+File: pgfmoduleshapes.code.tex 2019/02/02 v3.1.1 (3.1.1)
+\pgfnodeparttextbox=\box59
+)
+(d:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot
+.code.tex
+File: pgfmoduleplot.code.tex 2019/02/02 v3.1.1 (3.1.1)
+)
+(d:/Program Files/texlive/2019/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-v
+ersion-0-65.sty
+Package: pgfcomp-version-0-65 2019/02/02 v3.1.1 (3.1.1)
+\pgf@nodesepstart=\dimen260
+\pgf@nodesepend=\dimen261
+)
+(d:/Program Files/texlive/2019/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-v
+ersion-1-18.sty
+Package: pgfcomp-version-1-18 2019/02/02 v3.1.1 (3.1.1)
+))
+(d:/Program Files/texlive/2019/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(d:/Program Files/texlive/2019/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\tcb@titlebox=\box60
+\tcb@upperbox=\box61
+\tcb@lowerbox=\box62
+\tcb@phantombox=\box63
+\c@tcbbreakpart=\count176
+\c@tcblayer=\count177
+\tcolorbox@number=\count178
+\tcb@temp=\box64
+\tcb@temp=\box65
+\tcb@temp=\box66
+\tcb@temp=\box67
+\tcb@out=\write7
+\tcb@record@out=\write8
+)
+(d:/Program Files/texlive/2019/texmf-dist/tex/latex/tcolorbox/tcblistings.code.
+tex
+Library (tcolorbox): 'tcblistings.code.tex' version '4.20'
+
+(d:/Program Files/texlive/2019/texmf-dist/tex/latex/tcolorbox/tcblistingscore.c
+ode.tex
+Library (tcolorbox): 'tcblistingscore.code.tex' version '4.20'
+
+(d:/Program Files/texlive/2019/texmf-dist/tex/latex/tcolorbox/tcbprocessing.cod
+e.tex
+Library (tcolorbox): 'tcbprocessing.code.tex' version '4.20'
+(d:/Program Files/texlive/2019/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 69.
+))
+\c@tcblisting=\count179
+))
+(d:/Program Files/texlive/2019/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '4.20'
+(d:/Program Files/texlive/2019/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(d:/Program Files/texlive/2019/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(d:/Program Files/texlive/2019/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(d:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfkeys.cod
+e.tex))
+(d:/Program Files/texlive/2019/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(d:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+))
+(d:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgffor.code
+.tex
+Package: pgffor 2019/02/02 v3.1.1 (3.1.1)
+
+(d:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+)
+\pgffor@iter=\dimen262
+\pgffor@skip=\dimen263
+\pgffor@stack=\toks50
+\pgffor@toks=\toks51
+))
+(d:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/ti
+kz.code.tex
+Package: tikz 2019/02/02 v3.1.1 (3.1.1)
+
+(d:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/libraries/pgflibraryp
+lothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2019/02/02 v3.1.1 (3.1.1)
+\pgf@plot@mark@count=\count180
+\pgfplotmarksize=\dimen264
+)
+\tikz@lastx=\dimen265
+\tikz@lasty=\dimen266
+\tikz@lastxsaved=\dimen267
+\tikz@lastysaved=\dimen268
+\tikzleveldistance=\dimen269
+\tikzsiblingdistance=\dimen270
+\tikz@figbox=\box68
+\tikz@figbox@bg=\box69
+\tikz@tempbox=\box70
+\tikz@tempbox@bg=\box71
+\tikztreelevel=\count181
+\tikznumberofchildren=\count182
+\tikznumberofcurrentchild=\count183
+\tikz@fig@count=\count184
+
+(d:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/modules/pgfmodulematr
+ix.code.tex
+File: pgfmodulematrix.code.tex 2019/02/02 v3.1.1 (3.1.1)
+\pgfmatrixcurrentrow=\count185
+\pgfmatrixcurrentcolumn=\count186
+\pgf@matrix@numberofcolumns=\count187
+)
+\tikz@expandcount=\count188
+
+(d:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/li
+braries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2019/02/02 v3.1.1 (3.1.1)
+)))
+\tcb@waterbox=\box72
+
+(d:/Program Files/texlive/2019/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.co
+de.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '4.20'
+))
+(d:/Program Files/texlive/2019/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code
+.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '4.20'
+\tcb@testbox=\box73
+\tcb@totalupperbox=\box74
+\tcb@totallowerbox=\box75
+)
+(d:/Program Files/texlive/2019/texmf-dist/tex/latex/tcolorbox/tcbxparse.code.te
+x
+Library (tcolorbox): 'tcbxparse.code.tex' version '4.20'
+
+(d:/Program Files/texlive/2019/texmf-dist/tex/latex/l3packages/xparse/xparse.st
+y (d:/Program Files/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2019-04-06 L3 programming layer (loader) 
+
+(d:/Program Files/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2019-04-06 L3 programming layer (code)
+\c_max_int=\count189
+\l_tmpa_int=\count190
+\l_tmpb_int=\count191
+\g_tmpa_int=\count192
+\g_tmpb_int=\count193
+\g__kernel_prg_map_int=\count194
+\c__ior_term_ior=\count195
+\c_log_iow=\count196
+\l_iow_line_count_int=\count197
+\l__iow_line_target_int=\count198
+\l__iow_one_indent_int=\count199
+\l__iow_indent_int=\count266
+\c_zero_dim=\dimen271
+\c_max_dim=\dimen272
+\l_tmpa_dim=\dimen273
+\l_tmpb_dim=\dimen274
+\g_tmpa_dim=\dimen275
+\g_tmpb_dim=\dimen276
+\c_zero_skip=\skip62
+\c_max_skip=\skip63
+\l_tmpa_skip=\skip64
+\l_tmpb_skip=\skip65
+\g_tmpa_skip=\skip66
+\g_tmpb_skip=\skip67
+\c_zero_muskip=\muskip12
+\c_max_muskip=\muskip13
+\l_tmpa_muskip=\muskip14
+\l_tmpb_muskip=\muskip15
+\g_tmpa_muskip=\muskip16
+\g_tmpb_muskip=\muskip17
+\l_keys_choice_int=\count267
+\l__intarray_loop_int=\count268
+\c__intarray_sp_dim=\dimen277
+\g__intarray_font_int=\count269
+\c__fp_leading_shift_int=\count270
+\c__fp_middle_shift_int=\count271
+\c__fp_trailing_shift_int=\count272
+\c__fp_big_leading_shift_int=\count273
+\c__fp_big_middle_shift_int=\count274
+\c__fp_big_trailing_shift_int=\count275
+\c__fp_Bigg_leading_shift_int=\count276
+\c__fp_Bigg_middle_shift_int=\count277
+\c__fp_Bigg_trailing_shift_int=\count278
+\c__kernel_randint_max_int=\count279
+\g__fp_array_int=\count280
+\l__fp_array_loop_int=\count281
+\l__sort_length_int=\count282
+\l__sort_min_int=\count283
+\l__sort_top_int=\count284
+\l__sort_max_int=\count285
+\l__sort_true_max_int=\count286
+\l__sort_block_int=\count287
+\l__sort_begin_int=\count288
+\l__sort_end_int=\count289
+\l__sort_A_int=\count290
+\l__sort_B_int=\count291
+\l__sort_C_int=\count292
+\l__tl_analysis_normal_int=\count293
+\l__tl_analysis_index_int=\count294
+\l__tl_analysis_nesting_int=\count295
+\l__tl_analysis_type_int=\count296
+\l__regex_internal_a_int=\count297
+\l__regex_internal_b_int=\count298
+\l__regex_internal_c_int=\count299
+\l__regex_balance_int=\count300
+\l__regex_group_level_int=\count301
+\l__regex_mode_int=\count302
+\c__regex_cs_in_class_mode_int=\count303
+\c__regex_cs_mode_int=\count304
+\l__regex_catcodes_int=\count305
+\l__regex_default_catcodes_int=\count306
+\c__regex_catcode_D_int=\count307
+\c__regex_catcode_S_int=\count308
+\c__regex_catcode_L_int=\count309
+\c__regex_catcode_O_int=\count310
+\c__regex_catcode_A_int=\count311
+\c__regex_all_catcodes_int=\count312
+\l__regex_show_lines_int=\count313
+\l__regex_min_state_int=\count314
+\l__regex_max_state_int=\count315
+\l__regex_left_state_int=\count316
+\l__regex_right_state_int=\count317
+\l__regex_capturing_group_int=\count318
+\l__regex_min_pos_int=\count319
+\l__regex_max_pos_int=\count320
+\l__regex_curr_pos_int=\count321
+\l__regex_start_pos_int=\count322
+\l__regex_success_pos_int=\count323
+\l__regex_curr_char_int=\count324
+\l__regex_curr_catcode_int=\count325
+\l__regex_last_char_int=\count326
+\l__regex_case_changed_char_int=\count327
+\l__regex_curr_state_int=\count328
+\l__regex_step_int=\count329
+\l__regex_min_active_int=\count330
+\l__regex_max_active_int=\count331
+\l__regex_replacement_csnames_int=\count332
+\l__regex_match_count_int=\count333
+\l__regex_min_submatch_int=\count334
+\l__regex_submatch_int=\count335
+\l__regex_zeroth_submatch_int=\count336
+\g__regex_trace_regex_int=\count337
+\c_empty_box=\box76
+\l_tmpa_box=\box77
+\l_tmpb_box=\box78
+\g_tmpa_box=\box79
+\g_tmpb_box=\box80
+\l__box_top_dim=\dimen278
+\l__box_bottom_dim=\dimen279
+\l__box_left_dim=\dimen280
+\l__box_right_dim=\dimen281
+\l__box_top_new_dim=\dimen282
+\l__box_bottom_new_dim=\dimen283
+\l__box_left_new_dim=\dimen284
+\l__box_right_new_dim=\dimen285
+\l__box_internal_box=\box81
+\l__coffin_internal_box=\box82
+\l__coffin_internal_dim=\dimen286
+\l__coffin_offset_x_dim=\dimen287
+\l__coffin_offset_y_dim=\dimen288
+\l__coffin_x_dim=\dimen289
+\l__coffin_y_dim=\dimen290
+\l__coffin_x_prime_dim=\dimen291
+\l__coffin_y_prime_dim=\dimen292
+\c_empty_coffin=\box83
+\l__coffin_aligned_coffin=\box84
+\l__coffin_aligned_internal_coffin=\box85
+\l_tmpa_coffin=\box86
+\l_tmpb_coffin=\box87
+\g_tmpa_coffin=\box88
+\g_tmpb_coffin=\box89
+\l__coffin_bounding_shift_dim=\dimen293
+\l__coffin_left_corner_dim=\dimen294
+\l__coffin_right_corner_dim=\dimen295
+\l__coffin_bottom_corner_dim=\dimen296
+\l__coffin_top_corner_dim=\dimen297
+\l__coffin_scaled_total_height_dim=\dimen298
+\l__coffin_scaled_width_dim=\dimen299
+\c__coffin_empty_coffin=\box90
+\l__coffin_display_coffin=\box91
+\l__coffin_display_coord_coffin=\box92
+\l__coffin_display_pole_coffin=\box93
+\l__coffin_display_offset_dim=\dimen300
+\l__coffin_display_x_dim=\dimen301
+\l__coffin_display_y_dim=\dimen302
+\g__file_internal_ior=\read3
+\l__seq_internal_a_int=\count338
+\l__seq_internal_b_int=\count339
+\c__deprecation_minus_one=\count340
+)
+(d:/Program Files/texlive/2019/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
+File: l3pdfmode.def 2019-04-06 v L3 Experimental driver: PDF mode
+\l__driver_color_stack_int=\count341
+))
+Package: xparse 2019-03-05 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count342
+\g__xparse_grabber_int=\count343
+\l__xparse_m_args_int=\count344
+\l__xparse_v_nesting_int=\count345
+))
+(d:/Program Files/texlive/2019/texmf-dist/tex/latex/threeparttable/threeparttab
+le.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box94
+)
 (d:/Program Files/texlive/2019/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2019/02/27 1.8b listings language file
 )
@@ -972,85 +1286,86 @@ File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
 (./tutorial.aux)
 \openout1 = `tutorial.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 77.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 154.
+
 
 (d:/Program Files/texlive/2019/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1091,17 +1406,17 @@ File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 (d:/Program Files/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count176
-\scratchdimen=\dimen260
-\scratchbox=\box59
-\nofMPsegments=\count177
-\nofMParguments=\count178
-\everyMPshowfont=\toks50
-\MPscratchCnt=\count179
-\MPscratchDim=\dimen261
-\MPnumerator=\count180
-\makeMPintoPDFobject=\count181
-\everyMPtoPDFconversion=\toks51
+\scratchcounter=\count346
+\scratchdimen=\dimen303
+\scratchbox=\box95
+\nofMPsegments=\count347
+\nofMParguments=\count348
+\everyMPshowfont=\toks52
+\MPscratchCnt=\count349
+\MPscratchDim=\dimen304
+\MPnumerator=\count350
+\makeMPintoPDFobject=\count351
+\everyMPtoPDFconversion=\toks53
 )
 (d:/Program Files/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1121,8 +1436,8 @@ g
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 )) ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box60
-Package hyperref Info: Link coloring OFF on input line 77.
+\AtBeginShipoutBox=\box96
+Package hyperref Info: Link coloring OFF on input line 154.
 
 (d:/Program Files/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1131,61 +1446,61 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count182
+\c@section@level=\count352
 )
-LaTeX Info: Redefining \ref on input line 77.
-LaTeX Info: Redefining \pageref on input line 77.
-LaTeX Info: Redefining \nameref on input line 77.
+LaTeX Info: Redefining \ref on input line 154.
+LaTeX Info: Redefining \pageref on input line 154.
+LaTeX Info: Redefining \nameref on input line 154.
  (./tutorial.out) (./tutorial.out)
-\@outlinefile=\write7
-\openout7 = `tutorial.out'.
+\@outlinefile=\write9
+\openout9 = `tutorial.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 77.
+(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 154.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> OT1/cmss/bx/n on input line 77.
+(Font)                  OT1/lmr/bx/n --> OT1/cmss/bx/n on input line 154.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 77.
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 154.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 77.
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 154.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/lmss/m/n --> T1/lmr/m/n on input line 77.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 77.
+(Font)                  OT1/lmss/m/n --> T1/lmr/m/n on input line 154.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 154.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> T1/lmss/bx/n on input line 77.
+(Font)                  OT1/lmr/bx/n --> T1/lmss/bx/n on input line 154.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/lmr/bx/n --> T1/lmss/bx/n on input line 77.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 77.
+(Font)                  OT1/lmr/bx/n --> T1/lmss/bx/n on input line 154.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 154.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> T1/lmss/m/n on input line 77.
+(Font)                  OT1/lmss/m/n --> T1/lmss/m/n on input line 154.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> T1/lmss/m/n on input line 77.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 77.
+(Font)                  OT1/lmss/bx/n --> T1/lmss/m/n on input line 154.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 154.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> T1/lmss/m/it on input line 77.
+(Font)                  OT1/lmr/m/it --> T1/lmss/m/it on input line 154.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/lmr/bx/it --> T1/lmss/m/it on input line 77.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 77.
+(Font)                  OT1/lmr/bx/it --> T1/lmss/m/it on input line 154.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 154.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 77.
+(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 154.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 77.
+(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 154.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/lmss/m/n --> T1/lmss/bx/n on input line 77.
+(Font)                  T1/lmss/m/n --> T1/lmss/bx/n on input line 154.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/lmss/m/it --> T1/lmss/bx/it on input line 77.
+(Font)                  T1/lmss/m/it --> T1/lmss/bx/it on input line 154.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/lmss/bx/n --> T1/lmr/bx/n on input line 77.
+(Font)                  OT1/lmss/bx/n --> T1/lmr/bx/n on input line 154.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/lmss/bx/n --> T1/lmss/bx/n on input line 77.
+(Font)                  T1/lmss/bx/n --> T1/lmss/bx/n on input line 154.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/lmss/m/n --> T1/lmss/bx/n on input line 77.
+(Font)                  T1/lmss/m/n --> T1/lmss/bx/n on input line 154.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/lmss/m/it --> T1/lmss/bx/it on input line 77.
+(Font)                  T1/lmss/m/it --> T1/lmss/bx/it on input line 154.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/lmtt/m/n --> T1/lmtt/bx/n on input line 77.
+(Font)                  T1/lmtt/m/n --> T1/lmtt/bx/n on input line 154.
 
 (d:/Program Files/texlive/2019/texmf-dist/tex/latex/translator/translator-basic
 -dictionary-English.dict
@@ -1213,8 +1528,9 @@ Dictionary: translator-theorem-dictionary, Language: English
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
+Package caption Info: threeparttable package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count183
+\c@lstlisting=\count353
  (./tutorial.nav)
 (d:/Program Files/texlive/2019/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.bdg
 File: UTF8.bdg 2015/04/18 4.8.4
@@ -1227,74 +1543,75 @@ File: UTF8.chr 2015/04/18 4.8.4
 )
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
-(hyperref)                setting the option has no effect on input line 81.
+(hyperref)                setting the option has no effect on input line 158.
 
-LaTeX Font Info:    Try loading font information for OT1+lmss on input line 92.
-
+LaTeX Font Info:    Try loading font information for OT1+lmss on input line 169
+.
 (d:/Program Files/texlive/2019/texmf-dist/tex/latex/lm/ot1lmss.fd
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 92.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 169.
+
 
 (d:/Program Files/texlive/2019/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 92.
-
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 169
+.
 
 (d:/Program Files/texlive/2019/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 92.
-
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 169
+.
 
 (d:/Program Files/texlive/2019/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 92.
+(Font)              <14.4> on input line 169.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 92.
+(Font)              <10> on input line 169.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 92.
-LaTeX Font Info:    Try loading font information for U+msa on input line 92.
+(Font)              <7> on input line 169.
+LaTeX Font Info:    Try loading font information for U+msa on input line 169.
 
 (d:/Program Files/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 92.
+LaTeX Font Info:    Try loading font information for U+msb on input line 169.
 
 (d:/Program Files/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 92.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 169.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 92.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 169.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <7> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 92.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 169.
  [1
 
 {d:/Program Files/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 96.
+(Font)              <10.95> on input line 173.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 96.
+(Font)              <8> on input line 173.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 96.
+(Font)              <6> on input line 173.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 96.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 173.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <8> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 96.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 173.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <6> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 96.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 173.
  [2
 
 ]
 <figs/GitHub.png, id=110, 771.48225pt x 399.29175pt>
 File: figs/GitHub.png Graphic file (type png)
 <use figs/GitHub.png>
-Package pdftex.def Info: figs/GitHub.png  used on input line 108.
+Package pdftex.def Info: figs/GitHub.png  used on input line 185.
 (pdftex.def)             Requested size: 239.70367pt x 124.05942pt.
 
 [3
@@ -1307,32 +1624,10 @@ Package pdftex.def Info: figs/GitHub.png  used on input line 108.
 \openout4 = `tutorial.vrb'.
 
  (./tutorial.vrb
-\openout6 = `tutorial.tmp'.
+\openout7 = `tutorial.listing'.
 
 
-(./tutorial.tmp)
---------------------------------
-pos=l
-width=171.21765pt
-hsep=10.0pt
-vsep=12.0pt
-overhang=0pt
-rframe=single
-codefile=tutorial.tmp
-\lst@firstline=1\relax 
-\lst@lastline=9999999\relax 
-\lst@linerange=
-\if@SX@wide=FALSE
-\if@SX@rangeaccept=FALSE
-\if@SX@varwidth=FALSE
-graphicfile=, graphicparameter=[width=\linewidth ]
---------------------------------
-(./tutorial.tmp)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 11.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 11.
-) [6
+(./tutorial.listing) (./tutorial.listing)) [6
 
 ] [7
 
@@ -1341,32 +1636,48 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5> not available
 ] [9
 
 ]
-<figs/TeXstudio.png, id=326, 1156.32pt x 602.85225pt>
-File: figs/TeXstudio.png Graphic file (type png)
-<use figs/TeXstudio.png>
-Package pdftex.def Info: figs/TeXstudio.png  used on input line 174.
-(pdftex.def)             Requested size: 291.0721pt x 151.75215pt.
- [10
-
- <./figs/TeXstudio.png>]
-<figs/overleaf.png, id=356, 1155.1155pt x 563.10374pt>
-File: figs/overleaf.png Graphic file (type png)
-<use figs/overleaf.png>
-Package pdftex.def Info: figs/overleaf.png  used on input line 184.
-(pdftex.def)             Requested size: 239.70367pt x 116.84615pt.
- [11
-
- <./figs/overleaf.png>] [12
-
-]
 \openout4 = `tutorial.vrb'.
 
  (./tutorial.vrb
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 9.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 12.
 
 (d:/Program Files/texlive/2019/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)) [13
+)
+LaTeX Font Info:    Try loading font information for C70+gkai on input line 13.
+
+
+(d:/Program Files/texlive/2019/texmf-dist/tex/latex/cjk/texinput/UTF8/c70gkai.f
+d
+File: c70gkai.fd 2015/04/18 4.8.4
+)
+(d:/Program Files/texlive/2019/texmf-dist/tex/latex/cjk/texinput/UTF8/c70gkai.f
+dx
+File: c70gkai.fdx 2015/04/18 4.8.4
+)) [10
+
+]
+<figs/TeXstudio.png, id=355, 1156.32pt x 602.85225pt>
+File: figs/TeXstudio.png Graphic file (type png)
+<use figs/TeXstudio.png>
+Package pdftex.def Info: figs/TeXstudio.png  used on input line 280.
+(pdftex.def)             Requested size: 291.0721pt x 151.75215pt.
+ [11
+
+ <./figs/TeXstudio.png>]
+<figs/overleaf.png, id=386, 1155.1155pt x 563.10374pt>
+File: figs/overleaf.png Graphic file (type png)
+<use figs/overleaf.png>
+Package pdftex.def Info: figs/overleaf.png  used on input line 292.
+(pdftex.def)             Requested size: 239.70367pt x 116.84615pt.
+ [12
+
+ <./figs/overleaf.png>]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 300.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 300.
+ [13
 
 ]
 \openout4 = `tutorial.vrb'.
@@ -1379,43 +1690,36 @@ File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
  (./tutorial.vrb) [15
 
-] [16
+]
+\openout4 = `tutorial.vrb'.
 
-] [17
+ (./tutorial.vrb) [16
+
+]
+\openout4 = `tutorial.vrb'.
+
+
+(./tutorial.vrb) [17
+
+] [18
 
 ]
 \openout4 = `tutorial.vrb'.
 
  (./tutorial.vrb
-\openout6 = `tutorial.tmp'.
+\openout7 = `tutorial.listing'.
 
-
-(./tutorial.tmp)
---------------------------------
-pos=l
-width=171.21765pt
-hsep=10.0pt
-vsep=12.0pt
-overhang=0pt
-rframe=single
-codefile=tutorial.tmp
-\lst@firstline=1\relax 
-\lst@lastline=9999999\relax 
-\lst@linerange=
-\if@SX@wide=FALSE
-\if@SX@rangeaccept=FALSE
-\if@SX@varwidth=FALSE
-graphicfile=, graphicparameter=[width=\linewidth ]
---------------------------------
-(./tutorial.tmp)) [18
+ (./tutorial.listing)
+(./tutorial.listing)) [19
 
 ]
 \openout4 = `tutorial.vrb'.
 
  (./tutorial.vrb
-\openout6 = `tutorial.tmp'.
+\openout7 = `tutorial.listing'.
 
- (./tutorial.tmp
+ (./tutorial.listing)
+(./tutorial.listing
 LaTeX Font Info:    Try loading font information for T1+lmr on input line 7.
 
 (d:/Program Files/texlive/2019/texmf-dist/tex/latex/lm/t1lmr.fd
@@ -1425,360 +1729,146 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 LaTeX Font Warning: Font shape `T1/lmss/m/sc' in size <10.95> not available
 (Font)              Font shape `T1/lmr/m/sc' tried instead on input line 7.
 
-)
---------------------------------
-pos=l
-width=171.21765pt
-hsep=10.0pt
-vsep=12.0pt
-overhang=0pt
-rframe=single
-codefile=tutorial.tmp
-\lst@firstline=1\relax 
-\lst@lastline=9999999\relax 
-\lst@linerange=
-\if@SX@wide=FALSE
-\if@SX@rangeaccept=FALSE
-\if@SX@varwidth=FALSE
-graphicfile=, graphicparameter=[width=\linewidth ]
---------------------------------
-(./tutorial.tmp)) [19
+)) [20
 
 ]
 \openout4 = `tutorial.vrb'.
 
  (./tutorial.vrb
-\openout6 = `tutorial.tmp'.
+\openout7 = `tutorial.listing'.
 
- (./tutorial.tmp)
---------------------------------
-pos=l
-width=171.21765pt
-hsep=10.0pt
-vsep=12.0pt
-overhang=0pt
-rframe=single
-codefile=tutorial.tmp
-\lst@firstline=1\relax 
-\lst@lastline=9999999\relax 
-\lst@linerange=
-\if@SX@wide=FALSE
-\if@SX@rangeaccept=FALSE
-\if@SX@varwidth=FALSE
-graphicfile=, graphicparameter=[width=\linewidth ]
---------------------------------
-(./tutorial.tmp)) [20
+ (./tutorial.listing) (./tutorial.listing)) [21
+
+]
+\openout4 = `tutorial.vrb'.
+
+
+(./tutorial.vrb
+\openout7 = `tutorial.listing'.
+
+ (./tutorial.listing) (./tutorial.listing)) [22
 
 ]
 \openout4 = `tutorial.vrb'.
 
  (./tutorial.vrb
-\openout6 = `tutorial.tmp'.
+\openout7 = `tutorial.listing'.
 
- (./tutorial.tmp)
---------------------------------
-pos=l
-width=171.21765pt
-hsep=10.0pt
-vsep=12.0pt
-overhang=0pt
-rframe=single
-codefile=tutorial.tmp
-\lst@firstline=1\relax 
-\lst@lastline=9999999\relax 
-\lst@linerange=
-\if@SX@wide=FALSE
-\if@SX@rangeaccept=FALSE
-\if@SX@varwidth=FALSE
-graphicfile=, graphicparameter=[width=\linewidth ]
---------------------------------
-(./tutorial.tmp)) [21
-
-]
-\openout4 = `tutorial.vrb'.
-
- (./tutorial.vrb
-\openout6 = `tutorial.tmp'.
-
+(./tutorial.listing
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 11.
+(Font)              <9> on input line 5.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <9> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 11.
- (./tutorial.tmp)
---------------------------------
-pos=l
-width=171.21765pt
-hsep=10.0pt
-vsep=12.0pt
-overhang=0pt
-rframe=single
-codefile=tutorial.tmp
-\lst@firstline=1\relax 
-\lst@lastline=9999999\relax 
-\lst@linerange=
-\if@SX@wide=FALSE
-\if@SX@rangeaccept=FALSE
-\if@SX@varwidth=FALSE
-graphicfile=, graphicparameter=[width=\linewidth ]
---------------------------------
-(./tutorial.tmp)) [22
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 5.
+) (./tutorial.listing)) [23
 
 ]
 \openout4 = `tutorial.vrb'.
 
  (./tutorial.vrb
-\openout6 = `tutorial.tmp'.
+\openout7 = `tutorial.listing'.
 
- (./tutorial.tmp)
---------------------------------
-pos=l
-width=171.21765pt
-hsep=10.0pt
-vsep=12.0pt
-overhang=0pt
-rframe=single
-codefile=tutorial.tmp
-\lst@firstline=1\relax 
-\lst@lastline=9999999\relax 
-\lst@linerange=
-\if@SX@wide=FALSE
-\if@SX@rangeaccept=FALSE
-\if@SX@varwidth=FALSE
-graphicfile=, graphicparameter=[width=\linewidth ]
---------------------------------
-(./tutorial.tmp))
-Overfull \vbox (26.4248pt too high) detected at line 362
+
+(./tutorial.listing) (./tutorial.listing)) [24
+
+]
+\openout4 = `tutorial.vrb'.
+
+ (./tutorial.vrb
+\openout7 = `tutorial.listing'.
+
+
+(./tutorial.listing) (./tutorial.listing)) [25
+
+]
+\openout4 = `tutorial.vrb'.
+
+ (./tutorial.vrb
+\openout7 = `tutorial.listing'.
+
+
+(./tutorial.listing) (./tutorial.listing)) [26
+
+] [27
+
+]
+\openout4 = `tutorial.vrb'.
+
+ (./tutorial.vrb
+\openout7 = `tutorial.listing'.
+
+
+(./tutorial.listing) (./tutorial.listing)) [28
+
+]
+\openout4 = `tutorial.vrb'.
+
+ (./tutorial.vrb
+\openout7 = `tutorial.listing'.
+
+
+(./tutorial.listing) (./tutorial.listing)
+Underfull \hbox (badness 3118) in paragraph at lines 4--14
+\T1/lmss/m/n/10.95 Equation []1[][] is mass-energy
  []
 
-[23
+
+LaTeX Warning: Characters dropped after `\end{codeshow}' on input line 14.
+
+) [29
 
 ]
 \openout4 = `tutorial.vrb'.
 
  (./tutorial.vrb
-\openout6 = `tutorial.tmp'.
+\openout7 = `tutorial.listing'.
 
- (./tutorial.tmp)
---------------------------------
-pos=l
-width=171.21765pt
-hsep=10.0pt
-vsep=12.0pt
-overhang=0pt
-rframe=single
-codefile=tutorial.tmp
-\lst@firstline=1\relax 
-\lst@lastline=9999999\relax 
-\lst@linerange=
-\if@SX@wide=FALSE
-\if@SX@rangeaccept=FALSE
-\if@SX@varwidth=FALSE
-graphicfile=, graphicparameter=[width=\linewidth ]
---------------------------------
-(./tutorial.tmp)) [24
+ (./tutorial.listing) (./tutorial.listing)
 
-] [25
+LaTeX Warning: Characters dropped after `\end{codeshow}' on input line 9.
+
+) [30
 
 ]
 \openout4 = `tutorial.vrb'.
 
  (./tutorial.vrb
-\openout6 = `tutorial.tmp'.
+\openout7 = `tutorial.listing'.
 
- (./tutorial.tmp)
---------------------------------
-pos=l
-width=171.21765pt
-hsep=10.0pt
-vsep=12.0pt
-overhang=0pt
-rframe=single
-codefile=tutorial.tmp
-\lst@firstline=1\relax 
-\lst@lastline=9999999\relax 
-\lst@linerange=
-\if@SX@wide=FALSE
-\if@SX@rangeaccept=FALSE
-\if@SX@varwidth=FALSE
-graphicfile=, graphicparameter=[width=\linewidth ]
---------------------------------
-(./tutorial.tmp)) [26
+ (./tutorial.listing) (./tutorial.listing)
+
+LaTeX Warning: Characters dropped after `\end{codeshow}' on input line 11.
+
+) [31
 
 ]
 \openout4 = `tutorial.vrb'.
 
  (./tutorial.vrb
-\openout6 = `tutorial.tmp'.
+\openout7 = `tutorial.listing'.
 
- (./tutorial.tmp)
---------------------------------
-pos=l
-width=171.21765pt
-hsep=10.0pt
-vsep=12.0pt
-overhang=0pt
-rframe=single
-codefile=tutorial.tmp
-\lst@firstline=1\relax 
-\lst@lastline=9999999\relax 
-\lst@linerange=
-\if@SX@wide=FALSE
-\if@SX@rangeaccept=FALSE
-\if@SX@varwidth=FALSE
-graphicfile=, graphicparameter=[width=\linewidth ]
---------------------------------
-(./tutorial.tmp)) [27
+ (./tutorial.listing) (./tutorial.listing)
+
+LaTeX Warning: Characters dropped after `\end{codeshow}' on input line 12.
+
+) [32
 
 ]
 \openout4 = `tutorial.vrb'.
 
  (./tutorial.vrb
-\openout6 = `tutorial.tmp'.
+\openout7 = `tutorial.listing'.
 
- (./tutorial.tmp)
---------------------------------
-pos=l
-width=171.21765pt
-hsep=10.0pt
-vsep=12.0pt
-overhang=0pt
-rframe=single
-codefile=tutorial.tmp
-\lst@firstline=1\relax 
-\lst@lastline=9999999\relax 
-\lst@linerange=
-\if@SX@wide=FALSE
-\if@SX@rangeaccept=FALSE
-\if@SX@varwidth=FALSE
-graphicfile=, graphicparameter=[width=\linewidth ]
---------------------------------
-(./tutorial.tmp)) [28
+ (./tutorial.listing) (./tutorial.listing
+Overfull \hbox (4.93542pt too wide) detected at line 6
+[][]
+ []
 
-]
-\openout4 = `tutorial.vrb'.
+)
 
- (./tutorial.vrb
-\openout6 = `tutorial.tmp'.
+LaTeX Warning: Characters dropped after `\end{codeshow}' on input line 14.
 
- (./tutorial.tmp)
---------------------------------
-pos=l
-width=171.21765pt
-hsep=10.0pt
-vsep=12.0pt
-overhang=0pt
-rframe=single
-codefile=tutorial.tmp
-\lst@firstline=1\relax 
-\lst@lastline=9999999\relax 
-\lst@linerange=
-\if@SX@wide=FALSE
-\if@SX@rangeaccept=FALSE
-\if@SX@varwidth=FALSE
-graphicfile=, graphicparameter=[width=\linewidth ]
---------------------------------
-(./tutorial.tmp)) [29
-
-]
-\openout4 = `tutorial.vrb'.
-
- (./tutorial.vrb
-\openout6 = `tutorial.tmp'.
-
- (./tutorial.tmp)
---------------------------------
-pos=l
-width=171.21765pt
-hsep=10.0pt
-vsep=12.0pt
-overhang=0pt
-rframe=single
-codefile=tutorial.tmp
-\lst@firstline=1\relax 
-\lst@lastline=9999999\relax 
-\lst@linerange=
-\if@SX@wide=FALSE
-\if@SX@rangeaccept=FALSE
-\if@SX@varwidth=FALSE
-graphicfile=, graphicparameter=[width=\linewidth ]
---------------------------------
-(./tutorial.tmp)) [30
-
-]
-\openout4 = `tutorial.vrb'.
-
- (./tutorial.vrb
-\openout6 = `tutorial.tmp'.
-
- (./tutorial.tmp)
---------------------------------
-pos=l
-width=171.21765pt
-hsep=10.0pt
-vsep=12.0pt
-overhang=0pt
-rframe=single
-codefile=tutorial.tmp
-\lst@firstline=1\relax 
-\lst@lastline=9999999\relax 
-\lst@linerange=
-\if@SX@wide=FALSE
-\if@SX@rangeaccept=FALSE
-\if@SX@varwidth=FALSE
-graphicfile=, graphicparameter=[width=\linewidth ]
---------------------------------
-(./tutorial.tmp)) [31
-
-]
-\openout4 = `tutorial.vrb'.
-
- (./tutorial.vrb
-\openout6 = `tutorial.tmp'.
-
- (./tutorial.tmp)
---------------------------------
-pos=l
-width=171.21765pt
-hsep=10.0pt
-vsep=12.0pt
-overhang=0pt
-rframe=single
-codefile=tutorial.tmp
-\lst@firstline=1\relax 
-\lst@lastline=9999999\relax 
-\lst@linerange=
-\if@SX@wide=FALSE
-\if@SX@rangeaccept=FALSE
-\if@SX@varwidth=FALSE
-graphicfile=, graphicparameter=[width=\linewidth ]
---------------------------------
-(./tutorial.tmp)) [32
-
-]
-\openout4 = `tutorial.vrb'.
-
- (./tutorial.vrb
-\openout6 = `tutorial.tmp'.
-
- (./tutorial.tmp)
---------------------------------
-pos=l
-width=171.21765pt
-hsep=10.0pt
-vsep=12.0pt
-overhang=0pt
-rframe=single
-codefile=tutorial.tmp
-\lst@firstline=1\relax 
-\lst@lastline=9999999\relax 
-\lst@linerange=
-\if@SX@wide=FALSE
-\if@SX@rangeaccept=FALSE
-\if@SX@varwidth=FALSE
-graphicfile=, graphicparameter=[width=\linewidth ]
---------------------------------
-(./tutorial.tmp))
-Overfull \vbox (2.53313pt too high) detected at line 492
+)
+Overfull \vbox (14.53885pt too high) detected at line 579
  []
 
 [33
@@ -1787,182 +1877,144 @@ Overfull \vbox (2.53313pt too high) detected at line 492
 \openout4 = `tutorial.vrb'.
 
  (./tutorial.vrb
-<"figs/online equation editor".png, id=1025, 787.743pt x 272.81924pt>
+\openout7 = `tutorial.listing'.
+
+ (./tutorial.listing) (./tutorial.listing)
+
+LaTeX Warning: Characters dropped after `\end{codeshow}' on input line 14.
+
+) [34
+
+]
+\openout4 = `tutorial.vrb'.
+
+ (./tutorial.vrb
+\openout7 = `tutorial.listing'.
+
+ (./tutorial.listing) (./tutorial.listing))
+Overfull \vbox (43.44997pt too high) detected at line 611
+ []
+
+[35
+
+]
+\openout4 = `tutorial.vrb'.
+
+ (./tutorial.vrb
+<"figs/online equation editor".png, id=1069, 787.743pt x 272.81924pt>
 File: "figs/online equation editor".png Graphic file (type png)
 <use "figs/online equation editor".png>
 Package pdftex.def Info: "figs/online equation editor".png  used on input line 
 14.
 (pdftex.def)             Requested size: 239.70367pt x 83.01616pt.
-) [34
+) [36
 
- <./figs/online equation editor.png>] [35
+ <./figs/online equation editor.png>] [37
 
 ]
 \openout4 = `tutorial.vrb'.
 
 
 (./tutorial.vrb
-\openout6 = `tutorial.tmp'.
+\openout7 = `tutorial.listing'.
 
- (./tutorial.tmp
-<"figs/new york".jpg, id=1082, 259.97125pt x 194.7275pt>
+ (./tutorial.listing) (./tutorial.listing
+<"figs/new york".jpg, id=1128, 259.97125pt x 194.7275pt>
 File: "figs/new york".jpg Graphic file (type jpg)
 <use "figs/new york".jpg>
 Package pdftex.def Info: "figs/new york".jpg  used on input line 3.
-(pdftex.def)             Requested size: 115.09186pt x 86.20627pt.
+(pdftex.def)             Requested size: 95.87999pt x 71.81627pt.
 )
---------------------------------
-pos=l
-width=171.21765pt
-hsep=10.0pt
-vsep=12.0pt
-overhang=0pt
-rframe=single
-codefile=tutorial.tmp
-\lst@firstline=1\relax 
-\lst@lastline=9999999\relax 
-\lst@linerange=
-\if@SX@wide=FALSE
-\if@SX@rangeaccept=FALSE
-\if@SX@varwidth=FALSE
-graphicfile=, graphicparameter=[width=\linewidth ]
---------------------------------
-(./tutorial.tmp)) [36
+
+LaTeX Warning: Characters dropped after `\end{codeshow}' on input line 15.
+
+) [38
 
  <./figs/new york.jpg>]
 \openout4 = `tutorial.vrb'.
 
- (./tutorial.vrb) [37
+ (./tutorial.vrb) [39
+
+]
+\openout4 = `tutorial.vrb'.
+
+ (./tutorial.vrb) [40
 
 ]
 \openout4 = `tutorial.vrb'.
 
 
-(./tutorial.vrb) [38
+(./tutorial.vrb
+\openout7 = `tutorial.listing'.
 
-]
-\openout4 = `tutorial.vrb'.
-
- (./tutorial.vrb
-\openout6 = `tutorial.tmp'.
-
- (./tutorial.tmp)
---------------------------------
-pos=l
-width=171.21765pt
-hsep=10.0pt
-vsep=12.0pt
-overhang=0pt
-rframe=single
-codefile=tutorial.tmp
-\lst@firstline=1\relax 
-\lst@lastline=9999999\relax 
-\lst@linerange=
-\if@SX@wide=FALSE
-\if@SX@rangeaccept=FALSE
-\if@SX@varwidth=FALSE
-graphicfile=, graphicparameter=[width=\linewidth ]
---------------------------------
-(./tutorial.tmp)) [39
+ (./tutorial.listing) (./tutorial.listing)) [41
 
 ]
 \openout4 = `tutorial.vrb'.
 
  (./tutorial.vrb
-\openout6 = `tutorial.tmp'.
+\openout7 = `tutorial.listing'.
 
- (./tutorial.tmp)
---------------------------------
-pos=l
-width=171.21765pt
-hsep=10.0pt
-vsep=12.0pt
-overhang=0pt
-rframe=single
-codefile=tutorial.tmp
-\lst@firstline=1\relax 
-\lst@lastline=9999999\relax 
-\lst@linerange=
-\if@SX@wide=FALSE
-\if@SX@rangeaccept=FALSE
-\if@SX@varwidth=FALSE
-graphicfile=, graphicparameter=[width=\linewidth ]
---------------------------------
-(./tutorial.tmp)) [40
+(./tutorial.listing) (./tutorial.listing)) [42
 
 ]
 \openout4 = `tutorial.vrb'.
 
  (./tutorial.vrb
-<"figs/sample table".png, id=1224, 587.796pt x 345.6915pt>
+<"figs/sample table".png, id=1266, 664.28175pt x 369.7815pt>
 File: "figs/sample table".png Graphic file (type png)
 <use "figs/sample table".png>
 Package pdftex.def Info: "figs/sample table".png  used on input line 4.
-(pdftex.def)             Requested size: 308.18968pt x 181.25337pt.
-) [41
+(pdftex.def)             Requested size: 308.18968pt x 171.56293pt.
+) [43
 
- <./figs/sample table.png>]
-LaTeX Font Info:    Try loading font information for C70+gkai on input line 650
-.
-
-(d:/Program Files/texlive/2019/texmf-dist/tex/latex/cjk/texinput/UTF8/c70gkai.f
-d
-File: c70gkai.fd 2015/04/18 4.8.4
-)
-(d:/Program Files/texlive/2019/texmf-dist/tex/latex/cjk/texinput/UTF8/c70gkai.f
-dx
-File: c70gkai.fdx 2015/04/18 4.8.4
-) [42
+ <./figs/sample table.png>] [44
 
 ]
-<"figs/LaTeX online table editor".png, id=1284, 875.6715pt x 478.1865pt>
+<"figs/LaTeX online table editor".png, id=1325, 875.6715pt x 478.1865pt>
 File: "figs/LaTeX online table editor".png Graphic file (type png)
 <use "figs/LaTeX online table editor".png>
 Package pdftex.def Info: "figs/LaTeX online table editor".png  used on input li
-ne 667.
+ne 788.
 (pdftex.def)             Requested size: 205.46327pt x 112.19872pt.
- [43
+ [45
 
- <./figs/LaTeX online table editor.png>] [44
+ <./figs/LaTeX online table editor.png>] [46
 
 ]
 \openout4 = `tutorial.vrb'.
 
- (./tutorial.vrb
-<"figs/bib sample".png, id=1343, 279.444pt x 162.6075pt>
+
+(./tutorial.vrb
+<"figs/bib sample".png, id=1383, 279.444pt x 162.6075pt>
 File: "figs/bib sample".png Graphic file (type png)
 <use "figs/bib sample".png>
 Package pdftex.def Info: "figs/bib sample".png  used on input line 12.
 (pdftex.def)             Requested size: 136.97203pt x 79.70317pt.
-)
-[45
+) [47
 
  <./figs/bib sample.png>]
 \openout4 = `tutorial.vrb'.
 
- (./tutorial.vrb) [46
+ (./tutorial.vrb) [48
 
 ]
 \openout4 = `tutorial.vrb'.
 
- (./tutorial.vrb
+
+(./tutorial.vrb
 \openout5 = `tutorial-1.cpt'.
 
 \openout5 = `tutorial-2.cpt'.
 
 \openout5 = `tutorial-3.cpt'.
 
-
-(./tutorial.bbl
+ (./tutorial.bbl
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\translate ' on input line 1.
 
-)) [47
-
-] [48
-
-] [49
+)) [49
 
 ] [50
 
@@ -1970,60 +2022,68 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 ] [52
 
+] [53
+
+] [54
+
 ]
-\tf@nav=\write8
-\openout8 = `tutorial.nav'.
+\tf@nav=\write10
+\openout10 = `tutorial.nav'.
 
-\tf@toc=\write9
-\openout9 = `tutorial.toc'.
+\tf@toc=\write11
+\openout11 = `tutorial.toc'.
 
-\tf@snm=\write10
-\openout10 = `tutorial.snm'.
+\tf@snm=\write12
+\openout12 = `tutorial.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 783.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 783.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 905.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 905.
  (./tutorial.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 783.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 783.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 905.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 905.
 Package rerunfilecheck Info: File `tutorial.out' has not changed.
 (rerunfilecheck)             Checksum: E7B05C10F4A0F6027B4DFCD28E2019B3;379.
  ) 
 Here is how much of TeX's memory you used:
- 24277 strings out of 494490
- 432879 string characters out of 6174093
- 835420 words of memory out of 5000000
- 27064 multiletter control sequences out of 15000+600000
- 146685 words of font info for 100 fonts, out of 8000000 for 9000
+ 40317 strings out of 494490
+ 787382 string characters out of 6174093
+ 1114494 words of memory out of 5000000
+ 42991 multiletter control sequences out of 15000+600000
+ 675704 words of font info for 111 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 59i,19n,84p,802b,2811s stack positions out of 5000i,500n,10000p,200000b,80000s
-{d:/Program Files/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{d:/Pr
-ogram Files/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{d:/Progra
-m Files/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{d:/Program Fi
-les/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{d:/Program Files/
-texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}<d:/Program Files/texlive/
+ 60i,19n,83p,802b,3725s stack positions out of 5000i,500n,10000p,200000b,80000s
+{d:/Program Files/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{d
+:/Program Files/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{d:/Pr
+ogram Files/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{d:/Program Fi
+les/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{d:/Program Files/texl
+ive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}<d:/Program Files/texlive/
 2019/texmf-dist/fonts/type1/arphic/gkaiu/gkaiuff.pfb><d:/Program Files/texlive/
 2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><d:/Program Files/texlive/201
 9/texmf-dist/fonts/type1/public/lm/lmex10.pfb><d:/Program Files/texlive/2019/te
 xmf-dist/fonts/type1/public/lm/lmmi10.pfb><d:/Program Files/texlive/2019/texmf-
-dist/fonts/type1/public/lm/lmmi6.pfb><d:/Program Files/texlive/2019/texmf-dist/
-fonts/type1/public/lm/lmmi8.pfb><d:/Program Files/texlive/2019/texmf-dist/fonts
-/type1/public/lm/lmr10.pfb><d:/Program Files/texlive/2019/texmf-dist/fonts/type
-1/public/lm/lmss10.pfb><d:/Program Files/texlive/2019/texmf-dist/fonts/type1/pu
-blic/lm/lmss12.pfb><d:/Program Files/texlive/2019/texmf-dist/fonts/type1/public
-/lm/lmss17.pfb><d:/Program Files/texlive/2019/texmf-dist/fonts/type1/public/lm/
-lmss8.pfb><d:/Program Files/texlive/2019/texmf-dist/fonts/type1/public/lm/lmss9
-.pfb><d:/Program Files/texlive/2019/texmf-dist/fonts/type1/public/lm/lmssbx10.p
-fb><d:/Program Files/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsso10.pfb>
-<d:/Program Files/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsso8.pfb><d:/
-Program Files/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><d:/Prog
-ram Files/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy6.pfb><d:/Program F
-iles/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><d:/Program Files/
-texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy9.pfb><d:/Program Files/texli
-ve/2019/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on tutorial.pdf (52 pages, 949459 bytes).
+dist/fonts/type1/public/lm/lmmi5.pfb><d:/Program Files/texlive/2019/texmf-dist/
+fonts/type1/public/lm/lmmi6.pfb><d:/Program Files/texlive/2019/texmf-dist/fonts
+/type1/public/lm/lmmi8.pfb><d:/Program Files/texlive/2019/texmf-dist/fonts/type
+1/public/lm/lmr10.pfb><d:/Program Files/texlive/2019/texmf-dist/fonts/type1/pub
+lic/lm/lmr6.pfb><d:/Program Files/texlive/2019/texmf-dist/fonts/type1/public/lm
+/lmss10.pfb><d:/Program Files/texlive/2019/texmf-dist/fonts/type1/public/lm/lms
+s12.pfb><d:/Program Files/texlive/2019/texmf-dist/fonts/type1/public/lm/lmss17.
+pfb><d:/Program Files/texlive/2019/texmf-dist/fonts/type1/public/lm/lmss8.pfb><
+d:/Program Files/texlive/2019/texmf-dist/fonts/type1/public/lm/lmss9.pfb><d:/Pr
+ogram Files/texlive/2019/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><d:/Prog
+ram Files/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsso10.pfb><d:/Program
+ Files/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsso8.pfb><d:/Program Fil
+es/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><d:/Program Files/t
+exlive/2019/texmf-dist/fonts/type1/public/lm/lmsy5.pfb><d:/Program Files/texliv
+e/2019/texmf-dist/fonts/type1/public/lm/lmsy6.pfb><d:/Program Files/texlive/201
+9/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><d:/Program Files/texlive/2019/tex
+mf-dist/fonts/type1/public/lm/lmsy9.pfb><d:/Program Files/texlive/2019/texmf-di
+st/fonts/type1/public/lm/lmtt10.pfb><d:/Program Files/texlive/2019/texmf-dist/f
+onts/type1/public/lm/lmtt8.pfb>
+Output written on tutorial.pdf (54 pages, 1017388 bytes).
 PDF statistics:
- 1669 PDF objects out of 1728 (max. 8388607)
- 1550 compressed objects within 16 object streams
- 142 named destinations out of 1000 (max. 500000)
+ 1719 PDF objects out of 1728 (max. 8388607)
+ 1594 compressed objects within 16 object streams
+ 128 named destinations out of 1000 (max. 500000)
  187 words of extra memory for PDF output out of 10000 (max. 10000000)
 

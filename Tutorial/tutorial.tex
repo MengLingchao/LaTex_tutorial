@@ -26,6 +26,11 @@
 \usepackage{color}
 \usepackage{xcolor}
 \usepackage{showexpl} 
+\usepackage{accsupp}
+\newcommand{\emptyaccsupp}[1]{\BeginAccSupp{ActualText={}}#1\EndAccSupp{}}
+\usepackage{tcolorbox}
+\tcbuselibrary{listings,skins,breakable,xparse}
+\usepackage{threeparttable}
 %\usepackage{enumitem}
 \lstloadlanguages{[LaTeX]Tex} 
 \lstset{ %
@@ -56,8 +61,74 @@
 	morekeywords={*,...}               % if you want to add more keywords to the set
 }
 
+\lstdefinestyle{latexcn}{
+	language=[LaTeX]TeX,
+	% More Keywords
+	classoffset=0,
+	texcsstyle=*\color{blue},
+	moretexcs={
+		% LaTeX extension
+		chapter,section,subsection,setlength,
+		thechapter,thesection,thesubsection,theequation,
+		chaptermark,chaptername,appendix,
+		bibname,refname,bibpreamble,bibfont,citenumfont,bibnumfmt,bibsep,
+	},
+	classoffset=1,
+	texcsstyle=*\color{orange!75!black},
+	moretexcs={
+		% XeCJK & CTeX
+		xeCJKsetup,setCJKmainfont,newCJKfontfamily,CJKfontspec,
+		CTEXthechapter,songti,heiti,fangsong,kaishu,yahei,lishu,youyuan,
+		% AMSmath / AMSsymb / AMSthm
+		middle,text,tag,boldsymbol,mathbb,dddot,ddddot,iint,varoiint,
+		dfrac,tfrac,cfrac,leftroot,uproot,underbracket,xleftarrow,xrightarrow,
+		overset,underset,sideset,mathring,leqslant,geqslant,because,therefore,
+		shortintertext,binom,dbinom,implies,thesubequation,
+		impliedby,genfrac,theoremstyle,qedhere,
+		% Other math packages
+		wideparen,intertext,
+		xlongequal,xLeftrightarrow,xleftrightarrow,xLongleftarrow,xLongrightarrow,
+		% xcolor
+		definecolor,color,textcolor,colorbox,fcolorbox,
+		% hyperref
+		hyperref,autoref,href,url,nolinkurl,
+		% Graph & Table
+		includegraphics,graphicspath,scalebox,rotatebox,animategraphics,
+		newcolumntype,arraybackslash,multirow,captionsetup,
+		thead,multirowcell,makecell,Xhline,Xcline,diagbox,
+		toprule,midrule,bottomrule,DeclareFloatingEnvironment,
+		% ulem
+		uline,uuline,dashuline,dotuline,uwave,sout,xout,
+		% fancyhdr
+		lhead,chead,rhead,lfoot,cfoot,rfoot,
+		fancyhf,fancyhead,fancyfoot,fancypagestyle,
+		% fontspec
+		newfontfamily,
+		% titlesec & titletoc
+		titlelabel,titleformat,titlespacing,titleline,titlerule,dottecontents,titlecontents,
+		% enumitem
+		setlist,
+		% Listings & tcolorbox
+		lstdefinelanguage,lstdefinestyle,lstset,lstnewenvironment,
+		tcbuselibrary,newtcblisting,newtcbox,DeclareTCBListing
+		% citation & index: natbib, imakeidx
+		setcitestyle,printindex,
+		% Other packages
+		hologo,lettrine,endfirsthead,endhead,endlastfoot,columncolor,rowcolors,modulolinenumbers,MakeShortVerb,tikz
+	}
+}
+
+\NewTCBListing{codeshow}{ !O{listing side text} }{
+	skin=bicolor,colback=gray!30!white,
+	colbacklower=yellow!25!pink,colframe=red!75!black,
+	valign lower=center,
+	left=6mm,righthand width=0.4\linewidth,fontupper=\small,
+	% listing style
+	listing options={style=latexcn},#1,
+}
 \definecolor{myred}{RGB}{231, 76, 60}
 \setbeamertemplate{caption}[numbered]
+\usepackage{tikz}
 
 \setbeamercolor{section name}{fg=white}
 
@@ -74,6 +145,12 @@
 	\endgroup
 }
 \makeatother
+
+
+
+
+
+
 \begin{document}
 	
 	\begin{CJK*}{UTF8}{gkai}
@@ -81,7 +158,7 @@
 	\author[LC Meng]{Lingchao Meng}
 	\title[LaTeX Tutorial]{\LaTeX\ Tutorial}
 	%\subtitle{}
-	%\logo{}
+
 	\institute[SE, PKU]{School of Economics\\Peking University}
 	%\date{}
 	%\subject{}
@@ -92,7 +169,7 @@
 \end{frame}
 
 \begin{frame}
-	This is  just a beginners guide to writing documents in \LaTeX\ without prior knowledge of \LaTeX. This slide is designed for the \LaTeX\ workshop at School of Economics, Peking University.
+	This is  just a beginner guide to writing documents in \LaTeX\ without prior knowledge of \LaTeX. This slide is designed for the \LaTeX\ workshop at School of Economics, Peking University.
 \end{frame}
 
 \begin{frame}
@@ -119,21 +196,23 @@
 \begin{frame}[fragile]{What's \LaTeX?}
 \LaTeX\ (pronounced either “Lay-tech” or “Lah-tech”) 
 	\begin{itemize}
-		\item is based on Tex, a typesetting system designed by Donald Knuth in 1978 for high quality digital typesetting.
+		\item is based on \TeX, a typesetting system designed by Donald Knuth in 1978 for high quality digital typesetting.
 		\item is a \textit{typesetting system} and \textit{programming language}, not a \textit{word processor}.
 	\end{itemize}
 
 \vskip 0.25cm
-\begin{LTXexample}[caption={the typesetting nature of \LaTeX}]
+\begin{codeshow}
 This is \textbf{my} \emph{first} document prepared in \LaTeX. I \underline{typed} it on \today.
-\end{LTXexample} 
+\end{codeshow} 
 \end{frame}
+
+
 
 \begin{frame}{Why \LaTeX?}
 \begin{itemize}
-	\item Donald Knuth says that his aim in creating TEX is to beautifully
+	\item Donald Knuth says that his aim in creating \TeX\ is to beautifully
 	typeset \textit{technical documents} especially those \textit{containing a lot of Mathematics}.
-	\item Most English journals have their own \LaTeX\ template.
+	\item Most English journals have their own \LaTeX\ template or accept \LaTeX\ submission. \LaTeX\ is widely used in English paper writing. 
 	\item Even for ordinary text, \LaTeX\ is also a good choice.
 \end{itemize}
 \end{frame}
@@ -151,7 +230,7 @@ This is \textbf{my} \emph{first} document prepared in \LaTeX. I \underline{typed
 There are many different editors of \LaTeX.
 \begin{itemize}
 \item professional \LaTeX\ editors, such as TeXstudio, TeXwork.
-\item edit \LaTeX files using Vim, Sublime Text, Visual Code, etc.
+\item edit \LaTeX files using Vim, Sublime Text, Visual Studio Code, etc.
 \item For more comparison of \LaTeX, you can refer to https://en.wikipedia.org/wiki/Comparison\_of\_TeX\_editors
 \end{itemize}
  \vskip 0.75cm
@@ -160,8 +239,35 @@ Recommend Tex Live with TexStudio, you can refer to https://blog.csdn.net/zywheh
 
 \vskip 0.75cm
 
-Aside: you may change the default compiler to pdfLaTeX through Options-Configure TeXstudio-Build
+Aside: you may change the default compiler to \alert{pdfLaTeX} through Options-Configure TeXstudio-Build
 \end{frame}
+
+
+\begin{frame}[fragile]{From .tex file to .pdf file}
+	\begin{center}
+		\centering
+		\begin{tikzpicture}[auto,>=latex,shorten >=1pt]
+		\scope[every node/.style={draw,fill=blue!10}]
+		\node (src) at (0,0) {.tex file};
+		\node (pdf) at (6,0) {.pdf file};
+		\node[draw=gray,text=gray] (dvi) at (1,-1.5) {.dvi file};
+		\node[draw=gray,text=gray] (ps) at (5,-1.5) {.ps file};
+		\endscope
+		\scope[every node/.style={font={\scriptsize\ttfamily},inner sep=0pt}]
+		\draw[->] (src) edge[bend left=25] node{pdflatex (for English)} (pdf);
+		\draw[->,thick] (src) edge[bend left=4] node{xelatex（(for Chinese)} (pdf);
+		\draw[->] (src) edge[bend right=4] node[swap]{lualatex} (pdf);
+		\draw[->,gray] (src) -- node[swap]{latex} (dvi);
+		\draw[->,gray] (dvi) -- node[swap]{dvipdfmx} (pdf);
+		\draw[->,gray] (dvi) -- node[swap]{dvips (old)} (ps);
+		\draw[->,gray] (ps) -- node[swap]{ps2pdf} (pdf);
+		\endscope
+		\node[anchor=west,text width=3.5cm] at (7,0){}
+		;
+		\end{tikzpicture}
+	\end{center}
+\end{frame}
+
 
 \begin{frame}{Installation}
  \begin{figure}
@@ -172,9 +278,11 @@ Aside: you may change the default compiler to pdfLaTeX through Options-Configure
  \end{figure}
  
 \end{frame}
+
+
 \begin{frame}{Online \LaTeX}
 	
-	Overleaf(https://www.overleaf.com/) is a great \LaTeX\ editing tool with all the features that make your document creations easy. Overleaf comes with over hundreds of templates ranging from Lab report and Thesis to Resume/CV and formal letters. 
+	\alert{Overleaf(https://www.overleaf.com/)} is a great \LaTeX\ editing tool with all the features that make your document creations easy. Overleaf comes with over hundreds of templates ranging from Lab report and Thesis to Resume/CV and formal letters. 
 \begin{figure}
 	\centering
 	\includegraphics[width=0.7\linewidth]{figs/overleaf}
@@ -215,18 +323,29 @@ Aside: you may change the default compiler to pdfLaTeX through Options-Configure
 	\end{lstlisting}
 \end{frame}
 
-
+\begin{frame}[fragile]{Document Structure}
+	\LaTeX\ is extremely suitable for \textit{well-structured} article. 
+	\begin{enumerate}
+		\cprotect\item Title: \verb|\title{} \author{} \date{}...| $\Rightarrow$ \verb|\maketitle|
+		\cprotect\item Abstract: \verb|\begin{abstract}...\end{abstract}|
+		\cprotect\item Contents: \verb|\tableofcontents|
+		\cprotect\item Sections: \verb|\section \subsection...|
+		\cprotect\item Appendix: \verb|\appendix|
+		\cprotect\item References: \verb|\bibliography{}|
+		
+	\end{enumerate}
+\end{frame}
 \begin{frame}[fragile]{Document Structure}
 	\LaTeX\ can organize, number, and index chapters and sections of document. There are up to 7 levels of depth for defining sections depending on the document class
-	\begin{itemize}
-		\cprotect\item \verb+\part{title}+
-		\cprotect\item \verb+\chapter{title}+
-		\cprotect\item \verb+\section{title}+
+	\begin{enumerate}
+		\cprotect\item \verb+\part{title}+: the highest level
+		\cprotect\item \verb+\chapter{title}+: the highest level of report, book class
+		\cprotect\item \verb+\section{title}+: the highest level of article
 		\cprotect\item \verb+\subsection{title}+
 		\cprotect\item \verb+\subsubsection{title}+
-		\cprotect\item \verb+\paragraph{title}+
-		\cprotect\item \verb+\subparagraph{title}+
-	\end{itemize}
+		\cprotect\item \verb+\paragraph{title}+: not numbered
+		\cprotect\item \verb+\subparagraph{title}+: not numbered
+	\end{enumerate}
 \end{frame}
 
 
@@ -241,11 +360,7 @@ Aside: you may change the default compiler to pdfLaTeX through Options-Configure
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{A little sample}
-	\begin{center}
-		\alert{{\Large See the simple sample!}}
-	\end{center}
-\end{frame}
+
 
 \section{Basic Typesetting}
 
@@ -260,18 +375,18 @@ Aside: you may change the default compiler to pdfLaTeX through Options-Configure
 	\end{itemize}
 
 \vskip 0.5cm
-\begin{LTXexample}[caption={new paragraph}]
+\begin{codeshow}
 The first paragraph.\par
 The second paragraph.
 
 The third paragraph.
-\end{LTXexample}
+\end{codeshow}
 \end{frame}
 
 
 \begin{frame}[fragile]{Font effects}
 There are \LaTeX\ commands for a variety of font effects:
-\begin{LTXexample}[caption={Font effects}]
+\begin{codeshow}
 \textbf{hello world}
 
 \textit{hello wolld}
@@ -281,7 +396,7 @@ There are \LaTeX\ commands for a variety of font effects:
 \textsc{hello world}
 
 \textrm{hello world}
-\end{LTXexample}
+\end{codeshow}
 \end{frame}
 
 
@@ -294,20 +409,20 @@ There are \LaTeX\ commands for a variety of font effects:
 
 \vskip 1cm
 
-\begin{LTXexample}[caption={Colored text}]
+\begin{codeshow}
 \textcolor{red}{Red}
 \textcolor{gray}{Gray}
 \textcolor{myred}{Myred}
-\end{LTXexample}
+\end{codeshow}
 \end{frame}
 
 
  \begin{frame}[fragile]{Font size}
 \begin{itemize}
-	\item The global font size can be set by the documentclass option.
-	\item The local font size can be changed by the following commands.
+	\item The \textit{global font size} can be set by the documentclass option.
+	\item The \textit{local font size} can be changed by the following commands.
 \end{itemize}
-\begin{LTXexample}[caption={Font size}]
+\begin{codeshow}
 {\tiny tiny}\\
 {\scriptsize scriptsize}\\
 {\footnotesize footnotesize}\\
@@ -318,15 +433,15 @@ There are \LaTeX\ commands for a variety of font effects:
 {\LARGE LARGE}\\
 {\huge huge}\\
 {\Huge Huge}
-\end{LTXexample}
+\end{codeshow}
 \end{frame}
 
  \begin{frame}[fragile]{Lists}
  	\begin{itemize}
- 		\cprotect\item \LaTeX\ supports two types of lists: \textit{enumerate} produces numbered lists, while \textit{itemize} is for bulleted lists. Each list item is defined by \verb+\item+. Lists can be nested to produce sub-lists.
+ 		\cprotect\item \LaTeX\ supports two types of lists: \alert{\textit{enumerate}} produces numbered lists, while \alert{\textit{itemize}} is for bulleted lists. Each list item is defined by \verb+\item+. Lists can be nested to produce sub-lists.
  	\end{itemize}
 
-\begin{LTXexample}[caption={Lists}]
+\begin{codeshow}
 \begin{enumerate}
 	\item First thing
 	\item Second thing
@@ -336,35 +451,40 @@ There are \LaTeX\ commands for a variety of font effects:
 	\end{itemize}
 	\item[(3)] Third thing
 \end{enumerate}
-\end{LTXexample}
+\end{codeshow}
 \end{frame}
 
- \begin{frame}[fragile]{Comments and Spacing}
+ \begin{frame}[fragile]{Comments}
 	\begin{itemize}
-		\cprotect\item \LaTeX\ Comments are created using \%. When \LaTeX\ encounters a \% character while	processing a .tex file, it ignores the rest of the line.
-		\item Multiple consecutive spaces in\LaTeX\ are treated as a single space. Several empty lines are treated as one empty line.
+	\cprotect\item \LaTeX\ Comments are created using \%. When \LaTeX\ encounters a \% character while	processing a .tex file, it ignores the rest of the line.
+	\end{itemize}
+	
+\begin{codeshow}
+%comments 1
+The following is comments 2. % comments 2
+\end{codeshow}
+\end{frame}
+
+ \begin{frame}[fragile]{Spacing}
+	\begin{itemize}
+		\item Multiple consecutive spaces in \LaTeX\ are treated as a single space. Several empty lines are treated as one empty line.
 		\cprotect\item Use \verb*+\ + to produce more space and \verb+\vspace{length}+ to produce vertical space.
 	\end{itemize}
 	
-\begin{LTXexample}[caption={Comments and Spacing}]
-%comments 1
-The following is comments 2. % comments 2
-
+	\begin{codeshow}
 more space in line  like \ \ \ ahh.
-
-
+	
+		
 more vertical space like following.
-
-\vspace{0.5in}
-
+\vspace{0.25in}
+		
 third paragraph.
-\end{LTXexample}
+	\end{codeshow}
 \end{frame}
-
 \begin{frame}[fragile]{Special characters}
-\begin{LTXexample}[caption={Special characters}]
+\begin{codeshow}
 \# \$ \% \^{} \& \_ \{ \} \~{} \textbackslash
-\end{LTXexample}
+\end{codeshow}
 \end{frame}
 
 \section{Equations}
@@ -373,59 +493,59 @@ third paragraph.
 \end{frame}
 
 \begin{frame}[fragile]{Mathematical modes}
-	\LaTeX\ allows two writing modes for mathematical expressions: the \textit{inline mode} and the \textit{display mode}. The first one is used to write formulas that are part of a text. The second one is used to write expressions that are not part of a text or paragraph, and are therefore put on separate lines.
+	\LaTeX\ allows two writing modes for mathematical expressions: the \alert{\textit{inline mode}} and the \alert{\textit{display mode}}. The first one is used to write formulas that are part of a text. The second one is used to write expressions that are not part of a text or paragraph, and are therefore put on separate lines.
 	\begin{itemize}
 		\cprotect\item Inline mode: use \verb|$equation$| or \verb|\(equation\)|
 		\cprotect\item Display mode: use \verb|$$equation$$| or \verb|\[equation\]|
 	\end{itemize}
-\begin{LTXexample}[caption={equations}]
+\begin{codeshow}
 Inline mode: $a=b+c$ or \(a=b+c\)
 
 Display mode:
 \[a=b+c\]
 $$a=b+c$$
-\end{LTXexample}
+\end{codeshow}
 \end{frame}
 
 \begin{frame}[fragile]{Equation Environment}
 	\begin{itemize}
-		\item Another useful mode is the equation environment, which support the numbered equation and the reference.
+		\item Another useful mode is the \alert{\textit{equation environment}}, which support the numbered equation and the reference.
 		\cprotect\item The reference can achieved through \verb+\label{}+ and \verb+\ref{}+. The reference of the equation, table and figure are all the same.
 	\end{itemize}
 	
 	
-\begin{LTXexample}[caption={equation environment}]
+\begin{codeshow}
 An example 
 \begin{equation}\label{eq:myeq}
 E=MC^2
 \end{equation}
 Equation \ref{eq:myeq} is mass-energy equivalence.
-\end{LTXexample}	 
+\end{codeshow}	 
 \end{frame}
 
 \begin{frame}[fragile]{Subscripts and Superscripts}
 Subscripts and superscripts are written using the symbols \^{} and \_.
 	
 \vskip 1.5cm
-\begin{LTXexample}[caption={subscripts and superscripts}]
+\begin{codeshow}
 \[a_1^2=b_1^2+c_1^2\]
 \[a_mn^2=b_mn^2\]
 \[a_{mn}^2=b_{mn}^2\]
-\end{LTXexample}	 
+\end{codeshow}	 
 \end{frame}
 
 
 \begin{frame}[fragile]{Fractions}
 	\begin{itemize}
-		\item To enable the fraction, you need to include the \textit{amsmath} package, a powerful math package.
+		\item To enable the fraction, you need to include the \alert{\textit{amsmath}} package, a powerful math package.
 		\cprotect\item \verb+\frac{numerator}{denominator}+.
 	\end{itemize}
 	
 	\vskip 1cm
-\begin{LTXexample}[caption={fractions}]
+\begin{codeshow}
 \[a_1 = \frac{b_1}{c_1}\]
 \[a_1 = \frac{b_1}{c_1} mn\]
-\end{LTXexample}	 
+\end{codeshow}	 
 \end{frame}
 
 \begin{frame}[fragile]{Brackets and Parentheses}
@@ -435,11 +555,11 @@ Subscripts and superscripts are written using the symbols \^{} and \_.
 	\end{itemize}
 
 	\vskip 0.5cm
-	\begin{LTXexample}[caption={brackets and parentheses}]
+	\begin{codeshow}
 \[U_t=\left((1-\delta)\frac{A}{C}+\delta B\right)^{\frac{1}{1-\sigma}}\]
 \[U_t=((1-\delta)\frac{A}{C}+\delta B)^{\frac{1}{1-\sigma}}\]
 \[\left(A\right.\]
-	\end{LTXexample}	 
+	\end{codeshow}	 
 \end{frame}
 
 \begin{frame}[fragile]{Aligning equations}
@@ -448,14 +568,14 @@ Subscripts and superscripts are written using the symbols \^{} and \_.
 	\end{itemize}
 	
 	\vskip 0.5cm
-\begin{LTXexample}[caption={aligning equations}]
+\begin{codeshow}
 \begin{equation}
 \begin{aligned}
 \frac{\partial U_t}{\partial A}&=(1-\delta)U_t^{\frac{1}{1-\sigma^{-1}}-1}A^{-\sigma^{-1}}\\
 \frac{\partial U_t}{\partial B}&=\delta U_t^{\frac{1}{1-\sigma^{-1}}-1}B^{-\sigma^{-1}}
 \end{aligned}
 \end{equation}
-\end{LTXexample}	 
+\end{codeshow}	 
 \end{frame}
 
 
@@ -468,27 +588,26 @@ Subscripts and superscripts are written using the symbols \^{} and \_.
 		\cprotect\item math symbols.
 	\end{itemize}
 	
-	\begin{LTXexample}[caption={special symbols}]
+	\begin{codeshow}
 		\[\alpha\]
 		\[\beta\]
 		\[\int_{a}^{b} x^2 dx\]
 		\[\lim_{x\to\infty} f(x)\]
 		\[\uparrow\rightarrow\downarrow\leftarrow\]
-	\end{LTXexample}	 
+	\end{codeshow}	 
 \end{frame}
 
 
 \begin{frame}[fragile]{Special symbols}
 	Some trickier equations(not just math)
 	
-	\begin{LTXexample}[caption={special symbols}]
-		\begin{equation}\begin{aligned}
-		\oint \mathbf{B} \cdot d \mathbf{S} &=\mu_{0} \epsilon_{0} \frac{d \Phi_{E}}{d t}+\mu_{0} i_{e n c} \\
-		k &=A e^{-E_{A} / R T} \\
-		K_{a} &=\frac{\left[\mathrm{H}_{3} 0^{+}\right]\left[\mathrm{A}^{-}\right]}{[\mathrm{HA}]} \\
-		V &=\left(\bigoplus_{\lambda \in \operatorname{Sec}(T)} V^{(\lambda)}\right) \oplus V
-		\end{aligned}\end{equation}
-	\end{LTXexample}	 
+\tiny \begin{codeshow}
+\begin{equation}\begin{aligned}
+\oint \mathbf{B} \cdot d \mathbf{S} &=\mu_{0} \epsilon_{0} \frac{d \Phi_{E}}{d t}+\mu_{0} i_{e n c} \\
+K_{a} &=\frac{\left[\mathrm{H}_{3} 0^{+}\right]\left[\mathrm{A}^{-}\right]}{[\mathrm{HA}]} \\
+V &=\left(\bigoplus_{\lambda \in \operatorname{Sec}(T)} V^{(\lambda)}\right) \oplus V
+\end{aligned}\end{equation}
+\end{codeshow}
 \end{frame}
 
 
@@ -524,7 +643,7 @@ Subscripts and superscripts are written using the symbols \^{} and \_.
 		\cprotect\item Images should be EPS, PDF, PNG, JPEG or GIF files.
 	\end{itemize}
 	
-	\begin{LTXexample}[caption={special symbols}]
+	\begin{codeshow}
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\linewidth]{"figs/new york"}
@@ -532,7 +651,7 @@ Subscripts and superscripts are written using the symbols \^{} and \_.
 	\label{fig:new-york}
 \end{figure}
 
-	\end{LTXexample}	 
+	\end{codeshow}	 
 \end{frame}
 
 \begin{frame}[fragile]{Figures}
@@ -574,7 +693,7 @@ Subscripts and superscripts are written using the symbols \^{} and \_.
 		\end{itemize}
 	\end{enumerate}
 
-	\begin{LTXexample}[caption={Simple tables}]
+	\begin{codeshow}
 	\begin{tabular}{|rc}
 		Apples & Green \\
 		\hline
@@ -582,7 +701,7 @@ Subscripts and superscripts are written using the symbols \^{} and \_.
 		\cline{1-1}
 		Oranges & Orange \\
 	\end{tabular}	
-		\end{LTXexample}
+		\end{codeshow}
 \end{frame}
 
 \begin{frame}[fragile]{Tables}
@@ -597,7 +716,7 @@ Subscripts and superscripts are written using the symbols \^{} and \_.
 		\end{itemize}
 	\end{enumerate}
 	
-	\begin{LTXexample}[caption={Simple tables}]
+	\begin{codeshow}
 		\begin{tabular}{|rc}
 			Apples & Green \\
 			\hline
@@ -605,7 +724,7 @@ Subscripts and superscripts are written using the symbols \^{} and \_.
 			\cline{1-1}
 			Oranges & Orange \\
 		\end{tabular}	
-	\end{LTXexample}
+	\end{codeshow}
 \end{frame}
 
 
@@ -619,36 +738,38 @@ Subscripts and superscripts are written using the symbols \^{} and \_.
 \end{frame}
 
 
-
-\begin{frame}{Sample Tables}
-
-	\begin{table}[]
-		\centering
-		\caption{PSM and Estimated Impact from NSW(re74) and CPS1 Sample}
-		\vspace{-.2in}
-		\label{tab:ps-nswre74-cps1}
-		\resizebox{\textwidth}{!}{%
-			\begin{tabular}{lccccccccccccc}
-				\hline
-				& No. of & \multicolumn{2}{c}{Treatment Effect} & \multicolumn{10}{c}{whteher difference after matching significant} \\
-				& observations & parameter & S.E. & age & education & black & hispanic & nodgree & married & re75 & u75 & re74 & u74 \\ \hline
-				NSW & 445 & 1794 & (633） &  &  &  &  &  &  &  &  &  &  \\
-				Full CPS & 15992 & -8498 & (583) &  &  &  &  &  &  &  &  &  &  \\
-				Without replacement & 831 & 1449 & (783) & No & No & No & No & No & No & No & No & No & No \\
-				With replacement &  &  &  &  &  &  &  &  &  &  &  &  &  \\
-				Nearest Neghbour (1) & 4416 & 2315 & (1047) & No & No & No & No & No & No & No & No & No & No \\
-				Capliper, 0.00001 & 174 & 2879 & (1950) & No & No & No & Yes & No & No & No & No & No & No \\
-				Capliper, 0.001 & 3564 & 1289 & (1065) & No & No & No & No & No & No & No & No & No & No \\
-				Radius, 0.00001 & 174 & 2034 & (1797) & No & No & No & No & No & No & No & No & No & No \\
-				Radius, 0.001 & 3564 & 1127 & (944) & No & No & No & No & No & No & No & No & No & No \\
-				Kernel Normal & 4255 & 1084 & (742) & No & No & No & No & No & No & No & No & No & No \\
-				Kernal Biweight & 4255 & 1148 & (770) & No & No & No & No & No & No & No & No & No & No \\ \hline
-			\end{tabular}%
-		}
+\begin{frame}{Sample Table}
+	\begin{table}[]	
+		\caption{Persistence of ***}
+		\vspace{-0.2in}
+		\begin{threeparttable}
+			\label{tab:persistence}
+			\centering
+			\scriptsize
+			\resizebox{\textwidth}{!}{%
+				\begin{tabular}{lccccc}
+					\hline
+					\multicolumn{1}{c}{n-year-ahead} & Univariate Predictive &  & Controlling for &  & Controlling for \\
+					\multicolumn{1}{c}{$\beta^{***}$} & Regressions &  & Lagged $\beta^{MKT}$ &  & Lagged $\beta^{MKT}$, $\beta^{SMB}$ and $\beta^{HML}$ \\ \hline
+					n=1 & 0.7660*** &  & 0.7467*** &  & 0.7476*** \\
+					& (24.66) &  & (25.14) &  & (25.96) \\
+					n=2 & 0.5626*** &  & 0.5304*** &  & 0.5360*** \\
+					& (15.26) &  & (14.56) &  & (15.43) \\
+					n=3 & 0.3801*** &  & 0.3441*** &  & 0.3560*** \\
+					& (10.50) &  & (9.49) &  & (10.20) \\
+					n=4 & 0.2031*** &  & 0.1832*** &  & 0.1868*** \\
+					& (5.65) &  & (5.46) &  & (5.91) \\
+					n=5 & 0.0441 &  & 0.0487* &  & 0.0368 \\
+					& (1.39) &  & (1.82) &  & (1.59) \\ \hline
+				\end{tabular}%
+			}
+			\begin{flushleft}
+				This table tests the persistence of *** by running Fama and MacBeth Regression on n-year ahead$\beta^{***}$ on current $\beta^{***}$. The first column reports the average slope coefficients on $\beta^{GPR}$ from the univariate predictive regression. The second column reports the results after controlling $\beta^{MKT}$, and the third column reports the results after controlling $\beta^{MKT}$, $\beta^{SMB}$ and $\beta^{HML}$. Newey-West adjusted $t$-statistic are given in parentheses. $*$, $**$, and $***$ indicate the significance at the 10\%, 5\% and 1\% levels, respectively. The sample period is January 1980-December 2018.	
+			\end{flushleft}
+		\end{threeparttable}
 	\end{table}
-
+	
 \end{frame}
-
 \begin{frame}{Useful websites}
 	Oneline \LaTeX\ table editor.
 	\begin{enumerate}
@@ -691,7 +812,7 @@ The BibTeX file is the key file.
 
 \begin{frame}[fragile]{How to cite literature in \LaTeX}
 	
-	The .bsy file is another file.
+	The .bst file is another file.
 	\begin{itemize}
 		\item .bst file is the reference style file.
 		\item one can use .bst file to edit his customized reference style or use some journal-specific style.
@@ -768,6 +889,7 @@ All the above materials can be downloaded from my GitHub repository.
 \begin{itemize}
 	\item TeX Live: http://www.tug.org/texlive/
 	\item TeXstudio: https://www.texstudio.org/
+	\item LaTeXstudio: https://www.latexstudio.net/
 \end{itemize}
 	\end{itemize}
 \end{frame}

@@ -1,8 +1,0 @@
-		\begin{tabular}{|rc}
-			Apples & Green \\
-			\hline
-			Strawberries & Red \\
-			\cline{1-1}
-			Oranges & Orange \\
-		\end{tabular}	
-	
